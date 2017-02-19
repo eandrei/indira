@@ -1,0 +1,19 @@
+[{shop_url}] 
+
+Salut {firstname} {lastname}, 
+
+Your guest account for {shop_name} has been transformed into a
+customer account. 
+
+E-MAIL ADDRESS: {email}
+
+PASSWORD: {passwd} 		 
+
+Va rugam sa fiti precauti cand impartiti aceste date de
+autentificare altor persoane. 
+
+Puteti sa accesati contul de client din magazin: {shop_url} 
+
+{shop_name} [{shop_url}] powered by
+PrestaShop(tm) [http://www.prestashop.com/] 
+

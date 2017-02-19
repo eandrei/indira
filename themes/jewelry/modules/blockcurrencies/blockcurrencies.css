@@ -1,0 +1,65 @@
+#currencies-block-top {
+  float: right;
+  border-left: 0px solid #515151;
+  position: relative; }
+  @media (max-width: 479px) {
+    #currencies-block-top {
+      width: 25%; } }
+  #currencies-block-top span.firstWord {
+    display: none; }
+  #currencies-block-top div.current {
+    font-weight: normal;
+    padding: 8px 10px 10px 10px;
+    color: #000;
+    cursor: pointer;
+    line-height: 18px; }
+    @media (max-width: 479px) {
+      #currencies-block-top div.current {
+        text-align: center;
+        padding: 9px 5px 10px;
+        font-size: 11px; } }
+    #currencies-block-top div.current strong {
+      color: #777777; }
+    #currencies-block-top div.current:hover, #currencies-block-top div.current.active {
+      background: transparent; }
+    #currencies-block-top div.current:after {
+      content: "\f107";
+      font-family: "FontAwesome";
+      font-size: 12px;
+      line-height: 18px;
+      color: #121212;
+      vertical-align: -2px;
+      padding-left: 12px; }
+      @media (max-width: 479px) {
+        #currencies-block-top div.current:after {
+          padding-left: 2px;
+          font-size: 13px;
+          line-height: 13px;
+          vertical-align: 0; } }
+    @media (max-width: 479px) {
+      #currencies-block-top div.current .cur-label {
+        display: none; } }
+  #currencies-block-top ul {
+    display: none;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    width: 157px;
+    background: #f5f5f5;
+    border:1px solid #ebebeb;
+    z-index: 2; }
+    #currencies-block-top ul li {
+      color: #121212;
+      line-height: 35px;
+      border-bottom:1px solid #ebebeb;
+      font-size: 13px; }
+      #currencies-block-top ul li a,
+      #currencies-block-top ul li > span {
+        padding: 0 10px 0 12px;
+        display: block;
+        color: #121212; }
+      #currencies-block-top ul li.selected, #currencies-block-top ul li:hover a {
+        background: #f1f1f1; 
+        }
+
+/*# sourceMappingURL=blockcurrencies.css.map */

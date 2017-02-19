@@ -1,0 +1,19 @@
+.header_user_info {
+  float: right;
+  border-right: 1px solid #ebebeb; }
+  .header_user_info a {
+    color: #000;
+    font-weight: 700;
+	font-family:ProximaNova,Arial,Helvetica,sans-serif;
+      letter-spacing: .1px;
+    display: block;
+    padding: 2px 8px;
+    cursor: pointer;}
+    @media (max-width: 479px) {
+      .header_user_info a {
+        font-size: 11px; } }
+    .header_user_info a:hover, .header_user_info a.active {
+      background: transparent;
+	  text-decoration:underline;}
+
+/*# sourceMappingURL=blockuserinfo.css.map */

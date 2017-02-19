@@ -1,0 +1,1 @@
+<h4>- SPECIAL OFFER -</h4><h2><span class="gold-color">GOLD&</span><br />& DIAMONDS</h2><p>Lorem Ipsum dolor sit amen</p><p><button class="btn btn-default" type="button">Shop now!</button></p>

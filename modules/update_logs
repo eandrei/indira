@@ -1,0 +1,9 @@
+	Up to PrestaShop v.1.6.0.14 at /public_html/modules/mobilpay_cc/mobilpay_cc.php in line 471 the function validate order was:
+
+	function validateOrder($id_cart, $id_order_state, $amountPaid, $paymentMethod = 'Unknown', $message = NULL, $extraVars = array(), $currency_special = NULL, $dont_touch_amount = false, 	$secure_key = false, $shop = NULL)
+
+	After the update to 1.6.1.x the function was changed to
+
+	function validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL)
+
+	This modification was made bacause the PaymentModuleCore::validateOrder of PrestaShop was changed.

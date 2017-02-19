@@ -1,0 +1,24 @@
+[{shop_url}] 
+
+Salut {firstname} {lastname},
+
+Va multumim pentru comanda {order_name} de la {shop_name}. 
+
+Din pacate, unul sau mai multe articole comandate nu sunt momentan
+in stoc. Acest lucru poate cauza o usoara intarziere a livrarii.
+Acceptati scuzele noastre si fiti asigurat ca facem tot ce se poate
+pentru a rectifica acest lucru. 
+
+You can review your order and download your invoice from the
+"Order history" [{history_url}] section of your
+customer account by clicking "My account"
+[{my_account_url}] on our shop. 
+
+If you have a guest account, you can follow your order via the
+"Guest Tracking"
+[{guest_tracking_url}?id_order={order_name}] section
+on our shop. 
+
+{shop_name} [{shop_url}] powered by
+PrestaShop(tm) [http://www.prestashop.com/] 
+

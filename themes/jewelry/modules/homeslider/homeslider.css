@@ -1,0 +1,223 @@
+/******************************************************************************
+						Home Page Slider
+*******************************************************************************/
+#homepage-slider {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 14px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  float: left;
+  /*****************************************************************************
+  						BXSlider Styles
+  ********************************************************************************/ }
+  @media (max-width: 767px) {
+    #homepage-slider {
+      width: 100%;
+      max-width: 100%;
+      padding-top: 20px; } }
+  #homepage-slider #homeslider {
+    margin: 0 auto;
+    padding: 0; }
+  #homepage-slider .homeslider-container {
+    position: relative; }
+  #homepage-slider .homeslider-image {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  #homepage-slider .homeslider-description {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    padding: 105px 50px;
+    cursor: pointer; }
+	 #homepage-slider .homeslider-description h4 {
+		font-family:"Open Sans", sans-serif;
+		color:#121212;
+		font-weight:600!important;
+		margin-bottom:20px;
+		font-size:12px;
+		letter-spacing:7px;
+		}
+    #homepage-slider .homeslider-description h2 {
+      font-size: 6.6em;
+      color: #121212;
+      margin: 0;
+	  font-family:"Open Sans", sans-serif;
+	  font-weight:100;
+	  line-height:0.9em;
+      padding: 0; }
+    #homepage-slider .homeslider-description p {
+      width: 90%;
+	  font-family:"Open Sans", sans-serif;
+      font-size: 1.15em;
+      line-height: 1.3em;
+      padding: 0.5em 0;
+      color: #121212; }
+    #homepage-slider .homeslider-description button {
+      font-size: 1.2em;
+	  background:/*#dbb879;*/ #121212;
+	  border:1px solid /*#dbb879*/ #121212;
+	  color:#fff;
+	  margin-top:20px;
+	  font:normal 16px/20px Arial;
+	  padding:15px 25px;
+      text-transform: uppercase; }
+    @media (max-width: 1200px) {
+      #homepage-slider .homeslider-description {
+        padding:105px 50px;
+        font-size: 0.8em; } }
+    @media (max-width: 1024px) {
+      #homepage-slider .homeslider-description {
+        padding: 70px 30px;
+        font-size: 0.7em; }
+        #homepage-slider .homeslider-description p {
+          font-size: 1.5em; } }
+     @media (min-width:601px) and (max-width: 768px) {
+      #homepage-slider .homeslider-description {
+        padding: 60px 30px;
+        font-size: 0.5em; }
+          #homepage-slider .homeslider-description h2 {
+            font-size:5.8em;
+            line-height:35px;
+          }
+        #homepage-slider .homeslider-description h4{
+        font-size:10px;
+        letter-spacing:2px;}
+        #homepage-slider .homeslider-description p {
+          font-size: 1.5em; 
+          margin-top:15px;} 
+        #homepage-slider .homeslider-description button {
+            padding:5px 10px;
+            font-size:1.1em;
+            margin-top:0px;
+          }  
+          }      
+    @media (min-width:481px) and (max-width: 600px) {
+     #homepage-slider .homeslider-description {
+        padding: 30px 30px;
+        font-size: 0.5em; }
+        #homepage-slider .homeslider-description h2 {
+            font-size:4.0em;
+            line-height:30px;
+          }
+         #homepage-slider .homeslider-description button {
+            padding:5px 10px;
+            font-size:1.1em;
+            margin-top:0px;
+          }  
+         #homepage-slider .homeslider-description h4{
+        font-size:10px;
+        letter-spacing:2px;}  
+        #homepage-slider .homeslider-description p {
+          font-size: 1.5em; 
+          margin-top:5px;}    
+        }   
+     
+    @media (max-width: 480px) {
+      #homepage-slider .homeslider-description {
+        padding: 20px 30px;
+        font-size: 0.5em;
+        left:40%; }
+        #homepage-slider .homeslider-description h4{
+        	letter-spacing:0px;
+        	font-size:8px;
+        }
+          #homepage-slider .homeslider-description h2 {
+            font-size:3em;
+            line-height:20px;
+          }
+            #homepage-slider .homeslider-description button {
+              display:none;
+            }
+        #homepage-slider .homeslider-description p {
+          font-size: 1.7em; } }
+          
+        @media (min-width:441px) and (max-width: 479px) {
+        #homepage-slider .homeslider-description button {
+            padding:5px 10px;
+            font-size:1.1em;
+            margin-top:0px;
+            display:block;
+          }  
+       }   
+      
+  #homepage-slider .bx-wrapper a {
+    display: block; }
+  #homepage-slider .bx-wrapper img {
+    height: auto; }
+  #homepage-slider .bx-wrapper .bx-viewport {
+    width: 100%;
+    direction: ltr !important; }
+  #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666; }
+  #homepage-slider .bx-wrapper .bx-controls-direction a {
+    top: 48%;
+    margin-top: 0px;
+    font-size: 1em;
+    bottom: 10px;
+    outline: 0;
+    width: 52px;
+    height: 52px;
+    text-indent: -9999px;
+    z-index: 9999;
+    border: 0px solid #fff;
+    line-height: 18px; 
+    margin-top:-20px;}
+    #homepage-slider .bx-wrapper .bx-controls-direction a:before {
+      height: 48px;
+      width: 48px;
+      display: block;
+      content: ".";
+      text-indent: -9999px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1; }
+    #homepage-slider .bx-wrapper .bx-controls-direction a:after {
+      display: block;
+      width: 48px;
+      height: 48px;
+      color: #ccc;
+      text-indent: 0;
+      text-align: center;
+      font-size: 21px;
+      font-family: "FontAwesome";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      padding: 16px 0 0 0; }
+    #homepage-slider .bx-wrapper .bx-controls-direction a:hover:before {
+      background: transparent;
+      }
+  #homepage-slider .bx-wrapper .bx-prev {
+    left: 60px;
+     }
+  #homepage-slider .bx-wrapper .bx-next {
+    right: 60px;
+     }
+	
+    #homepage-slider .bx-wrapper .bx-prev:after {
+      content: "\f053"; }
+  #homepage-slider .bx-wrapper .bx-next:after {
+    content: "\f054"; }
+
+.ie8 #homepage-slider .bx-wrapper .bx-controls-direction a:before {
+  background: #333; }
+  
+   .gold-color{
+		color:/*#dbb879*/ #121212;
+   }
+/*# sourceMappingURL=homeslider.css.map */
+@media (max-width:768px){
+  #homepage-slider .bx-wrapper .bx-prev {
+    left: 5px;
+     }
+  #homepage-slider .bx-wrapper .bx-next {
+    right: 5px;
+     }
+     }

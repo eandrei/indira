@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: */manufacturer
+Disallow: *?controller=manufacturer
+Disallow: */supplier
+Disallow: *?controller=supplier

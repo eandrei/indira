@@ -1,0 +1,295 @@
+div.payment_module { padding-bottom: 20px; text-transform: none; }
+.braintree_title img { float: none; margin-right: 8px; margin-top: -2px; vertical-align: middle; }
+#braintree-payment-form {}
+#braintree-payment-form label { display: inline-block; margin-bottom: 4px; text-transform: uppercase; }
+#braintree-payment-form label.lowercase { text-transform: none; }
+#braintree-payment-form input[type="text"], #braintree-payment-form select { border: #CCCCCC solid 1px; margin-bottom: 15px; padding: 3px; }
+#braintree-payment-form input[type="checkbox"] { margin-bottom: 15px; }
+#braintree-payment-form input.braintree-card-number { width: 210px; }
+#braintree-payment-form input.braintree-card-cvc {width: 48px;}
+#braintree-payment-form a { display: inline; position: relative; border: none; padding: 0;}
+a.braintree-card-cvc-info { font-style: italic; display: inline;}
+a.braintree-card-cvc-info div.cvc-info {
+	background-color: #BDE5F8;
+	border: #00529B solid 1px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #00529B!important;
+	display: none;
+	font-style: normal;
+	padding: 8px;
+/*	position: absolute;
+	right: -170px;
+	top: -77px;*/
+	text-decoration: none;
+	width: 300px;
+}
+a.braintree-card-cvc-info:hover div.cvc-info { display: block; }
+div.cvc-info:hover { cursor: default; }
+#braintree-payment-form img.cc-icon { border: #CCCCCC solid 1px; float: left; margin-right: 5px; }
+.block-left { display: inline-block; float: left; margin-right: 20px; }
+img.disable { opacity: 0.3; }
+img.enable { opacity: 1; }
+#braintree-payment-form-cc .braintree-submit-button-cc { margin-left: 5px; }
+#braintree-payment-form-cc a { display: inline; font-size: 11px; text-decoration: underline; }
+#braintree-payment-form .braintree-submit-button, #braintree-payment-form-cc .braintree-submit-button-cc {
+	position:relative;
+	display:inline-block;
+	padding:5px 7px;
+	border:1px solid #cc9900;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-weight:bold;
+	color:#000;
+	background:url(../../themes/default/img/bg_bt.gif) repeat-x 0 0 #f4b61b;
+	cursor: pointer;
+}
+#braintree-payment-form .braintree-submit-button:hover, #braintree-payment-form-cc .braintree-submit-button-cc:hover {
+	text-decoration:none;
+	background-position: left -50px
+}
+div.braintree-payment-errors {
+	margin: 0 0 10px 0;
+	padding: 10px;
+	border: 1px solid #900;
+	font-size: 13px;
+	background: #FCC;
+	display: none;
+}
+
+div.braintree-card-deleted {
+	margin: 0 0 10px 0; 
+	padding: 10px;
+	border: 1px solid #ade27d; 
+	font-size: 13px;
+	background: #d3ffab;
+	display: none;
+	text-transform: none;
+}
+
+#braintree-translations, #braintree-ajax-loader, #braintree-ajax-loader-paypal { display: none; }
+#braintree_save_token { vertical-align: top; }
+a#bt_error {
+	border: none;
+    padding: 0;
+    margin: 0;
+}
+#braintree-payment-form input, #braintree-payment-form select { margin-left: 0; }
+#braintree-replace-card, #braintree-delete-card { border: none; padding: 0; cursor: pointer; }
+
+#braintree-form .clear{clear: both;}
+#braintree-form .clear_none{clear: none;}
+#braintree-form .ui-block-b{clear: both;}
+
+#braintree-form #paypal-button {
+	margin-bottom: 10px;
+}
+
+#braintree-payment-form #paypal-container {
+	margin-top: 20px;
+}
+
+#braintree-hosted-form #paypal-container {
+	margin-bottom: 20px;
+}
+
+#braintree-hosted-form {}
+#braintree-hosted-form #braintree-submit-button {
+	position:relative;
+	display:none;
+	padding:5px 7px;
+	border:1px solid #cc9900;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-weight:bold;
+	color:#000;
+	background:url(../img/bg_btn.gif) repeat-x 0 0 #f4b61b;
+	cursor: pointer;
+	line-height: normal;
+    height: 30px;
+}
+#braintree-hosted-form #braintree-submit-button:hover {
+	text-decoration:none;
+	background-position: left -50px
+}
+
+#braintree-hosted-form .card-field-container {
+    height: 30px;
+    display: block;
+}
+
+#braintree-hosted-form .card-label {
+    display: block;
+    border-top: solid 1px #DEE2E5;
+    border-bottom: solid 1px #DEE2E5;
+    padding: 8px 0;
+    margin-top: -1px;
+	margin-bottom: 0;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transition: background-color 131ms linear;
+    -moz-transition: background-color 131ms linear;
+    transition: background-color 131ms linear;
+}
+
+#braintree-hosted-form .row {
+	margin: 0;
+	zoom: 1;
+	display: block;
+    clear: both;
+}
+
+#braintree-hosted-form .column.half {
+	width: 50%;
+}
+
+#braintree-hosted-form .column {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+	width: 100%;
+}
+
+#braintree-hosted-form .expiration-label.right-border {
+    border-right: solid 1px #DEE2E5;
+    margin-right: -1px;
+}
+
+#braintree-hosted-form .cvv-label {
+    border-left: solid 1px #DEE2E5;
+}
+
+#braintree-hosted-form .card-label .invalid-bottom-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #D0021B;
+    height: 10px;
+    width: 100%;
+    -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20,0,1);
+    -moz-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20,0,1);
+    -ms-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20,0,1);
+    -o-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20,0,1);
+    transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20,0,1);
+}
+
+#braintree-hosted-form .ie8 .card-label .invalid-bottom-bar,.ie9 .card-label .invalid-bottom-bar{bottom:-15px}
+#braintree-hosted-form .card-label .invalid-bottom-bar, .card-label .invalid-bottom-bar {bottom:-15px}
+
+#braintree-hosted-form .braintree-hosted-fields-invalid .invalid-bottom-bar {bottom:15px}
+
+#braintree-hosted-form .braintree-hosted-fields-invalid .field-name {color:#D0021B}
+
+#braintree-hosted-form .card-label.invalid .invalid-bottom-bar {
+    -webkit-animation: invalidBarAnimation 1600ms linear both;
+    animation: invalidBarAnimation 1600ms linear both;
+}
+
+#braintree-hosted-form .payment-method-icon {
+    position: absolute;
+    left: auto;
+    right: 14px;
+    top: 50%;
+    width: 41px;
+    height: 27px;
+    margin-top: -14px;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    border-radius: 1px;
+}
+
+#braintree-hosted-form .payment-method-icon.visa {
+    display: block;
+    text-indent: -999em;
+    background-image: url(../img/braintree_dropin_sprite.png);
+    background-position: 0 -380px;
+    width: 44px;
+    height: 28px;
+}
+
+#braintree-hosted-form .payment-method-icon.american-express {
+    display: block;
+    text-indent: -999em;
+    background-image: url(../img/braintree_dropin_sprite.png);
+    background-position: 0 -352px;
+    width: 44px;
+    height: 28px;
+}
+#braintree-hosted-form .payment-method-icon.master-card {
+    display: block;
+    text-indent: -999em;
+    background-image: url(../img/braintree_dropin_sprite.png);
+    background-position: 0 -268px;
+    width: 44px;
+    height: 28px;
+}
+#braintree-hosted-form .payment-method-icon.diners-club {
+    display: block;
+    text-indent: -999em;
+    background-image: url(../img/braintree_dropin_sprite.png);
+    background-position: 0 -128px;
+    width: 44px;
+    height: 28px;
+}
+#braintree-hosted-form .payment-method-icon.discover {
+    display: block;
+    text-indent: -999em;
+    background-image: url(../img/braintree_dropin_sprite.png);
+    background-position: 0 -156px;
+    width: 44px;
+    height: 28px;
+}
+#braintree-hosted-form .payment-method-icon.jcb {
+    display: block;
+    text-indent: -999em;
+    background-image: url(../img/braintree_dropin_sprite.png);
+    background-position: 0 -212px;
+    width: 44px;
+    height: 28px;
+}
+#braintree-hosted-form .payment-method-icon.maestro {
+    display: block;
+    text-indent: -999em;
+    background-image: url(../img/braintree_dropin_sprite.png);
+    background-position: 0 -240px;
+    width: 44px;
+    height: 28px;
+}
+
+#braintree-hosted-form #braintree-paypal-loggedout #braintree-paypal-button {
+    border: none;
+    padding: 0;
+}
+
+.card-label.active{z-index:2;background-color:#f9f9f9}
+.card-label.active ::-webkit-input-placeholder{color:#283036}
+.card-label.active :-moz-placeholder{color:#283036}
+.card-label.active ::-moz-placeholder{color:#283036}
+.card-label.active :-ms-input-placeholder{color:#283036}
+.card-label.active .field-name{color:#283036}
+.card-label.show-label .field-name{opacity:1;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.card-label.active+.card-label,.card-label.active+.checkbox-label{border-top-color:transparent}
+.card-label.invalid{z-index:3}
+.card-label.invalid ::-webkit-input-placeholder{color:#D0021B}
+.card-label.invalid :-moz-placeholder{color:#D0021B}
+.card-label.invalid ::-moz-placeholder{color:#D0021B}
+.card-label.invalid :-ms-input-placeholder{color:#D0021B}
+.card-label.invalid,.card-label.invalid .card-field,.card-label.invalid .field-name{color:#D0021B}
+.card-label.invalid .card-field{border-bottom-color:#D0021B;background:0 0;-webkit-animation:cardFieldAnimation 800ms linear both;animation:cardFieldAnimation 800ms linear both}
+
+.is-modern .card-label.invalid .invalid-bottom-bar{-webkit-animation:invalidBarAnimation 1600ms linear both;animation:invalidBarAnimation 1600ms linear both}
+
+.ie8 .card-label.invalid .invalid-bottom-bar,.ie9 .card-label.invalid .invalid-bottom-bar{bottom:-7px}
