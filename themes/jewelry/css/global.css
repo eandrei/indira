@@ -9015,3 +9015,14 @@ body#order header .row #header_logo,
 
     border-bottom: 1px solid #d9d9d9;
 }
+
+.alert-promo {
+    background-size: cover;
+    background-color: #f36e5f;
+    border-color: transparent;
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}

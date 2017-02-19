@@ -375,11 +375,14 @@ span.view_scroll_spacer {
 	}
 	#short_description_block {
 		color: $description-color;
+        border-top: 1px solid #e2e2e2;
+        padding: 12px 12px 0 12px;
+        background: #f6f7f7;
+        border-bottom: 1px solid #e2e2e2;
 		.buttons_bottom_block {
 			display: none;
 		}
 		#short_description_content{
-			padding: 0 0 15px;
 			word-wrap: break-word;
 			p{
 				line-height: 18px;

@@ -25,49 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="form.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sell/themes/default/template/controllers/products/helpers/form/form.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6058" max-vertical-offset="8050">
-              <caret line="248" column="12" selection-start-line="248" selection-start-column="12" selection-end-line="248" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/settings.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.188679" vertical-offset="0" max-vertical-offset="550">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="defines.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/defines.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.8076925" vertical-offset="0" max-vertical-offset="5025">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9298246" vertical-offset="590" max-vertical-offset="3050">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="mobilpay_cc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/mobilpay_cc/mobilpay_cc.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,11 +47,81 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urgentcargus.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urgentcargus.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/urgentcargus/urgentcargus.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14914425" vertical-offset="639" max-vertical-offset="2475">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            <state vertical-scroll-proportion="-1.1509434" vertical-offset="639" max-vertical-offset="2475">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/jewelry/product.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.2222223" vertical-offset="8155" max-vertical-offset="28775">
+              <caret line="334" column="39" selection-start-line="331" selection-start-column="6" selection-end-line="334" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/jewelry/sass/product.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.4528303" vertical-offset="9364" max-vertical-offset="30775">
+              <caret line="384" column="34" selection-start-line="384" selection-start-column="9" selection-end-line="384" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/jewelry/product.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.716981" vertical-offset="9350" max-vertical-offset="19275">
+              <caret line="384" column="50" selection-start-line="384" selection-start-column="50" selection-end-line="384" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/jewelry/header.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.3076923" vertical-offset="2564" max-vertical-offset="3150">
+              <caret line="106" column="81" selection-start-line="106" selection-start-column="81" selection-end-line="106" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/jewelry/css/product.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6551724" vertical-offset="28965" max-vertical-offset="29400">
+              <caret line="1170" column="0" selection-start-line="1170" selection-start-column="0" selection-end-line="1170" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/jewelry/css/global.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="225263" max-vertical-offset="225825">
+              <caret line="9027" column="1" selection-start-line="9027" selection-start-column="1" selection-end-line="9027" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/jewelry/sass/global.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.528302" vertical-offset="88741" max-vertical-offset="89250">
+              <caret line="3555" column="0" selection-start-line="3555" selection-start-column="0" selection-end-line="3564" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -110,66 +137,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaymentModule.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/PaymentModule.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5660377" vertical-offset="3314" max-vertical-offset="24750">
-              <caret line="161" column="33" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="33" />
-              <folding>
-                <marker date="1469369822000" expanded="true" signature="2722:2784" placeholder="DELETE FROM ..." />
-                <marker date="1469369822000" expanded="true" signature="2846:2909" placeholder="DELETE FROM ..." />
-                <marker date="1469369822000" expanded="true" signature="2971:3031" placeholder="DELETE FROM ..." />
-                <marker date="1469369822000" expanded="true" signature="3525:3609" placeholder="INSERT INTO ..." />
-                <marker date="1469369822000" expanded="true" signature="3615:3719" placeholder="SELECT ${(in..." />
-                <marker date="1469369822000" expanded="true" signature="4188:4323" placeholder="INSERT INTO ..." />
-                <marker date="1469369822000" expanded="true" signature="40832:40849" placeholder="..." />
-                <marker date="1469369822000" expanded="true" signature="40922:40939" placeholder="..." />
-                <marker date="1469369822000" expanded="true" signature="41148:41165" placeholder="..." />
-                <marker date="1469369822000" expanded="true" signature="41242:41259" placeholder="..." />
-                <marker date="1469369822000" expanded="true" signature="51740:51824" placeholder="INSERT INTO ..." />
-                <marker date="1469369822000" expanded="true" signature="52259:52336" placeholder="SELECT `id_h..." />
-                <marker date="1469369822000" expanded="true" signature="52446:52923" placeholder="SELECT DISTI..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tree_associated_categories.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sell/themes/default/template/controllers/products/helpers/tree/tree_associated_categories.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3047" max-vertical-offset="4175">
-              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tree_toolbar_search.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sell/themes/default/template/helpers/tree/tree_toolbar_search.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1022" max-vertical-offset="1700">
-              <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/supercheckout/views/css/supercheckout.css" />
-        <option value="$PROJECT_DIR$/modules/supercheckout/views/templates/front/order-shipping-extra.tpl" />
-        <option value="$PROJECT_DIR$/modules/cashondelivery/controllers/front/validation.php" />
         <option value="$PROJECT_DIR$/themes/jewelry/css/modules/blocktopmenu/css/superfish-modified.css" />
-        <option value="$PROJECT_DIR$/themes/jewelry/sass/global.scss" />
         <option value="$PROJECT_DIR$/themes/jewelry/modules/blocktopmenu/css/superfish-modified.css" />
         <option value="$PROJECT_DIR$/themes/jewelry/css/modules/blockuserinfo/blockuserinfo.css" />
         <option value="$PROJECT_DIR$/themes/jewelry/css/modules/blockcontact/blockcontact.css" />
         <option value="$PROJECT_DIR$/themes/jewelry/css/product_list.css" />
-        <option value="$PROJECT_DIR$/themes/jewelry/product.tpl" />
-        <option value="$PROJECT_DIR$/themes/jewelry/css/product.css" />
         <option value="$PROJECT_DIR$/themes/jewelry/css/modules/blockcart/blockcart.css" />
         <option value="$PROJECT_DIR$/modules/fancourier/fancourier.php" />
         <option value="$PROJECT_DIR$/modules/supercheckout/classes/supercheckout_configuration.php" />
@@ -196,7 +173,6 @@
         <option value="$PROJECT_DIR$/modules/supercheckout/controllers/front/supercheckout.php" />
         <option value="$PROJECT_DIR$/modules/supercheckout/views/templates/front/supercheckout.tpl" />
         <option value="$PROJECT_DIR$/themes/jewelry/shopping-cart.tpl" />
-        <option value="$PROJECT_DIR$/themes/jewelry/css/global.css" />
         <option value="$PROJECT_DIR$/sell/themes/default/template/controllers/products/helpers/tree/tree_associated_categories.tpl" />
         <option value="$PROJECT_DIR$/sell/themes/default/template/helpers/tree/tree_toolbar_search.tpl" />
         <option value="$PROJECT_DIR$/classes/tree/Tree.php" />
@@ -210,6 +186,13 @@
         <option value="$PROJECT_DIR$/config/defines.inc.php" />
         <option value="$PROJECT_DIR$/modules/mobilpay_cc/mobilpay_cc.php" />
         <option value="$PROJECT_DIR$/modules/urgentcargus/urgentcargus.class.php" />
+        <option value="$PROJECT_DIR$/themes/jewelry/product.css" />
+        <option value="$PROJECT_DIR$/themes/jewelry/sass/product.scss" />
+        <option value="$PROJECT_DIR$/themes/jewelry/product.tpl" />
+        <option value="$PROJECT_DIR$/themes/jewelry/css/product.css" />
+        <option value="$PROJECT_DIR$/themes/jewelry/header.tpl" />
+        <option value="$PROJECT_DIR$/themes/jewelry/sass/global.scss" />
+        <option value="$PROJECT_DIR$/themes/jewelry/css/global.css" />
       </list>
     </option>
   </component>
@@ -396,48 +379,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pdf/invoice.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6514807" vertical-offset="725" max-vertical-offset="3675">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdf/invoice.note-tab.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7904328" vertical-offset="786" max-vertical-offset="1225">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdf/invoice.payment-tab.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.76537585" vertical-offset="336" max-vertical-offset="1125">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdf/invoice.product-tab.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5125285" vertical-offset="225" max-vertical-offset="4450">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdf/invoice.addresses-tab.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.961538" vertical-offset="486" max-vertical-offset="1250">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdf/invoice.summary-tab.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8076925" vertical-offset="775" max-vertical-offset="1350">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/jewelry/order-confirmation.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.45283" vertical-offset="620" max-vertical-offset="1275">
@@ -576,13 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7313" max-vertical-offset="11925">
           <caret line="297" column="28" selection-start-line="297" selection-start-column="16" selection-end-line="297" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jewelry/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221935" max-vertical-offset="225550">
-          <caret line="8881" column="6" selection-start-line="8881" selection-start-column="6" selection-end-line="8881" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -755,19 +689,19 @@
         <state vertical-scroll-proportion="-2.5660377" vertical-offset="3314" max-vertical-offset="24750">
           <caret line="161" column="33" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="33" />
           <folding>
-            <marker date="1469369822000" expanded="true" signature="2722:2784" placeholder="DELETE FROM ..." />
-            <marker date="1469369822000" expanded="true" signature="2846:2909" placeholder="DELETE FROM ..." />
-            <marker date="1469369822000" expanded="true" signature="2971:3031" placeholder="DELETE FROM ..." />
-            <marker date="1469369822000" expanded="true" signature="3525:3609" placeholder="INSERT INTO ..." />
-            <marker date="1469369822000" expanded="true" signature="3615:3719" placeholder="SELECT ${(in..." />
-            <marker date="1469369822000" expanded="true" signature="4188:4323" placeholder="INSERT INTO ..." />
-            <marker date="1469369822000" expanded="true" signature="40832:40849" placeholder="..." />
-            <marker date="1469369822000" expanded="true" signature="40922:40939" placeholder="..." />
-            <marker date="1469369822000" expanded="true" signature="41148:41165" placeholder="..." />
-            <marker date="1469369822000" expanded="true" signature="41242:41259" placeholder="..." />
-            <marker date="1469369822000" expanded="true" signature="51740:51824" placeholder="INSERT INTO ..." />
-            <marker date="1469369822000" expanded="true" signature="52259:52336" placeholder="SELECT `id_h..." />
-            <marker date="1469369822000" expanded="true" signature="52446:52923" placeholder="SELECT DISTI..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="SELECT ${(in..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="SELECT `id_h..." />
+            <marker date="1469369822000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..." />
           </folding>
         </state>
       </provider>
@@ -802,8 +736,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/urgentcargus/urgentcargus.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14914425" vertical-offset="639" max-vertical-offset="2475">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state vertical-scroll-proportion="-1.1509434" vertical-offset="639" max-vertical-offset="2475">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/product.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2222223" vertical-offset="8155" max-vertical-offset="28775">
+          <caret line="334" column="39" selection-start-line="331" selection-start-column="6" selection-end-line="334" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/sass/product.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4528303" vertical-offset="9364" max-vertical-offset="30775">
+          <caret line="384" column="34" selection-start-line="384" selection-start-column="9" selection-end-line="384" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/product.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.716981" vertical-offset="9350" max-vertical-offset="19275">
+          <caret line="384" column="50" selection-start-line="384" selection-start-column="50" selection-end-line="384" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3076923" vertical-offset="2564" max-vertical-offset="3150">
+          <caret line="106" column="81" selection-start-line="106" selection-start-column="81" selection-end-line="106" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/sass/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.528302" vertical-offset="88741" max-vertical-offset="89250">
+          <caret line="3555" column="0" selection-start-line="3555" selection-start-column="0" selection-end-line="3564" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225263" max-vertical-offset="225825">
+          <caret line="9027" column="1" selection-start-line="9027" selection-start-column="1" selection-end-line="9027" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/css/product.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6551724" vertical-offset="28965" max-vertical-offset="29400">
+          <caret line="1170" column="0" selection-start-line="1170" selection-start-column="0" selection-end-line="1170" selection-end-column="0" />
           <folding />
         </state>
       </provider>
