@@ -104,7 +104,7 @@
 			<div id="slider_row" class="row">
 						<div id="top_column" class="center_column col-xs-12 col-sm-12">{hook h="displayTopColumn"}</div>
 					</div>
-                <div class="alert-promo">Livrare gratuita de Martisor 20 Feb - 30 Feb</div>
+                <div class="alert-promo">Livrare gratuita de Martisor 20 Feb - 28 Feb</div>
 				<div id="columns" class="container">
 					{if $page_name !='index' && $page_name !='pagenotfound'}
 						{include file="$tpl_dir./breadcrumb.tpl"}
