@@ -37,10 +37,10 @@
 {if isset($meta_keywords) AND $meta_keywords}
 		<meta name="keywords" content="{$meta_keywords|escape:'html':'UTF-8'}" />
 {/if}
-		<meta name="generator" content="PrestaShop" />
 		<meta name="robots" content="{if isset($nobots)}no{/if}index,{if isset($nofollow) && $nofollow}no{/if}follow" />
 		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="alternate" href="{$base_dir}" hreflang="{$language_code|escape:'html':'UTF-8'}" />
 		<link rel="icon" type="image/vnd.microsoft.icon" href="{$favicon_url}?{$img_update_time}" />
 		<link rel="shortcut icon" type="image/x-icon" href="{$favicon_url}?{$img_update_time}" />
 {if isset($css_files)}
@@ -104,7 +104,7 @@
 			<div id="slider_row" class="row">
 						<div id="top_column" class="center_column col-xs-12 col-sm-12">{hook h="displayTopColumn"}</div>
 					</div>
-                <div class="alert-promo">Livrare gratuita de Martisor 20 Feb - 28 Feb</div>
+                <div class="alert-promo">Cadou surpriza pentru primele 100 de comenzi!</div>
 				<div id="columns" class="container">
 					{if $page_name !='index' && $page_name !='pagenotfound'}
 						{include file="$tpl_dir./breadcrumb.tpl"}

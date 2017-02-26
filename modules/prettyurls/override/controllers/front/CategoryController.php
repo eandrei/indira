@@ -15,14 +15,10 @@
  * @copyright Copyright 2016 © fmemodules.com All right reserved
  * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 */
+
 class CategoryController extends CategoryControllerCore
 {
-	/*
-    * module: prettyurls
-    * date: 2017-02-26 01:23:53
-    * version: 2.0.0
-    */
-    public function init()
+	public function init()
 	{
 		$link_rewrite = Tools::safeOutput(urldecode(Tools::getValue('category_rewrite')));
 		$cat_pattern = '/.*?\/([0-9]+)\-([_a-zA-Z0-9-\pL]*)/';
@@ -44,6 +40,7 @@ class CategoryController extends CategoryControllerCore
 				$_POST['id_category'] = $id_category;
 				$_GET['category_rewrite'] = '';
 			}
+			//IF no Route to category Found than it must be 404 page
 			elseif ($id_category <= 0)
 			{
 				$_GET['category_rewrite'] = '';
