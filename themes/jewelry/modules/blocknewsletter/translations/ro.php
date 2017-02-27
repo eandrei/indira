@@ -61,6 +61,7 @@ $_MODULE['<{blocknewsletter}jewelry>blocknewsletter_82e5e0bc0f9c776c98253d569c11
 $_MODULE['<{blocknewsletter}jewelry>blocknewsletter_644ecc2486a059ca16b001a77909bf40'] = 'Fișierul .CSV a fost exportat cu succes: %d clienți găsiți.';
 $_MODULE['<{blocknewsletter}jewelry>blocknewsletter_48e3d5f66961b621c78f709afcd7d437'] = 'Descarcă fișierul';
 $_MODULE['<{blocknewsletter}jewelry>blocknewsletter_87b0ca57db642f4e7780174a6abdc37d'] = 'Niciun rezultat!';
-$_MODULE['<{blocknewsletter}jewelry>blocknewsletter_ffb7e666a70151215b4c55c6268d7d72'] = 'Buletin informativ';
+$_MODULE['<{blocknewsletter}jewelry>blocknewsletter_ffb7e666a70151215b4c55c6268d7d72'] = 'Newsletter';
 $_MODULE['<{blocknewsletter}jewelry>blocknewsletter_416f61a2ce16586f8289d41117a2554e'] = 'E-mail-ul tău';
-$_MODULE['<{blocknewsletter}jewelry>blocknewsletter_d8335f4a5d918134bd0bdc47cc487d74'] = 'Introduceţi e-mailul dvs.';
+$_MODULE['<{blocknewsletter}jewelry>blocknewsletter_d8335f4a5d918134bd0bdc47cc487d74'] = 'Email';
+$_MODULE['<{blocknewsletter}jewelry>blocknewsletter_d67850bd126f070221dcfd5fa6317043'] = 'Mā înscriu!';
