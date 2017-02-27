@@ -16,10 +16,10 @@ config/settings.*.php
 
 # Site content
 # The following folders contain product images, virtual products, CSV's, etc.
-
+.DS_Store
 admin-dev/backups/
 admin-dev/export/
 admin-dev/import/
 download/
-img/
+./img/
 upload/
