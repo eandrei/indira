@@ -51,7 +51,5 @@
 		</div><!-- #page -->
 {/if}
 {include file="$tpl_dir./global.tpl"}
-<!--Start of Zendesk Chat Script-->
-
 	</body>
 </html>

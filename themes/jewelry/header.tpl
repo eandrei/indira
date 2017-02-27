@@ -65,6 +65,13 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 
 		<link rel="stylesheet" href="{$css_dir}animate.css" type="text/css" />
+        <!--Start of Zendesk Chat Script-->
+        <script type="text/javascript">
+            {literal}
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");$.src="https://v2.zopim.com/?4ciASL8TjCEZHghrs07yN7pYhP7fWUhr";z.t=+new Date;$.type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+            {/literal}
+        </script>
+        <!--End of Zendesk Chat Script-->
 	</head>
 	<body{if isset($page_name)} id="{$page_name|escape:'html':'UTF-8'}"{/if} class="{if isset($page_name)}{$page_name|escape:'html':'UTF-8'}{/if}{if isset($body_classes) && $body_classes|@count} {implode value=$body_classes separator=' '}{/if}{if $hide_left_column} hide-left-column{else} show-left-column{/if}{if $hide_right_column} hide-right-column{else} hide-right-column{/if}{if isset($content_only) && $content_only} content_only{/if} lang_{$lang_iso}">
 	{if !isset($content_only) || !$content_only}
