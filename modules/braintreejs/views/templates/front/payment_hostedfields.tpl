@@ -50,6 +50,36 @@
 		<div id="paypal-container">
 			<div class="clear"></div>
 
+			{* show existing paypal accounts *}
+			<div id="default-paypal-container">
+			{if isset($braintree_paypal_future) && $braintree_paypal_future && isset($braintree_pp_accounts) && is_array($braintree_pp_accounts) && count($braintree_pp_accounts) > 0}
+
+				<div class="clear"></div>
+				<h4 class="braintree_title">{l s='Existing Paypal Account' mod='braintreejs'}</h3>
+				
+				{foreach from=$braintree_pp_accounts item=pp_account}
+
+				<div id="braintree-paypal-loggedin" style="display: block; max-width: 500px; overflow: hidden; padding: 16px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(209, 212, 214); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(209, 212, 214); background-image: url({$pp_account.imageUrl|escape:'html':'UTF-8'}), none; background-position: 20px 50%; background-repeat: no-repeat;">
+					<span id="bt-pp-name" style="color: rgb(40, 48, 54); font-size: 13px; font-weight: 800; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin-left: 88px; -webkit-font-smoothing: antialiased;">PayPal</span>
+					<span id="bt-pp-email" style="color: rgb(110, 120, 127); font-size: 13px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin-left: 5px; -webkit-font-smoothing: antialiased;">{$pp_account.email|escape:'html':'UTF-8'}</span>
+					<button class="bt-pp-submit" data-token="{$pp_account.token|escape:'html':'UTF-8'}" id="bt-{$pp_account.token|escape:'html':'UTF-8'}" style="color: rgb(61, 149, 206); font-size: 11px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 20px; margin: 0px 0px 0px 25px; padding: 0px; border: 0px; cursor: pointer; text-decoration: underline; float: right; -webkit-font-smoothing: antialiased; background-color: transparent;">Use</button>
+				</div>
+
+				{/foreach}
+
+			{/if}
+			</div>
+
+			<div class="clear"></div>
+			<div id="new-paypal-container">
+				<h4 class="braintree_title">{l s='New Paypal Account' mod='braintreejs'}</h3>
+				<div id="paypal-button"></div>
+			</div>
+			<div id="braintree-ajax-loader-paypal"><img src="{$this_path_bt|escape:'html':'UTF-8'}views/img/ajax-loader.gif" alt="" /> {l s='Transaction in progress, please wait.' mod='braintreejs'}</div>
+			
+			<div style="float:none" class="ui-block-b"><input type="submit" id="braintree-submit-paypal-button" name="submitPaypalPayment" value="{l s='Submit Paypal Payment' mod='braintreejs'}" class="exclusive button" data-icon="check" data-iconpos="right" data-theme="b" data-ajax="true" style="display: none;"/></div>
+		</div>
+		{/if} {* end paypal *}
 
 		<div id="card-container">
 			<label class="card-label credit-card-number-label" for="card-number">

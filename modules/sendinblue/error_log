@@ -1,0 +1,1 @@
+[20-Sep-2016 19:22:34 Europe/Bucharest] PHP Notice:  Undefined property: Sendinblue::$cl_version in /home/indirabijro/public_html/modules/sendinblue/sendinblue.php on line 767
