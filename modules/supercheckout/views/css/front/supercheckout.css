@@ -901,6 +901,14 @@
 
 #supercheckout-fieldset div.supercheckout-container div.input-postcode {
     float: left;
+    position:relative;
+}
+
+#supercheckout-fieldset div.supercheckout-container div.input-postcode .errorsmall {
+    position: absolute;
+    width: 159px;
+    line-height: 16px;
+    font-size: 92% !important;
 }
 
 #supercheckout-fieldset div.supercheckout-container div.input-postcode .input-text {

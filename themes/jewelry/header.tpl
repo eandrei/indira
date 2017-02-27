@@ -106,9 +106,6 @@
 					</div>
                 <div class="alert-promo">Cadou surpriza pentru primele 100 de comenzi!</div>
 				<div id="columns" class="container">
-					{if $page_name !='index' && $page_name !='pagenotfound'}
-						{include file="$tpl_dir./breadcrumb.tpl"}
-					{/if}
 					
 					<div class="row">
 						{if isset($left_column_size) && !empty($left_column_size)}

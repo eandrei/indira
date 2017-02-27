@@ -13,3 +13,527 @@
 [22-Jan-2017 20:03:36 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
 [22-Jan-2017 20:03:37 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
 [22-Jan-2017 20:03:44 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[22-Jan-2017 20:18:49 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[13-Feb-2017 02:26:37 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[13-Feb-2017 02:26:40 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[13-Feb-2017 02:28:19 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[13-Feb-2017 02:28:21 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[13-Feb-2017 02:28:22 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[13-Feb-2017 02:28:41 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:00 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:01 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:05 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:07 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:09 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:20 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:20 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:20 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:20 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:20 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:20 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:34 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:38 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 06:40:41 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 11:40:41 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 11:40:49 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 11:40:57 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 11:41:19 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[16-Feb-2017 11:41:19 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[18-Feb-2017 11:41:56 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[18-Feb-2017 11:41:57 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 14:44:55 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 14:44:57 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 14:44:57 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 14:44:57 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 14:44:58 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:27:21 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:27:22 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:27:23 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:27:23 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:27:28 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:36:58 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:37:01 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:37:01 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:37:01 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:37:30 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:37:31 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:37:31 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:37:31 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:42:16 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:42:17 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:42:17 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:42:17 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 15:42:18 Europe/Bucharest] PHP Strict Standards:  Declaration of Mobilpay_cc::validateOrder() should be compatible with PaymentModuleCore::validateOrder($id_cart, $id_order_state, $amount_paid, $payment_method = 'Unknown', $message = NULL, $extra_vars = Array, $currency_special = NULL, $dont_touch_amount = false, $secure_key = false, Shop $shop = NULL) in /home/indirabijro/public_html/modules/mobilpay_cc/mobilpay_cc.php on line 0
+[19-Feb-2017 20:03:34 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.192882
+    [namelookup_time] => 0.004179
+    [connect_time] => 0.043857
+    [pretransfer_time] => 0.143146
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 145
+    [speed_upload] => 305
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.192843
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40231
+)
+
+[19-Feb-2017 20:03:59 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.193801
+    [namelookup_time] => 0.004182
+    [connect_time] => 0.044188
+    [pretransfer_time] => 0.144099
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 144
+    [speed_upload] => 304
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.193764
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40248
+)
+
+[19-Feb-2017 20:04:08 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.202798
+    [namelookup_time] => 2.4E-5
+    [connect_time] => 0.039935
+    [pretransfer_time] => 0.145301
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 138
+    [speed_upload] => 290
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.20278
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40249
+)
+
+[19-Feb-2017 20:04:10 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.189821
+    [namelookup_time] => 1.6E-5
+    [connect_time] => 0.039474
+    [pretransfer_time] => 0.140715
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 147
+    [speed_upload] => 310
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.189798
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40251
+)
+
+[19-Feb-2017 20:04:15 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.190778
+    [namelookup_time] => 1.6E-5
+    [connect_time] => 0.039673
+    [pretransfer_time] => 0.139277
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 146
+    [speed_upload] => 309
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.19076
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40252
+)
+
+[19-Feb-2017 20:04:42 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.192377
+    [namelookup_time] => 0.004186
+    [connect_time] => 0.043932
+    [pretransfer_time] => 0.143533
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 145
+    [speed_upload] => 306
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.192341
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40260
+)
+
+[19-Feb-2017 20:05:11 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.192052
+    [namelookup_time] => 0.004176
+    [connect_time] => 0.045233
+    [pretransfer_time] => 0.142345
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 145
+    [speed_upload] => 307
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.192024
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40266
+)
+
+[19-Feb-2017 20:05:27 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.213638
+    [namelookup_time] => 0.004179
+    [connect_time] => 0.045843
+    [pretransfer_time] => 0.149334
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 131
+    [speed_upload] => 276
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.213614
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40270
+)
+
+[19-Feb-2017 20:05:28 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.193682
+    [namelookup_time] => 0.004186
+    [connect_time] => 0.044045
+    [pretransfer_time] => 0.145609
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 144
+    [speed_upload] => 304
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.193656
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40271
+)
+
+[19-Feb-2017 20:05:34 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.188183
+    [namelookup_time] => 1.6E-5
+    [connect_time] => 0.039502
+    [pretransfer_time] => 0.136582
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 148
+    [speed_upload] => 313
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.188167
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40273
+)
+
+[19-Feb-2017 20:06:12 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 409
+    [header_size] => 375
+    [request_size] => 292
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.193167
+    [namelookup_time] => 0.004183
+    [connect_time] => 0.044048
+    [pretransfer_time] => 0.142343
+    [size_upload] => 59
+    [size_download] => 28
+    [speed_download] => 144
+    [speed_upload] => 305
+    [download_content_length] => 28
+    [upload_content_length] => 59
+    [starttransfer_time] => 0.193128
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 40281
+)
+
+[21-Feb-2017 15:10:09 Europe/Bucharest] Array
+(
+    [url] => https://urgentcargus.azure-api.net/api/LoginUser
+    [content_type] => application/json; charset=utf-8
+    [http_code] => 200
+    [header_size] => 369
+    [request_size] => 285
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.200049
+    [namelookup_time] => 0.004193
+    [connect_time] => 0.04472
+    [pretransfer_time] => 0.143937
+    [size_upload] => 52
+    [size_download] => 52
+    [speed_download] => 259
+    [speed_upload] => 259
+    [download_content_length] => 52
+    [upload_content_length] => 52
+    [starttransfer_time] => 0.200021
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 191.233.85.116
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 176.126.201.11
+    [local_port] => 51309
+)
+
+[21-Feb-2017 17:59:33 Europe/Bucharest] PHP Fatal error:  Uncaught  --> Smarty: unable to write file /home/indirabijro/public_html/cache/smarty/cache/blocktopmenu/2/36/product/139/52/f1/62/wrt58ac63e55654d2_73216638 <-- 
+  thrown in /home/indirabijro/public_html/tools/smarty/sysplugins/smarty_internal_write_file.php on line 46
+[25-Feb-2017 23:24:42 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 16351 of 16384 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 70
+[26-Feb-2017 01:00:20 Europe/Bucharest] PHP Notice:  Undefined offset: 6 in /home/indirabijro/public_html/classes/stock/StockManager.php on line 949
+[26-Feb-2017 01:13:07 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:13:07 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:13:41 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:13:41 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:14:12 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:14:12 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:16:37 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:16:38 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:16:39 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:16:40 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:16:46 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:16:47 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:16:47 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:16:48 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:16:49 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:16:49 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:17:32 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:17:48 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:17:48 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:17:49 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:17:49 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:17:49 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:17:50 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:17:50 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:19:06 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:19:07 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:19:08 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:19:09 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:19:09 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:19:09 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:19:10 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:22:07 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:22:08 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 01:22:08 Europe/Bucharest] PHP Parse error:  syntax error, unexpected ''category_rule'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) in /home/indirabijro/public_html/override/classes/Dispatcher.php on line 4
+[26-Feb-2017 02:14:14 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 8191 of 8192 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 02:14:16 Europe/Bucharest] PHP Warning:  scandir(/home/indirabijro/public_html/themes/jewelry/cache/ie9): failed to open dir: No such file or directory in /home/indirabijro/public_html/classes/Media.php on line 628
+[26-Feb-2017 02:14:16 Europe/Bucharest] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/indirabijro/public_html/classes/Media.php on line 628
+[26-Feb-2017 02:14:16 Europe/Bucharest] PHP Warning:  array_diff(): Argument #1 is not an array in /home/indirabijro/public_html/classes/Media.php on line 628
+[26-Feb-2017 02:14:16 Europe/Bucharest] PHP Warning:  Invalid argument supplied for foreach() in /home/indirabijro/public_html/classes/Media.php on line 628
+[26-Feb-2017 02:14:16 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 02:14:16 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 02:14:18 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 02:14:18 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 02:14:19 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 02:14:20 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 02:14:20 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 02:14:20 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 10:16:18 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 10:16:18 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 11:26:38 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 21116 of 64198 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 70
+[26-Feb-2017 11:45:52 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 14:55:27 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[26-Feb-2017 20:10:48 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 16377 of 16384 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 20:12:14 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 16383 of 16384 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 70
+[26-Feb-2017 20:30:48 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 8191 of 8192 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 20:52:10 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 8191 of 8192 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 21:53:02 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 20469 of 20480 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 21:56:34 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 12283 of 12288 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 21:56:52 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 20469 of 20480 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 21:57:18 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 8191 of 8192 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 21:57:43 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 12284 of 12288 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 21:57:54 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 8192 of 8192 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 21:58:45 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 8191 of 8192 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 22:01:18 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 4095 of 4096 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 22:01:23 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 4095 of 4096 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 22:02:33 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 12283 of 12288 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 22:02:58 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 9028 of 25088 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 22:03:39 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 32746 of 32768 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 22:05:42 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 4095 of 4096 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[26-Feb-2017 22:10:16 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 98275 of 98304 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 70
+[26-Feb-2017 22:10:59 Europe/Bucharest] PHP Notice:  unserialize(): Error at offset 4096 of 4096 bytes in /home/indirabijro/public_html/classes/cache/CacheFs.php on line 40
+[27-Feb-2017 02:07:16 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102
+[27-Feb-2017 02:07:17 Europe/Bucharest] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/indirabijro/public_html/cache/smarty/compile/bf/40/19/bf40192b3c8964885b74df0a3ce36c5b8edb4a36.file.header.tpl.php on line 102

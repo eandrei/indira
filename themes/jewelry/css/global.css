@@ -5735,8 +5735,8 @@ textarea {
 
 #columns {
   position: relative;
-  padding-bottom: 50px;
-  padding-top: 15px; }
+  padding-bottom: 20px;
+  padding-top: 5px; }
   
 @media (max-width: 768px) {
    #columns {
@@ -7046,7 +7046,10 @@ div.star a:hover {
 
 .pack_content {
   margin: 10px 0 10px 0; }
-
+.sf-menu > li:last-child > a {
+    color:red;
+    font-weight: bold;
+}
 .confirmation {
   margin: 0 0 10px;
   padding: 10px;
@@ -7083,21 +7086,21 @@ div.star a:hover {
   background: transparent; }
 
 .breadcrumb {
+    background-color: transparent !important;
+    float:left;
   display: inline-block;
-  padding: 0 11px 0px 0px;
   color:#636363;
   font-weight: normal;
+    margin-right:30px;
   font-size: 10px;
-  line-height: 26px;
   min-height: 6px;
-  background:#fff;
   font-family:"Open Sans", sans-serif;
   text-transform:uppercase;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
   overflow: hidden;
-  margin-bottom: 14px;
+  margin-bottom: 0px;
   position: relative;
   z-index: 1; }
 
@@ -8698,11 +8701,11 @@ span.h2{
 @media (min-width: 768px) and (max-width: 1024px) {
 .home_banners{margin-bottom:51px;}
 .hb, .hb-right{
-width:26%;
+
 }
 .hb-right{float:right;}
-.hb{margin-right:25px;}
-.hb-large{width: 42%;}
+.hb{}
+.hb-large{display: none;}
 .hb h2, .hb-right h2, .hb a, .hb-right a, span.h2{
 width:100%;
 }
@@ -8710,13 +8713,17 @@ width:100%;
 width:100%;
 }
 }
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .hb-large{display: none;}
+}
 @media (min-width: 480px) and (max-width: 768px) {
 .home_banners{margin-bottom:0px;}
 .hb, .hb-right{
-width:26%;
+
 }
-.hb{margin-right:25px;}
-.hb-large{width:42%;}
+.hb{}
+.hb-large{display: none;}
 .hb h2, .hb-right h2, span.h2{
  width:100%;
 font-size:30px;

@@ -25,41 +25,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mouseintent.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/mouseintent/mouseintent.php">
+      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/jewelry/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="25.961538" vertical-offset="2450" max-vertical-offset="6050">
-              <caret line="71" column="76" selection-start-line="71" selection-start-column="76" selection-end-line="71" selection-end-column="76" />
+            <state vertical-scroll-proportion="-8.296296" vertical-offset="175951" max-vertical-offset="226200">
+              <caret line="7047" column="26" selection-start-line="7047" selection-start-column="26" selection-end-line="7047" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/jewelry/header.tpl">
+      <file leaf-file-name="supercheckout_configuration.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/supercheckout/classes/supercheckout_configuration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="2434" max-vertical-offset="3150">
-              <caret line="106" column="62" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
+            <state vertical-scroll-proportion="-2.5660377" vertical-offset="2364" max-vertical-offset="5325">
+              <caret line="100" column="25" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="25" />
+              <folding>
+                <element signature="e#6#500#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="supercheckout.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/supercheckout/views/css/front/supercheckout.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.703704" vertical-offset="22380" max-vertical-offset="58550">
+              <caret line="910" column="30" selection-start-line="910" selection-start-column="30" selection-end-line="910" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aCategoryController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/override/controllers/front/aCategoryController.php">
+      <file leaf-file-name="defines.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/defines.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.769231" vertical-offset="0" max-vertical-offset="850">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="5025">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/front/CategoryController.php">
+      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.075472" vertical-offset="2384" max-vertical-offset="6600">
-              <caret line="104" column="83" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="83" />
+            <state vertical-scroll-proportion="-2.5660377" vertical-offset="2189" max-vertical-offset="6775">
+              <caret line="93" column="53" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="53" />
               <folding>
                 <element signature="e#6#974#0#PHP" expanded="true" />
               </folding>
@@ -67,51 +79,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/jewelry/global.css">
+      <file leaf-file-name="settings.inc.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/settings.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15400" max-vertical-offset="221550">
+            <state vertical-scroll-proportion="0.05733945" vertical-offset="0" max-vertical-offset="550">
+              <caret line="1" column="32" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="450">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mouseintent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/mouseintent/js/mouseintent.js">
+      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="525">
-              <caret line="12" column="107" selection-start-line="12" selection-start-column="107" selection-end-line="12" selection-end-column="107" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bioep.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/mouseintent/js/bioep.js">
+      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/autoload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="2" column="643" selection-start-line="2" selection-start-column="643" selection-end-line="2" selection-end-column="643" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="350">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/jewelry/css/global.css">
+      <file leaf-file-name="db_slave_server.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/db_slave_server.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.851851" vertical-offset="214976" max-vertical-offset="226025">
-              <caret line="8614" column="13" selection-start-line="8614" selection-start-column="13" selection-end-line="8614" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blocknewsletter.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/jewelry/css/modules/blocknewsletter/blocknewsletter.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="3925">
-              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="450">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,10 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/pdf/invoice.addresses-tab.tpl" />
-        <option value="$PROJECT_DIR$/pdf/invoice.summary-tab.tpl" />
-        <option value="$PROJECT_DIR$/themes/jewelry/order-confirmation.tpl" />
         <option value="$PROJECT_DIR$/tools/profiling/ObjectModel.php" />
         <option value="$PROJECT_DIR$/classes/ObjectModel.php" />
         <option value="$PROJECT_DIR$/modules/supercheckout/controllers/front/supercheckout.php" />
@@ -141,7 +149,6 @@
         <option value="$PROJECT_DIR$/js/tiny_mce/tiny_mce.js" />
         <option value="$PROJECT_DIR$/sell/themes/default/template/controllers/products/helpers/form/form.tpl" />
         <option value="$PROJECT_DIR$/config/settings.inc.php" />
-        <option value="$PROJECT_DIR$/config/defines.inc.php" />
         <option value="$PROJECT_DIR$/modules/mobilpay_cc/mobilpay_cc.php" />
         <option value="$PROJECT_DIR$/modules/urgentcargus/urgentcargus.class.php" />
         <option value="$PROJECT_DIR$/themes/jewelry/product.css" />
@@ -164,15 +171,20 @@
         <option value="$PROJECT_DIR$/modules/mouseintent/mouseintent.php" />
         <option value="$PROJECT_DIR$/themes/default-bootstrap/sass/modules/blocknewsletter/blocknewsletter.scss" />
         <option value="$PROJECT_DIR$/themes/jewelry/sass/modules/blocknewsletter/blocknewsletter.scss" />
-        <option value="$PROJECT_DIR$/themes/jewelry/css/category.css" />
         <option value="$PROJECT_DIR$/modules/mouseintent/css/mouseintent.css" />
         <option value="$PROJECT_DIR$/themes/jewelry/css/modules/blocknewsletter/blocknewsletter.css" />
         <option value="$PROJECT_DIR$/modules/mouseintent/tpl/mouseintent.tpl" />
         <option value="$PROJECT_DIR$/modules/mouseintent/js/mouseintent.js" />
         <option value="$PROJECT_DIR$/modules/mouseintent/js/bioep.js" />
-        <option value="$PROJECT_DIR$/themes/jewelry/css/global.css" />
         <option value="$PROJECT_DIR$/override/controllers/front/CategoryController.php" />
+        <option value="$PROJECT_DIR$/themes/jewelry/global.css" />
         <option value="$PROJECT_DIR$/themes/jewelry/header.tpl" />
+        <option value="$PROJECT_DIR$/themes/jewelry/css/category.css" />
+        <option value="$PROJECT_DIR$/themes/jewelry/category.tpl" />
+        <option value="$PROJECT_DIR$/themes/jewelry/css/global.css" />
+        <option value="$PROJECT_DIR$/modules/supercheckout/classes/supercheckout_configuration.php" />
+        <option value="$PROJECT_DIR$/modules/supercheckout/views/css/front/supercheckout.css" />
+        <option value="$PROJECT_DIR$/config/defines.inc.php" />
       </list>
     </option>
   </component>
@@ -236,7 +248,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="override" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -250,33 +262,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="override" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="override" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="front" />
+              <option name="myItemId" value="jewelry" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,11 +280,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="override" />
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,23 +370,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32784638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26180258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26180258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32784638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -411,82 +415,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/error_log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9298246" vertical-offset="590" max-vertical-offset="3050">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.188679" vertical-offset="0" max-vertical-offset="550">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/defines.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8076925" vertical-offset="0" max-vertical-offset="5025">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/PaymentModule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5660377" vertical-offset="3314" max-vertical-offset="24750">
-          <caret line="161" column="33" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jewelry/product.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2222223" vertical-offset="8155" max-vertical-offset="28775">
-          <caret line="334" column="39" selection-start-line="331" selection-start-column="6" selection-end-line="334" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jewelry/sass/product.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4528303" vertical-offset="9364" max-vertical-offset="30775">
-          <caret line="384" column="34" selection-start-line="384" selection-start-column="9" selection-end-line="384" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jewelry/sass/global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.528302" vertical-offset="88741" max-vertical-offset="89250">
-          <caret line="3555" column="0" selection-start-line="3555" selection-start-column="0" selection-end-line="3564" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/urgentcargus/urgentcargus.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6055046" vertical-offset="0" max-vertical-offset="2475">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/urgentcargus/install/AdminUrgentCargus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.2614679" vertical-offset="114" max-vertical-offset="550">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/urgentcargus/urgentcargus.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.3396225" vertical-offset="1414" max-vertical-offset="8525">
@@ -678,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jewelry/css/category.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28735632" vertical-offset="125" max-vertical-offset="2850">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/mouseintent/css/mouseintent.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
@@ -715,14 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jewelry/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221550">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/mouseintent/js/mouseintent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="525">
@@ -735,14 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
           <caret line="2" column="643" selection-start-line="2" selection-start-column="643" selection-end-line="2" selection-end-column="643" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jewelry/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.851851" vertical-offset="214976" max-vertical-offset="226025">
-          <caret line="8614" column="13" selection-start-line="8614" selection-start-column="13" selection-end-line="8614" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -765,18 +670,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/override/controllers/front/aCategoryController.php">
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/breadcrumb.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.769231" vertical-offset="0" max-vertical-offset="850">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1375">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/jewelry/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2434" max-vertical-offset="3150">
-          <caret line="106" column="62" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
+        <state vertical-scroll-proportion="-1.1509434" vertical-offset="2614" max-vertical-offset="3075">
+          <caret line="107" column="52" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/product-list.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.075472" vertical-offset="2764" max-vertical-offset="5600">
+          <caret line="151" column="110" selection-start-line="151" selection-start-column="107" selection-end-line="151" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6666667" vertical-offset="66701" max-vertical-offset="221525">
+          <caret line="2672" column="11" selection-start-line="2672" selection-start-column="1" selection-end-line="2672" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/css/category.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2222223" vertical-offset="255" max-vertical-offset="3000">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/category.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6226416" vertical-offset="1089" max-vertical-offset="3250">
+          <caret line="47" column="238" selection-start-line="47" selection-start-column="238" selection-end-line="47" selection-end-column="260" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jewelry/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.296296" vertical-offset="175951" max-vertical-offset="226200">
+          <caret line="7047" column="26" selection-start-line="7047" selection-start-column="26" selection-end-line="7047" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/supercheckout/classes/supercheckout_configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5660377" vertical-offset="2364" max-vertical-offset="5325">
+          <caret line="100" column="25" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="25" />
+          <folding>
+            <element signature="e#6#500#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/supercheckout/views/css/front/supercheckout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.703704" vertical-offset="22380" max-vertical-offset="58550">
+          <caret line="910" column="30" selection-start-line="910" selection-start-column="30" selection-end-line="910" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/defines.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="5025">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/db_slave_server.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5660377" vertical-offset="2189" max-vertical-offset="6775">
+          <caret line="93" column="53" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="53" />
+          <folding>
+            <element signature="e#6#974#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05733945" vertical-offset="0" max-vertical-offset="550">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="32" />
           <folding />
         </state>
       </provider>

@@ -48,14 +48,14 @@
                     <div class="content_scene_cat_bg"{if $category->id_image} style="background:url({$link->getCatImageLink($category->link_rewrite, $category->id_image, 'category_default')|escape:'html':'UTF-8'}) right center no-repeat; background-size:cover; min-height:{$categorySize.height}px;"{/if}>
                         {if $category->description}
                             <div class="cat_desc">
-                            <span class="category-name">
+                            <h1>
                                 {strip}
                                     {$category->name|escape:'html':'UTF-8'}
                                     {if isset($categoryNameComplement)}
                                         {$categoryNameComplement|escape:'html':'UTF-8'}
                                     {/if}
                                 {/strip}
-                            </span>
+                            </h1>
                             {if Tools::strlen($category->description) > 350}
                                 <div id="category_description_short" class="rte">{$description_short}</div>
                                 <div id="category_description_full" class="unvisible rte">{$category->description}</div>
@@ -69,8 +69,6 @@
                   {/if}
             </div>
 		{/if}
-      
-        <h1 class="page-heading{if (isset($subcategories) && !$products) || (isset($subcategories) && $products) || !isset($subcategories) && $products} product-listing{/if}"><span class="cat-name">{$category->name|escape:'html':'UTF-8'}{if isset($categoryNameComplement)}&nbsp;{$categoryNameComplement|escape:'html':'UTF-8'}{/if}</span>{include file="$tpl_dir./category-count.tpl"}</h1>
 		{if isset($subcategories)}
         {if (isset($display_subcategories) && $display_subcategories eq 1) || !isset($display_subcategories) }
 		<!-- Subcategories -->
@@ -105,6 +103,9 @@
                 	{include file="./nbr-product-page.tpl"}
 				</div>
                 <div class="top-pagination-content clearfix">
+                    {if $page_name !='index' && $page_name !='pagenotfound'}
+                        {include file="$tpl_dir./breadcrumb.tpl"}
+                    {/if}
                 	{include file="./product-compare.tpl"}
 					{include file="$tpl_dir./pagination.tpl"}
                 </div>
