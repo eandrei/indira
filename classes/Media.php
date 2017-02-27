@@ -601,7 +601,8 @@ class MediaCore
         $compiled_css = array_merge($external_css_files, $css_files);
 
         //If browser not IE <= 9, bypass ieCssSplitter
-        if (!preg_match('/(?i)msie [1-9]/', $_SERVER['HTTP_USER_AGENT'])) {
+        $user_agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
+        if (!preg_match('/(?i)msie [1-9]/', $user_agent)) {
             return $compiled_css;
         }
         $splitted_css = self::ieCssSplitter($compiled_css, $cache_path.'ie9', $css_split_need_refresh);
@@ -624,12 +625,9 @@ class MediaCore
         $protocol_link = Tools::getCurrentUrlProtocolPrefix();
         //return cached css
         if (!$refresh) {
-            $cached_files = scandir($cache_path);
-            foreach ($cached_files as $file) {
-                if ($file != '.' && $file != '..') {
-                    $css_url = str_replace(_PS_ROOT_DIR_, '', $protocol_link.Tools::getMediaServer('').$cache_path.DIRECTORY_SEPARATOR.$file);
-                    $splitted_css[$css_url] = 'all';
-                }
+            foreach (array_diff(scandir($cache_path), array('..', '.')) as $file) {
+                $css_url = str_replace(_PS_ROOT_DIR_, '', $protocol_link.Tools::getMediaServer('').$cache_path.DIRECTORY_SEPARATOR.$file);
+                $splitted_css[$css_url] = 'all';
             }
             return array('lteIE9' => $splitted_css);
         }
@@ -775,10 +773,8 @@ class MediaCore
     {
         foreach (array(_PS_THEME_DIR_.'cache') as $dir) {
             if (file_exists($dir)) {
-                foreach (scandir($dir) as $file) {
-                    if ($file[0] != '.' && $file != 'index.php') {
-                        Tools::deleteFile($dir.DIRECTORY_SEPARATOR.$file, array('index.php'));
-                    }
+                foreach (array_diff(scandir($dir), array('..', '.', 'index.php')) as $file) {
+                    Tools::deleteFile($dir.DIRECTORY_SEPARATOR.$file);
                 }
             }
         }

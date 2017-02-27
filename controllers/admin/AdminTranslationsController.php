@@ -525,7 +525,7 @@ class AdminTranslationsControllerCore extends AdminController
 
         // Get all email files
         foreach ($files_list as $file) {
-            if (preg_match('#^mails\/([a-z0-9]+)\/#Ui', $file['filename'], $matches)) {
+            if (preg_match('#^(\.\/)?mails\/([a-z0-9]+)\/#Ui', $file['filename'], $matches)) {
                 $slash_pos = strrpos($file['filename'], '/');
                 $mails_new_lang[] = substr($file['filename'], -(strlen($file['filename']) - $slash_pos - 1));
             }
@@ -637,7 +637,7 @@ class AdminTranslationsControllerCore extends AdminController
 
         foreach ($files as $file) {
             // Check if file is a file theme
-            if (preg_match('#^translations\/'.$iso_code.'\/tabs.php#Ui', $file['filename'], $matches) && Validate::isLanguageIsoCode($iso_code)) {
+            if (preg_match('#translations\/'.$iso_code.'\/tabs.php#Ui', $file['filename'], $matches) && Validate::isLanguageIsoCode($iso_code)) {
                 // Include array width new translations tabs
                 $_TABS = array();
                 clearstatcache();
@@ -1216,46 +1216,46 @@ class AdminTranslationsControllerCore extends AdminController
     {
         switch ($type_translation) {
             case 'front':
-                    // Parsing file in Front office
-                    $regex = '/\{l\s*s=([\'\"])'._PS_TRANS_PATTERN_.'\1(\s*sprintf=.*)?(\s*js=1)?\s*\}/U';
+                // Parsing file in Front office
+                $regex = '/\{l\s*s=([\'\"])'._PS_TRANS_PATTERN_.'\1(\s*sprintf=.*)?(\s*js=1)?\s*\}/U';
                 break;
 
             case 'back':
-                    // Parsing file in Back office
-                    if ($type_file == 'php') {
-                        $regex = '/this->l\((\')'._PS_TRANS_PATTERN_.'\'[\)|\,]/U';
-                    } elseif ($type_file == 'specific') {
-                        $regex = '/Translate::getAdminTranslation\((\')'._PS_TRANS_PATTERN_.'\'(?:,.*)*\)/U';
-                    } else {
-                        $regex = '/\{l\s*s\s*=([\'\"])'._PS_TRANS_PATTERN_.'\1(\s*sprintf=.*)?(\s*js=1)?(\s*slashes=1)?.*\}/U';
-                    }
+                // Parsing file in Back office
+                if ($type_file == 'php') {
+                    $regex = '/this->l\((\')'._PS_TRANS_PATTERN_.'\'[\)|\,]/U';
+                } elseif ($type_file == 'specific') {
+                    $regex = '/Translate::getAdminTranslation\((\')'._PS_TRANS_PATTERN_.'\'(?:,.*)*\)/U';
+                } else {
+                    $regex = '/\{l\s*s\s*=([\'\"])'._PS_TRANS_PATTERN_.'\1(\s*sprintf=.*)?(\s*js=1)?(\s*slashes=1)?.*\}/U';
+                }
                 break;
 
             case 'errors':
-                    // Parsing file for all errors syntax
-                    $regex = '/Tools::displayError\((\')'._PS_TRANS_PATTERN_.'\'(,\s*(.+))?\)/U';
+                // Parsing file for all errors syntax
+                $regex = '/Tools::displayError\((\')'._PS_TRANS_PATTERN_.'\'(,\s*(.+))?\)/U';
                 break;
 
             case 'modules':
-                    // Parsing modules file
-                    if ($type_file == 'php') {
-                        $regex = '/->l\((\')'._PS_TRANS_PATTERN_.'\'(, ?\'(.+)\')?(, ?(.+))?\)/U';
-                    } else {
-                        // In tpl file look for something that should contain mod='module_name' according to the documentation
-                        $regex = '/\{l\s*s=([\'\"])'._PS_TRANS_PATTERN_.'\1.*\s+mod=\''.$module_name.'\'.*\}/U';
-                    }
+                // Parsing modules file
+                if ($type_file == 'php') {
+                    $regex = '/->l\((\')'._PS_TRANS_PATTERN_.'\'(, ?\'(.+)\')?(, ?(.+))?\)/U';
+                } else {
+                    // In tpl file look for something that should contain mod='module_name' according to the documentation
+                    $regex = '/\{l\s*s=([\'\"])'._PS_TRANS_PATTERN_.'\1.*\s+mod=\''.$module_name.'\'.*\}/U';
+                }
                 break;
 
             case 'pdf':
-                    // Parsing PDF file
-                    if ($type_file == 'php') {
-                        $regex = array(
-                            '/HTMLTemplate.*::l\((\')'._PS_TRANS_PATTERN_.'\'[\)|\,]/U',
-                            '/->l\((\')'._PS_TRANS_PATTERN_.'\'(, ?\'(.+)\')?(, ?(.+))?\)/U'
-                        );
-                    } else {
-                        $regex = '/\{l\s*s=([\'\"])'._PS_TRANS_PATTERN_.'\1(\s*sprintf=.*)?(\s*js=1)?(\s*pdf=\'true\')?\s*\}/U';
-                    }
+                // Parsing PDF file
+                if ($type_file == 'php') {
+                    $regex = array(
+                        '/HTMLTemplate.*::l\((\')'._PS_TRANS_PATTERN_.'\'[\)|\,]/U',
+                        '/->l\((\')'._PS_TRANS_PATTERN_.'\'(, ?\'(.+)\')?(, ?(.+))?\)/U'
+                    );
+                } else {
+                    $regex = '/\{l\s*s=([\'\"])'._PS_TRANS_PATTERN_.'\1(\s*sprintf=.*)?(\s*js=1)?(\s*pdf=\'true\')?\s*\}/U';
+                }
                 break;
         }
 
@@ -1568,6 +1568,7 @@ class AdminTranslationsControllerCore extends AdminController
 
     protected function getMailPattern()
     {
+        Tools::displayAsDeprecated('Email pattern is no longer used, emails are always saved like they are.');
         // Let the indentation like it.
         return '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
 <html>
@@ -1641,13 +1642,13 @@ class AdminTranslationsControllerCore extends AdminController
                         if (Tools::getValue('title_'.$group_name.'_'.$mail_name)) {
                             $title = Tools::getValue('title_'.$group_name.'_'.$mail_name);
                         }
-                        $string_mail = $this->getMailPattern();
-                        $content = str_replace(array('#title', '#content'), array($title, $content), $string_mail);
 
                         // Magic Quotes shall... not.. PASS!
                         if (_PS_MAGIC_QUOTES_GPC_) {
                             $content = stripslashes($content);
                         }
+
+                        $content = preg_replace('/<title>.*<\/title>/', '<title>'.$title.'</title>', $content);
                     }
 
                     if (Validate::isCleanHTML($content)) {
@@ -1658,7 +1659,7 @@ class AdminTranslationsControllerCore extends AdminController
                         if (!file_exists($path) && !mkdir($path, 0777, true)) {
                             throw new PrestaShopException(sprintf(Tools::displayError('Directory "%s" cannot be created'), dirname($path)));
                         }
-                        file_put_contents($path.$mail_name.'.'.$type_content, Tools::purifyHTML($content, array('{', '}'), true));
+                        file_put_contents($path.$mail_name.'.'.$type_content, $content);
                     } else {
                         throw new PrestaShopException(Tools::displayError('Your HTML email templates cannot contain JavaScript code.'));
                     }
@@ -1855,6 +1856,8 @@ class AdminTranslationsControllerCore extends AdminController
         $name_var = $this->translations_informations[$this->type_selected]['var'];
         $GLOBALS[$name_var] = $this->fileExists();
         $missing_translations_back = array();
+        $missing_translations_found = array();
+        $tab_array = array();
 
         // Get all types of file (PHP, TPL...) and a list of files to parse by folder
         $files_per_directory = $this->getFileToParseByTypeTranslation();
@@ -1894,8 +1897,11 @@ class AdminTranslationsControllerCore extends AdminController
                                 $tabs_array[$prefix_key][$key]['trad'] = '';
                                 if (!isset($missing_translations_back[$prefix_key])) {
                                     $missing_translations_back[$prefix_key] = 1;
-                                } else {
+                                    $missing_translations_found[$prefix_key] = array();
+                                    $missing_translations_found[$prefix_key][] = $key;
+                                } elseif (!in_array($key, $missing_translations_found[$prefix_key])) {
                                     $missing_translations_back[$prefix_key]++;
+                                    $missing_translations_found[$prefix_key][] = $key;
                                 }
                             }
                         }
@@ -1925,8 +1931,11 @@ class AdminTranslationsControllerCore extends AdminController
                                 $tabs_array[$prefix_key][$key]['trad'] = '';
                                 if (!isset($missing_translations_back[$prefix_key])) {
                                     $missing_translations_back[$prefix_key] = 1;
-                                } else {
+                                    $missing_translations_found[$prefix_key] = array();
+                                    $missing_translations_found[$prefix_key][] = $key;
+                                } elseif(!in_array($key, $missing_translations_found[$prefix_key])) {
                                     $missing_translations_back[$prefix_key]++;
+                                    $missing_translations_found[$prefix_key][] = $key;
                                 }
                             }
                         }
@@ -1999,12 +2008,15 @@ class AdminTranslationsControllerCore extends AdminController
                                     $new_lang[$english_string]['trad'] = '';
                                     if (!isset($missing_translations_back[$prefix_key])) {
                                         $missing_translations_back[$prefix_key] = 1;
-                                    } else {
+                                        $missing_translations_found[$prefix_key] = array();
+                                        $missing_translations_found[$prefix_key][] = $english_string;
+                                    } elseif (!in_array($english_string, $missing_translations_found[$prefix_key])) {
                                         $missing_translations_back[$prefix_key]++;
+                                        $missing_translations_found[$prefix_key][] = $english_string;
                                     }
                                 }
                             }
-                            $new_lang[$english_string]['use_sprintf'] = $this->checkIfKeyUseSprintf($key);
+                            $new_lang[$english_string]['use_sprintf'] = $this->checkIfKeyUseSprintf($english_string);
                         }
                     }
                     if (isset($tabs_array[$prefix_key])) {
@@ -2479,18 +2491,12 @@ class AdminTranslationsControllerCore extends AdminController
 
     protected function cleanMailContent(&$content, $lang, &$title)
     {
-        // Because TinyMCE don't work correctly with <DOCTYPE>, <html> and <body> tags
         if (stripos($content[$lang], '<body')) {
             $array_lang = $lang != 'en' ? array('en', $lang) : array($lang);
             foreach ($array_lang as $language) {
                 $title[$language] = substr($content[$language], 0, stripos($content[$language], '<body'));
                 preg_match('#<title>([^<]+)</title>#Ui', $title[$language], $matches);
                 $title[$language] = empty($matches[1])?'':$matches[1];
-                // The 2 lines below allow to exlude <body> tag from the content.
-                // This allow to exclude body tag even if attributs are setted.
-                $content[$language] = substr($content[$language], stripos($content[$language], '<body') + 5);
-                $content[$language] = substr($content[$language], stripos($content[$language], '>') + 1);
-                $content[$language] = substr($content[$language], 0, stripos($content[$language], '</body>'));
             }
         }
         $content[$lang] = (isset($content[$lang]) ? Tools::htmlentitiesUTF8(stripslashes($content[$lang])) : '');
@@ -2680,9 +2686,9 @@ class AdminTranslationsControllerCore extends AdminController
                 foreach (scandir($dir) as $file) {
                     if (!in_array($file, self::$ignore_folder)) {
                         $files_to_copy_iso[] = array(
-                                "from" => $dir.$file,
-                                "to" => str_replace((strpos($dir, _PS_CORE_DIR_) !== false) ? _PS_CORE_DIR_ : _PS_ROOT_DIR_, _PS_ROOT_DIR_.'/themes/'.$current_theme, $dir).$file
-                            );
+                            "from" => $dir.$file,
+                            "to" => str_replace((strpos($dir, _PS_CORE_DIR_) !== false) ? _PS_CORE_DIR_ : _PS_ROOT_DIR_, _PS_ROOT_DIR_.'/themes/'.$current_theme, $dir).$file
+                        );
                     }
                 }
             }

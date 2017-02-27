@@ -25,18 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="supercheckout_configuration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/supercheckout/classes/supercheckout_configuration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5660377" vertical-offset="2364" max-vertical-offset="5325">
-              <caret line="100" column="25" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="25" />
-              <folding>
-                <element signature="e#6#500#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="supercheckout.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/supercheckout/views/css/front/supercheckout.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,11 +67,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validation.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="validation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/cashondelivery/controllers/front/validation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1550">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1550">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urgent_awb.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mails/ro/urgent_awb.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.37878788" vertical-offset="0" max-vertical-offset="462">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -415,13 +413,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/urgentcargus/install/AdminUrgentCargusIstoric.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.076923" vertical-offset="1875" max-vertical-offset="4725">
-          <caret line="99" column="68" selection-start-line="99" selection-start-column="68" selection-end-line="99" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/urgentcargus/install/AdminUrgentCargusLivrari.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="123.07692" vertical-offset="3450" max-vertical-offset="13250">
@@ -799,6 +790,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1550">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mails/ro/urgent_awb.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37878788" vertical-offset="0" max-vertical-offset="462">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding />
         </state>
       </provider>

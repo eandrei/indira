@@ -1268,7 +1268,7 @@
                     {/if}
                     </div>
                     <!-- Added to show cart rules -->
-
+                   
                     <div id="loyalty_text_holder">
                         {$HOOK_SHOPPING_CART}{*Variable contains html content, escape not required*}
                     </div>

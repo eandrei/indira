@@ -259,7 +259,6 @@ product_tabs['Combinations'] = new function(){
 				context: document.body,
 				dataType: 'json',
 				context: this,
-
 				success: function(data) {
 					// color the selected line
 					parent.siblings().removeClass('selected-line');

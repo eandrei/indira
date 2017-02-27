@@ -4110,9 +4110,9 @@ class ProductCore extends ObjectModel
         }
 
         if (($customization_labels = Db::getInstance()->executeS('
-			SELECT `id_customization_field`, `id_lang`, `name`
+			SELECT `id_customization_field`, `id_lang`, `id_shop`, `name`
 			FROM `'._DB_PREFIX_.'customization_field_lang`
-			WHERE `id_customization_field` IN ('.implode(', ', $customization_field_ids).')'.($id_shop ? ' AND cfl.`id_shop` = '.$id_shop : '').'
+			WHERE `id_customization_field` IN ('.implode(', ', $customization_field_ids).')'.($id_shop ? ' AND `id_shop` = '.$id_shop : '').'
 			ORDER BY `id_customization_field`')) === false) {
             return false;
         }
@@ -4164,6 +4164,7 @@ class ProductCore extends ObjectModel
                     $data = array(
                         'id_customization_field' => (int)$customization_field_id,
                         'id_lang' => (int)$customization_label['id_lang'],
+                        'id_shop' => (int)$customization_label['id_shop'],
                         'name' => pSQL($customization_label['name']),
                     );
 
@@ -5372,7 +5373,7 @@ class ProductCore extends ObjectModel
     public function setCoverWs($id_image)
     {
         Db::getInstance()->execute('UPDATE `'._DB_PREFIX_.'image_shop` image_shop, `'._DB_PREFIX_.'image` i
-			SET image_shop.`cover` = 0
+			SET image_shop.`cover` = NULL
 			WHERE i.`id_product` = '.(int)$this->id.' AND i.id_image = image_shop.id_image
 			AND image_shop.id_shop='.(int)Context::getContext()->shop->id);
         Db::getInstance()->execute('UPDATE `'._DB_PREFIX_.'image_shop`

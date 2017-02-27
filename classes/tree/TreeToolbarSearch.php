@@ -61,7 +61,7 @@ class TreeToolbarSearchCore extends TreeToolbarButtonCore implements
             $path = __PS_BASE_URI__.$admin_webpath.'/themes/'.$bo_theme.'/js/vendor/typeahead.min.js';
             $html = '<script type="text/javascript">
                 $(function(){ $.getScript(\''.$path.'\'); });
-                </script>';
+            </script>';
         } else {
             $this->getContext()->controller->addJs(__PS_BASE_URI__.$admin_webpath.'/themes/'.$bo_theme.'/js/vendor/typeahead.min.js');
         }

@@ -26,7 +26,7 @@ class UrgentClass {
 
     function CallMethod($function, $parameters = '', $verb, $token = null) {
         $json = json_encode($parameters);
-
+ 
         curl_setopt($this->curl, CURLOPT_POSTFIELDS, $json);
         curl_setopt($this->curl, CURLOPT_CUSTOMREQUEST, $verb);
         curl_setopt($this->curl, CURLOPT_URL, $this->url . '/' . $function);
