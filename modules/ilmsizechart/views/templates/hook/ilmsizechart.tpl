@@ -34,7 +34,7 @@ $('document').ready(function(){
 {/literal}
 </script>
 
-<a id="ilm_size_chart" href="#ilm_size_chart_form"><b><img src="{$baseURL|escape:'htmlall':'UTF-8'}modules/ilmsizechart/img/ruler.png" /> Size Chart</b></a>
+<a id="ilm_size_chart" href="#ilm_size_chart_form"><b><img src="{$baseURL|escape:'htmlall':'UTF-8'}modules/ilmsizechart/img/ruler.png" /> {l s='Size Chart' mod='ilmsizechart'}</b></a>
             
 <div style="display: none;">
 	<div id="ilm_size_chart_form">
