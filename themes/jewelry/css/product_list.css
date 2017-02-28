@@ -532,6 +532,8 @@ Product list(Index page) Styles
       padding-bottom:0px;}
 	  ul.product_list .product-name{
 		min-height:40px;
+          overflow: hidden;
+          height: 45px;
 	  }
 	ul.product_list.grid > li .product-container .comments_note .star_content{
 		width:100%;
