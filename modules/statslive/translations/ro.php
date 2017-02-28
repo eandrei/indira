@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statslive}prestashop>statslive_fa55230e9791f2b71322869318a5f00f'] = 'Vizitatori online';
 $_MODULE['<{statslive}prestashop>statslive_abf306fd198ab007d480ed610a6690fb'] = 'Adaugați o listă de clienți și vizitatori ce sunt în prezent online, la tabloul de bord Statistici.';
 $_MODULE['<{statslive}prestashop>statslive_66c4c5112f455a19afde47829df363fa'] = 'Total:';
@@ -17,6 +16,3 @@ $_MODULE['<{statslive}prestashop>statslive_a55533db46597bee3cd16899c007257e'] = 
 $_MODULE['<{statslive}prestashop>statslive_24efa7ee4511563b16144f39706d594f'] = 'Nota';
 $_MODULE['<{statslive}prestashop>statslive_e5900cd9ae26ca607f7cd497f114b9f9'] = 'IP-urile de memtenanţă sunt excluse vizitatorilor online.';
 $_MODULE['<{statslive}prestashop>statslive_05b564d49dbd9049f0df80a45cfe7d1c'] = 'Adauga sau sterge o adresa IP.';
-
-
-return $_MODULE;

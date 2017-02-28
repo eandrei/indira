@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{blockcms}prestashop>blockcms_ca3e06233b736d289df9f4580a4ab19a'] = 'Bloc: CMS';
 $_MODULE['<{blockcms}prestashop>blockcms_cdca12007979fc49008fd125cdb775fc'] = 'Adaugă un bloc conținând mai multe legături CMS.';
 $_MODULE['<{blockcms}prestashop>blockcms_a82be0f551b8708bc08eb33cd9ded0cf'] = 'Informaţii';
@@ -16,11 +15,11 @@ $_MODULE['<{blockcms}prestashop>blockcms_c93efb366650d08e5827974c0ddec8d8'] = 'A
 $_MODULE['<{blockcms}prestashop>blockcms_6f3ebe2ce8a7c3b873c1003b6ead60df'] = 'Legăturile subsolului paginii';
 $_MODULE['<{blockcms}prestashop>blockcms_e363df19c685465bca24d0c06d9394c7'] = 'Selectează fiecare pagină care dorești să fie afișată în blocul CMS din subsol (footer).';
 $_MODULE['<{blockcms}prestashop>blockcms_b0f8cd6eb22f287563dad544796b4118'] = 'Informații în subsol (footer)';
-$_MODULE['<{blockcms}prestashop>blockcms_75cb29c17cf91bef81cc289b0dd1b1fa'] = 'Se afișează "Magazinele noastre" în footer';
-$_MODULE['<{blockcms}prestashop>blockcms_0e5da791148c92be6eca8c537a47569e'] = 'Se afișează "Promoții" în footer';
-$_MODULE['<{blockcms}prestashop>blockcms_e995cfe1489190cf28799a16d23be91a'] = 'Afișează linkul "Produse noi" în subsol';
-$_MODULE['<{blockcms}prestashop>blockcms_edeab890c4f02138691d67eefcbfe7e8'] = 'Afișează linkul "Top vânzări" în subsol';
-$_MODULE['<{blockcms}prestashop>blockcms_45bc5fe3bf5717315e42a831ba7da748'] = 'Se afișează "Contact" în footer';
+$_MODULE['<{blockcms}prestashop>blockcms_75cb29c17cf91bef81cc289b0dd1b1fa'] = 'Se afișează \"Magazinele noastre\" în footer';
+$_MODULE['<{blockcms}prestashop>blockcms_0e5da791148c92be6eca8c537a47569e'] = 'Se afișează \"Promoții\" în footer';
+$_MODULE['<{blockcms}prestashop>blockcms_e995cfe1489190cf28799a16d23be91a'] = 'Afișează linkul \"Produse noi\" în subsol';
+$_MODULE['<{blockcms}prestashop>blockcms_edeab890c4f02138691d67eefcbfe7e8'] = 'Afișează linkul \"Top vânzări\" în subsol';
+$_MODULE['<{blockcms}prestashop>blockcms_45bc5fe3bf5717315e42a831ba7da748'] = 'Se afișează \"Contact\" în footer';
 $_MODULE['<{blockcms}prestashop>blockcms_68b7b9e603633d155941fb1d665c3997'] = 'Se afișează linkul către harta sitului în footer';
 $_MODULE['<{blockcms}prestashop>blockcms_573a06e2ae339eeb4fb19e7f689bd3d8'] = 'Afișează „Motorizat de PrestaShop” în subsol';
 $_MODULE['<{blockcms}prestashop>blockcms_c9cc8cce247e49bae79f15173ce97354'] = 'Salvează';
@@ -33,10 +32,10 @@ $_MODULE['<{blockcms}prestashop>blockcms_ac37b115bc4e914c9ab63bd4a1c1746a'] = 'C
 $_MODULE['<{blockcms}prestashop>blockcms_ce5bf551379459c1c61d2a204061c455'] = 'Locatie';
 $_MODULE['<{blockcms}prestashop>blockcms_f9e4884c7654daa6581b42ed90aeaba4'] = 'Coloana stângă';
 $_MODULE['<{blockcms}prestashop>blockcms_feb6cc332459769fe15570bf332a6b50'] = 'Coloana dreaptă';
-$_MODULE['<{blockcms}prestashop>blockcms_ef0e9df97eac6e978e72eeaf5abb8b0e'] = 'Adaugă linkul "Căutare magazin"';
+$_MODULE['<{blockcms}prestashop>blockcms_ef0e9df97eac6e978e72eeaf5abb8b0e'] = 'Adaugă linkul \"Căutare magazin\"';
 $_MODULE['<{blockcms}prestashop>blockcms_93cba07454f06a4a960172bbd6e2a435'] = 'Da';
 $_MODULE['<{blockcms}prestashop>blockcms_bafd7322c6e97d25b6299b5d6fe8920b'] = 'Nu';
-$_MODULE['<{blockcms}prestashop>blockcms_9a8d463045dc8c2ad89bcd455fd937e8'] = 'Adaugă "Magazinele noastre" la sfârșitul blocului.';
+$_MODULE['<{blockcms}prestashop>blockcms_9a8d463045dc8c2ad89bcd455fd937e8'] = 'Adaugă \"Magazinele noastre\" la sfârșitul blocului.';
 $_MODULE['<{blockcms}prestashop>blockcms_bbfdbbf61a22c160c5498b6ae08cb356'] = 'Conținut';
 $_MODULE['<{blockcms}prestashop>blockcms_04313a11bf4a501b7cf2273ea7b32862'] = 'Selectează fiecare pagină care dorești să fie afișată în acest bloc.';
 $_MODULE['<{blockcms}prestashop>blockcms_0d6d7a7c758cd16507d4aebf18305691'] = 'Valoare afișare magazin invalidă.';
@@ -70,7 +69,3 @@ $_MODULE['<{blockcms}prestashop>form_7dce122004969d56ae2e0245cb754d35'] = 'Modif
 $_MODULE['<{blockcms}prestashop>form_f2a6c498fb90ee345d997f888fce3b18'] = 'Șterge';
 $_MODULE['<{blockcms}prestashop>form_49ee3087348e8d44e1feda1917443987'] = 'Nume';
 $_MODULE['<{blockcms}prestashop>form_f7c68d40f8727c658e821c6e6d56af07'] = 'Nici o pagină nu au fost creată.';
-$_MODULE['<{blockcms}prestashop>blockcms_3cb29f0ccc5fd220a97df89dafe46290'] = 'Cele mai cumpărate';
-
-
-return $_MODULE;

@@ -266,6 +266,7 @@ $_LANG['product_7dcd185f890fd28f69d1ed210292d77f'] = 'Specificatii';
 $_LANG['product_9dea4016dbcc290b773ab2fae678aaa8'] = 'bucati';
 $_LANG['product_bc0f7082192ef02e934a036cf4991789'] = 'Acest produs nu mai este in stoc';
 $_LANG['product_cb0645f153ad1a4e8b9a2978aa09b815'] = 'Mareste';
+$_LANG['product_e2e79605fc9450ec17957cf0e910f5c6'] = 'TVA inclus';
 $_LANG['product_e3487fd1b54104e02f7751ed85220fba'] = 'Mai multe informatii';
 $_LANG['products-comparison_2d0f6b8300be19cf35e89e66f0677f95'] = 'Adauga in cos';
 $_LANG['shopping-cart-advanced_12a7a93d72ded50311b52c7d0a853e3c'] = 'Profita de ofertele noastre:';

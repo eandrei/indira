@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsbestcustomers}prestashop>statsbestcustomers_4f29d8c727dcf2022ac241cb96c31083'] = 'Niciun rezultat';
 $_MODULE['<{statsbestcustomers}prestashop>statsbestcustomers_f5c493141bb4b2508c5938fd9353291a'] = 'Se afișează %1$s din %2$s';
 $_MODULE['<{statsbestcustomers}prestashop>statsbestcustomers_77587239bf4c54ea493c7033e1dbf636'] = 'Nume de familie';
@@ -22,6 +21,3 @@ $_MODULE['<{statsbestcustomers}prestashop>statsbestcustomers_397a5e109a5897ee7d6
 $_MODULE['<{statsbestcustomers}prestashop>statsbestcustomers_4bc24eed56e0ba89fc3ab4e094d18d8a'] = 'Operatiuni sustenabile, puncte de loialitate sau carduri, care nu numai ca justifica comunicarea dintre comerciant si client, dar ofera si avantaje clientilor (oferte private, reduceri).';
 $_MODULE['<{statsbestcustomers}prestashop>statsbestcustomers_2f408c42912e3afe23a0e4adcbe34b96'] = 'Aceste acțiuni încurajează clienții să cumpere produse și să viziteze mai des magazinul dumneavoastră.';
 $_MODULE['<{statsbestcustomers}prestashop>statsbestcustomers_998e4c5c80f27dec552e99dfed34889a'] = 'Export CSV';
-
-
-return $_MODULE;

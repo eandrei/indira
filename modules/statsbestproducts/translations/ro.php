@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsbestproducts}prestashop>statsbestproducts_8c4d7af5f578693f9a6cf391e912ee33'] = 'Niciun rezultat.';
 $_MODULE['<{statsbestproducts}prestashop>statsbestproducts_f5c493141bb4b2508c5938fd9353291a'] = 'Se afișează %1$s din %2$s';
 $_MODULE['<{statsbestproducts}prestashop>statsbestproducts_63d5049791d9d79d86e9a108b0a999ca'] = 'Referinţă';
@@ -17,6 +16,3 @@ $_MODULE['<{statsbestproducts}prestashop>statsbestproducts_4d3d769b812b6faa6b76e
 $_MODULE['<{statsbestproducts}prestashop>statsbestproducts_950cf49f8ca529be64c924f16fcb5404'] = 'Produsele care se vând cel mai bine.';
 $_MODULE['<{statsbestproducts}prestashop>statsbestproducts_15429f69e40860368f6e113e4cba5601'] = 'Adaugați o listă de cele mai bune produse vândute la tabloul de bord Statistici.';
 $_MODULE['<{statsbestproducts}prestashop>statsbestproducts_998e4c5c80f27dec552e99dfed34889a'] = 'Export CSV';
-
-
-return $_MODULE;

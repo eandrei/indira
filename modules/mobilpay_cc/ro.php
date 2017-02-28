@@ -10,6 +10,3 @@ $_MODULE['<{mobilpay_cc}prestashop>confirmation_0db71da7150c27142eef9d22b843b4a9
 $_MODULE['<{mobilpay_cc}prestashop>confirmation_64430ad2835be8ad60c59e7d44e4b0b1'] = 'Asistenţă Clienţi';
 $_MODULE['<{mobilpay_cc}prestashop>mobilpay_23cdaf2b1ac26d3ad184ce9ced69669e'] = 'Plăteşte prin MobilPay Credit Card';
 $_MODULE['<{mobilpay_cc}prestashop>mobilpay_5c2ddd84491205038da9434827513778'] = 'Plăteşte cu cardul de debit / credit';
-$_MODULE['<{mobilpay_cc}prestashop>validation_59319ac504f7ad04ae16126cf49e7f7e'] = 'Modalitatea de plată';
-$_MODULE['<{mobilpay_cc}prestashop>validation_9e6d9b3daa15e41d36806a289c42674d'] = 'Alege modalitatea de plată';
-$_MODULE['<{mobilpay_cc}prestashop>validation_dd1f775e443ff3b9a89270713580a51b'] = 'Înapoi';

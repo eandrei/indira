@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsstock}prestashop>statsstock_96ca47f429c269b85e31be9fb17df6d4'] = 'Cantităţi disponibile';
 $_MODULE['<{statsstock}prestashop>statsstock_7782fb19c81ec8a47e39f9c073b7da59'] = 'Adaugă un bloc ce afișează cantitățile de produse disponibile pentru vânzare între statisticile de pe Panoul de Control.';
 $_MODULE['<{statsstock}prestashop>statsstock_c49b42f642c62f20a3640f20ca132840'] = 'Evaluarea cantităților disponibile pentru vânzare';
@@ -19,6 +18,3 @@ $_MODULE['<{statsstock}prestashop>statsstock_347cbf03d737b02a70a96ff204c22fbc'] 
 $_MODULE['<{statsstock}prestashop>statsstock_844c29394eea07066bb2efefc35784ec'] = 'Preț mediu';
 $_MODULE['<{statsstock}prestashop>statsstock_62668f75fc6977f3d09df632d1585d07'] = 'Total valoare';
 $_MODULE['<{statsstock}prestashop>statsstock_a9873f90f06f9e2cfa3d048298ecca8c'] = 'Această secțiune corespunde prețului implicit de vânzare cu ridicata al furnizotului implicit al produsului. Un preț mediu este folosit dacă produsul are atașate atribute.';
-
-
-return $_MODULE;

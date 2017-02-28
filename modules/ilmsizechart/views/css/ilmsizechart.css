@@ -1,0 +1,23 @@
+/**
+ * ILM Size Chart act as Size guide for Prestashop store. Admin Can configure the Size chart in 4 different type all information explanined in the Documnet or You can view a demo.
+ *
+ * @author    Abdullah Ahamed
+ * @copyright Copyright (c) 2014 ILM Tech. All rights reserved.
+ * @license   GNU General Public License version 2 or later; see LICENSE.txt
+ * @site		http://www.ilmtech.in
+ * @contact		info@ilmtech.in
+ 
+ */
+.ilmsize{border: 1px solid #e6e6e6;padding: 6px;font-weight: bold;}
+.ilmsize p{background: #e6e6e6;letter-spacing: 1px;padding: 6px 12px;margin-bottom: 5px;}
+.ilmsize table{margin-bottom: 0;}
+.ilmsize table tr td{border: none;padding: 6px 12px;border-left: 3px solid #fff;border-right: 3px solid #fff; }
+.ilmsize table tr td:last-child{border-right: none;}
+.ilmsize table tr td:first-child{border-left: none;}
+.ilmsize .ilmrow,
+.ilmsize .ilmcol{background: #e6e6e6;}
+.ilmsize .ilmcol{border-bottom: 5px solid #fff;}
+.ilmsize .hover { background-color: #eee; }
+.ilmsize .hover .ilmrow,
+.ilmsize .hover td:hover,
+.ilmsize .ilmcol.hover{background: #ff9e7c;}

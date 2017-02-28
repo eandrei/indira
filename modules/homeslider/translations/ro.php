@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{homeslider}prestashop>homeslider_693b83f5eca43e2bb1675287c37ce9e2'] = 'Carusel de imagini pentru pagina de start';
 $_MODULE['<{homeslider}prestashop>homeslider_c17aed434289cedd02618451e12c8da6'] = 'Adaugă un carusel de imagini în pagina de start.';
 $_MODULE['<{homeslider}prestashop>homeslider_3f80dc2cdd06939d4f5514362067cd86'] = 'Valori incorecte';
@@ -50,6 +49,3 @@ $_MODULE['<{homeslider}prestashop>list_c82324ebbcea34f55627a897b37190e3'] = 'Lis
 $_MODULE['<{homeslider}prestashop>list_ef61fb324d729c341ea8ab9901e23566'] = 'Adaugă';
 $_MODULE['<{homeslider}prestashop>list_7dce122004969d56ae2e0245cb754d35'] = 'Modifică';
 $_MODULE['<{homeslider}prestashop>list_f2a6c498fb90ee345d997f888fce3b18'] = 'Șterge';
-
-
-return $_MODULE;

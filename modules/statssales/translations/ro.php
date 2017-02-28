@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statssales}prestashop>statssales_45c4b3e103155326596d6ccd2fea0f25'] = 'Vanzari si comenzi';
 $_MODULE['<{statssales}prestashop>statssales_d2fb07753354576172a2b144c373a610'] = 'Adaugă grafice reprezentând evoluția vânzărilor și a comenzilor la Tabloul de bord.';
 $_MODULE['<{statssales}prestashop>statssales_6602bbeb2956c035fb4cb5e844a4861b'] = 'Ghid';
@@ -25,6 +24,3 @@ $_MODULE['<{statssales}prestashop>statssales_c8be451a5698956a0e78b5c2caab4821'] 
 $_MODULE['<{statssales}prestashop>statssales_b52b44c9d23e141b067d7e83b44bb556'] = 'Produse:';
 $_MODULE['<{statssales}prestashop>statssales_497a2a4cf0a780ff5b60a7a6e43ea533'] = 'Moneda vânzărilor: %s';
 $_MODULE['<{statssales}prestashop>statssales_17833fb3783b26e0a9bc8b21ee85302a'] = 'Procentajul comenzilor în funcție de stadiu.';
-
-
-return $_MODULE;

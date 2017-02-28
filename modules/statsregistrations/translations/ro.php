@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{statsregistrations}prestashop>statsregistrations_8b15fc6468c919d299f9a601b61b95fc'] = 'Conturi de clienți';
 $_MODULE['<{statsregistrations}prestashop>statsregistrations_f14056d6fef225c8aafd5a99d4c70fa8'] = 'Adăugați un tab ce conţine progresul înregistrărilor la panoul de Statistici.';
 $_MODULE['<{statsregistrations}prestashop>statsregistrations_247b3bdef50a59d5a83f23c4f1c8fa47'] = 'Numarul de vizitatori care s-au oprit la pasul de inregistrare:';
@@ -18,6 +17,3 @@ $_MODULE['<{statsregistrations}prestashop>statsregistrations_ded9c8756dc14fd26e3
 $_MODULE['<{statsregistrations}prestashop>statsregistrations_aa09be43df78c214e64ac3c3b255708e'] = 'Ofertele speciale, lichidările, promoțiile și/sau concursurile necesită atenția cumpărătorilor. Oferirea de astfel de lucruri nu numai ca vă vor păstra afacerea în viață, dar va contribui și la creșterea traficului, a loialității clienților și la schimbarea politicii comerțului.';
 $_MODULE['<{statsregistrations}prestashop>statsregistrations_8cb5605d77d1d2f9eab6191c0e027747'] = 'Designul si interfata prietenoasa sunt mai importante ca niciodata in lumea vanzarilor online. O tema aleasa gresit sau greu de urmarit pot indeparta cumparatorii. Asta inseamna ca ar trebui sa aspiram sa gasim balanta corecta intre frumusete si functionalitate.';
 $_MODULE['<{statsregistrations}prestashop>statsregistrations_998e4c5c80f27dec552e99dfed34889a'] = 'Export CSV';
-
-
-return $_MODULE;

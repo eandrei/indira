@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{homefeatured}prestashop>homefeatured_5d17bf499a1b9b2e816c99eebf0153a9'] = 'Produse recomandate pe pagina de start';
 $_MODULE['<{homefeatured}prestashop>homefeatured_6d37ec35b5b6820f90394e5ee49e8cec'] = 'Afișează produsele recomandate pe coloana centrală a paginii de start.';
 $_MODULE['<{homefeatured}prestashop>homefeatured_fddb8a1881e39ad11bfe0d0aca5becc3'] = 'Numărul produselor este incorect. Trebuie să fie un număr pozitiv.';
@@ -22,7 +21,3 @@ $_MODULE['<{homefeatured}prestashop>homefeatured_4351cfebe4b61d8aa5efa1d02071000
 $_MODULE['<{homefeatured}prestashop>homefeatured_2d0f6b8300be19cf35e89e66f0677f95'] = 'Adaugă în coş';
 $_MODULE['<{homefeatured}prestashop>homefeatured_e0e572ae0d8489f8bf969e93d469e89c'] = 'Nici un produs';
 $_MODULE['<{homefeatured}prestashop>tab_2cc1943d4c0b46bfcf503a75c44f988b'] = 'Cele mai căutate';
-$_MODULE['<{homefeatured}prestashop>homefeatured_d505d41279039b9a68b0427af27705c6'] = 'Momentan, nicio recomandare.';
-
-
-return $_MODULE;

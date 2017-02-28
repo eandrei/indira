@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{sekeywords}prestashop>sekeywords_65b0b42febc8ea16db4652eab6f420a4'] = 'Cuvinte cheie pentru motoare de căutare';
 $_MODULE['<{sekeywords}prestashop>sekeywords_8effa630c1740a748801b881acb90fa6'] = 'Afișează cuvintele cheie care au condus vizitatorii către site-ul dvs.';
 $_MODULE['<{sekeywords}prestashop>sekeywords_6602bbeb2956c035fb4cb5e844a4861b'] = 'Ghid';
@@ -24,6 +23,3 @@ $_MODULE['<{sekeywords}prestashop>sekeywords_998e4c5c80f27dec552e99dfed34889a'] 
 $_MODULE['<{sekeywords}prestashop>sekeywords_7b48f6cc4a1dde7fca9597e717c2465f'] = 'Nici un cuvânt cheie';
 $_MODULE['<{sekeywords}prestashop>sekeywords_e15832aa200f342e8f4ab580b43a72a8'] = 'Top 10 cuvinte';
 $_MODULE['<{sekeywords}prestashop>sekeywords_52ef9633d88a7480b3a938ff9eaa2a25'] = 'Altele';
-
-
-return $_MODULE;

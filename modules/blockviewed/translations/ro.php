@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-
 $_MODULE['<{blockviewed}prestashop>blockviewed_859e85774d372c6084d62d02324a1cc3'] = 'Bloc: Produse vizualizate';
 $_MODULE['<{blockviewed}prestashop>blockviewed_eaa362292272519b786c2046ab4b68d2'] = 'Adaugă un bloc ce arată ultimele produse vizualizate.';
 $_MODULE['<{blockviewed}prestashop>blockviewed_2e57399079951d84b435700493b8a8c1'] = 'Trebuie să completezi câmpul \'Produse afișate\'.';
@@ -14,7 +13,3 @@ $_MODULE['<{blockviewed}prestashop>blockviewed_d36bbb6066e3744039d38e580f17a2cc'
 $_MODULE['<{blockviewed}prestashop>blockviewed_c9cc8cce247e49bae79f15173ce97354'] = 'Salvează';
 $_MODULE['<{blockviewed}prestashop>blockviewed_43560641f91e63dc83682bc598892fa1'] = 'Produse vizualizate';
 $_MODULE['<{blockviewed}prestashop>blockviewed_8f7f4c1ce7a4f933663d10543562b096'] = 'Mai multe despre';
-$_MODULE['<{blockviewed}prestashop>blockviewed_c70ad5f80e4c6f299013e08cabc980df'] = 'Mai multe despre %s';
-
-
-return $_MODULE;

@@ -1,0 +1,68 @@
+/**
+ * ILM Size Chart act as Size guide for Prestashop store. Admin Can configure the Size chart in 4 different type all information explanined in the Documnet or You can view a demo.
+ *
+ * @author    Abdullah Ahamed
+ * @copyright Copyright (c) 2014 ILM Tech. All rights reserved.
+ * @license   GNU General Public License version 2 or later; see LICENSE.txt
+ * @site		http://www.ilmtech.in
+ * @contact		info@ilmtech.in
+ 
+ */
+.col-sm-6{width: 49%;float: left;}
+.col-sm-12{width: 100%;float: left;margin: 0;}
+.ilmsize_label.bootstrap.col-sm-6 {margin-left: 2%;}
+.list-toolbar-btn {
+  background: none repeat scroll 0 0 #14c20c;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 10px;
+  float: right;
+}
+.btn{
+  background: none repeat scroll 0 0 #14c20c;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.inverse{background: none repeat scroll 0 0 #000000;padding: 11px;}
+.list-action-enable.action-enabled {
+  background: #13B838;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px;
+}
+.list-action-enable.action-disabled {
+  background: #c12121;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px;
+}
+.margin-form > input#module_form_submit_btn {
+  background: none repeat scroll 0 0 green;
+  border: medium none;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+input[type="text"],select option{padding: 5px;}
+#ilmchartimg-name {
+  margin-top: -2px;
+  padding: 11px;
+  width: 89%;
+}
+.hide{display: none;}
+select[multiple="multiple"]{width: 60%;height: 200px;}
+.ilmsizechart.table{min-width: 300px;}
+.bootstrap {margin: 10px 0;}
