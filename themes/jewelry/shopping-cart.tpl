@@ -383,13 +383,7 @@
     <div class="cart__sidebar center_column col-xs-4 col-sm-4">
         <div id="HOOK_SHOPPING_CART">{$HOOK_SHOPPING_CART}</div>
         <div class="cart__totals cart__totals__sidebar cart-totals">
-            <div class="cart-totals__actions">
-                {if !$opc}
-                    <a  href="{if $back}{$link->getPageLink('order', true, NULL, 'step=1&amp;back={$back}')|escape:'html':'UTF-8'}{else}module/supercheckout/supercheckout{/if}" class="button btn btn-default standard-checkout button-medium" title="{l s='Proceed to checkout'}">
-                        <span>{l s='Proceed to checkout'}<i class="icon-chevron-right right"></i></span>
-                    </a>
-                {/if}
-            </div>
+
             <div class="cart-totals__summary">
 
                 <div class="cart-totals__subtotal cart-totals__row">
@@ -461,6 +455,13 @@
                     </div>
                     <div class="cart-totals__row__amount">{displayPrice price=$total_price}</div>
                 </div>
+                 <div class="cart-totals__actions">
+                {if !$opc}
+                    <a  href="{if $back}{$link->getPageLink('order', true, NULL, 'step=1&amp;back={$back}')|escape:'html':'UTF-8'}{else}module/supercheckout/supercheckout{/if}" class="button btn btn-default standard-checkout button-medium" title="{l s='Proceed to checkout'}">
+                        <span>{l s='Proceed to checkout'}<i class="icon-chevron-right right"></i></span>
+                    </a>
+                {/if}
+            </div>
             </div>
             </div>
         </div>

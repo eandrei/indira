@@ -7044,6 +7044,13 @@ div.star_hover a,
 div.star a:hover {
   background-position: 0 -32px; }
 
+.layer_cart_cart .continue {
+    display:none;
+}
+.cart-totals__actions {
+    margin-top:28px;
+}
+
 .pack_content {
   margin: 10px 0 10px 0; }
 .sf-menu > li:last-child > a {
