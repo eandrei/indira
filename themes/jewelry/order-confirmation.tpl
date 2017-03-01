@@ -43,3 +43,24 @@
 	<a class="button-exclusive btn btn-default" href="{$link->getPageLink('history', true)|escape:'html':'UTF-8'}" title="{l s='Go to your order history page'}"><i class="icon-chevron-left"></i>{l s='View your order history'}</a>
 </p>
 {/if}
+
+    <!-- Google Code for IndiraEtnic Conversion Page -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 859933323;
+        var google_conversion_language = "en";
+        var google_conversion_format = "3";
+        var google_conversion_color = "ffffff";
+        var google_conversion_label = "BpGCCP_K-G4Qi5WGmgM";
+        var google_conversion_value = {$order_total};
+        var google_conversion_currency = "RON";
+        var google_remarketing_only = false;
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/859933323/?value=80.00&amp;currency_code=RON&amp;label=BpGCCP_K-G4Qi5WGmgM&amp;guid=ON&amp;script=0"/>
+        </div>
+    </noscript>
