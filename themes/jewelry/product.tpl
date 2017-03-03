@@ -663,6 +663,26 @@
 		{/if}
 	{/if}
 </div> <!-- itemscope product wrapper -->
+    <script>
+
+        var fbPrice = {$productPrice};
+        {literal}
+        fbq('track', 'ViewContent', {
+            value: fbPrice,
+            currency: 'RON'
+        });
+        $(document).ready( function() {
+            jQuery('#add_to_cart').on('click', function(){
+                fbq('track', 'AddToCart', {
+                    value: fbPrice,
+                    currency: 'RON'
+                });
+            });
+        });
+        {/literal}
+    </script>
+
+
 {strip}
 {if isset($smarty.get.ad) && $smarty.get.ad}
 	{addJsDefL name=ad}{$base_dir|cat:$smarty.get.ad|escape:'html':'UTF-8'}{/addJsDefL}

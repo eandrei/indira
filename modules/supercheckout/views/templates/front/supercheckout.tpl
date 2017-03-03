@@ -1,3 +1,6 @@
+<script>
+    fbq('track', 'InitiateCheckout');
+</script>
 {if !isset($empty)}
     <script>
         var supercheckoutLayout = {$settings['layout']|intval};
