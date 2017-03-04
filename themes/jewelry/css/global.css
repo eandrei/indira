@@ -9041,9 +9041,9 @@ body#order header .row #header_logo,
 
 .alert-promo {
     background-size: cover;
-    background-color: #f36e5f;
+    background-color: #41c1ca;
     border-color: transparent;
-    color: #41c1ca;
+    color: #fff;
     padding: 10px;
     margin: auto;
     text-align: center;
