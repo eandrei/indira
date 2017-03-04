@@ -1350,11 +1350,6 @@
                             <div  id="supercheckout_confirm_order" class="orangebutton" >
                                 {l s='Place Order' mod='supercheckout'}
                             </div>
-                            <label><input id="tnc_checkbox" type="hidden" name="cgv" value="1" {if $checkedTOS}checked="checked"{/if} />
-                                {l s='By purchasing I agree with ' mod='supercheckout'}
-                            </label>
-                            <a href="{$link_conditions|escape:'html':'UTF-8'}" target="_blank" class="iframe various fancybox.ajax" rel="nofollow">{l s='Terms and conditions' mod='supercheckout'}</a>
-
                         </div>
                     </div>
                     <input type="hidden" name="supercheckout_submission" value="" />
