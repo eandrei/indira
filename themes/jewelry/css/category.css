@@ -6,6 +6,7 @@
 }
 .content_scene_cat {
 
+    display:none;
   border-top: 0px solid #333;
   color: #121212;
   line-height: 19px;
