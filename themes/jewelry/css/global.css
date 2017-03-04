@@ -8896,9 +8896,7 @@ body#order header .row #header_logo,
     padding: 0px 0px 10px 0px;
     width:100%;
 }
-#module-supercheckout-supercheckout .columns-container {
-    background-color: #FAFAFA;
-}
+
 @media screen and (max-width: 767px) {
      .cart__mobile {
          display: block;
