@@ -344,7 +344,7 @@
             {/if}
             <div class="cart-totals__row {if $discount@last}last_item{elseif $discount@first}first_item{else}item{/if}" id="cart_discount_{$discount.id_discount}">
                 <div class="cart-totals__row__label">
-                    <span class="ng-scope">{$discount.name}</span>
+                    <span>{$discount.name}</span>
                     {if strlen($discount.code)}
                         <a
                                 href="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}?deleteDiscount={$discount.id_discount}"
@@ -364,7 +364,7 @@
                     <div class="cart-totals__row__label">
                         <span class="">{l s='Total shipping'}</span>
                     </div>
-                    <div class="cart-totals__row__amount">{if $total_shipping_tax_exc == 0.00}{l s='Free shipping!'}{else}{displayPrice price=$total_shipping_tax_exc}{/if}</div>
+                    <div class="total_shopping cart-totals__row__amount">{if $total_shipping_tax_exc == 0.00}{l s='Free shipping!'}{else}{displayPrice price=$total_shipping_tax_exc}{/if}</div>
                 </div>
 
                 <div class="cart-totals__grand-total cart-totals__row">

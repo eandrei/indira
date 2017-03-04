@@ -9056,3 +9056,15 @@ body#order header .row #header_logo,
 body.order #columns {
     padding-top:20px;
 }
+
+.ajax_cart_shipping_cost,
+.cart-totals__shipping  .cart-totals__row__amount {
+    color: #093;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.beneficiu .fa-truck {
+    color: #093;
+    font-weight: bold;
+}
