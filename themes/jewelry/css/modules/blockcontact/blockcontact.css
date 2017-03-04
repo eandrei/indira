@@ -1,8 +1,8 @@
 .shop-phone {
   float: left;
-    color:#000;
+    color:#3C3C3C;
   padding: 2px 8px;
-  	font-family:ProximaNova,Arial,Helvetica,sans-serif}
+    font-family:'Open Sans', sans-serif;}
   @media (max-width: 767px) {
     .shop-phone {
       display: none; } }
@@ -14,7 +14,9 @@
       letter-spacing: .1px;
     padding-right: 7px; }
   .shop-phone strong {
-    color: #000; }
+    color: #3C3C3C;
+    font-weight: normal;
+  }
   @media (max-width: 991px) {
     .shop-phone.is_logged {
       display: none; } }
@@ -29,9 +31,8 @@
   #contact-link a {
     display: block;
     color: #000000;
-    font-weight: 700;
       letter-spacing: .1px;
-	font-family:ProximaNova,Arial,Helvetica,sans-serif;
+	font-family:'Open Sans', sans-serif;
     padding: 2px 8px;
     cursor: pointer;}
     @media (max-width: 479px) {

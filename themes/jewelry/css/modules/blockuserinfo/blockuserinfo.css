@@ -3,8 +3,7 @@
   border-right: 1px solid #ebebeb; }
   .header_user_info a {
     color: #000;
-    font-weight: 700;
-	font-family:ProximaNova,Arial,Helvetica,sans-serif;
+      font-family:'Open Sans', sans-serif;
       letter-spacing: .1px;
     display: block;
     padding: 2px 8px;

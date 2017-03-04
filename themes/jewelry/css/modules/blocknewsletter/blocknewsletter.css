@@ -72,9 +72,9 @@
     font-size: 14px;
     line-height: 25px;
     border: none;
-    color: #000;
+    color: #888;
     font-weight: 400;
-    text-transform: uppercase; }
+  }
     #footer #newsletter_block_left h4:after {
       display: none; }
   #footer #newsletter_block_left .block_content {
@@ -104,7 +104,7 @@
       background: none;
       text-align: center;
       color: /*#908f8f*/#fff;
-      background:#000;
+      background:#41c1ca;
       padding: 0px 8px; 
       line-height:38px;
 	  margin-left:-40px;
