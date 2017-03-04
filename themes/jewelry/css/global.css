@@ -6024,9 +6024,9 @@ span.exclusive {
   color: #fff;
   padding: 0;
   font-weight: normal;
-  background: #7FD1CE;
+  background: #41c1ca;
   border: 1px solid;
-  border-color: #7FD1CE;
+  border-color: #41c1ca;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0; }
@@ -6146,8 +6146,8 @@ span.exclusive {
   font: 700 13px/21px Arial, Helvetica, sans-serif;
   color: #FFF;
   padding: 0;
-  background:#7FD1CE;
-  border: 1px solid #7FD1CE;
+  background:#41c1ca;
+  border: 1px solid #41c1ca;
 	overflow:hidden;
 	width:35px;
 	height:35px;
@@ -8995,12 +8995,12 @@ body#order header .row #header_logo,
 .cart-totals__promo-form .button-small{
     height: 30px;
     border-color: #d9d9d9;
-    background: #7FD1CE;
+    background: #41c1ca;
 }
 
 .cart-totals__promo-form  .button-small span:hover  {
     border-color: #d9d9d9;
-    background: #7FD1CE;
+    background: #41c1ca;
 }
 
 .cart__header {
