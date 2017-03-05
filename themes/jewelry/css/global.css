@@ -8623,6 +8623,7 @@ content:"\f095";
 	
 .hb{
 	margin-right:15px;
+    margin-top:15px;
 	float:left;
 	}
 
@@ -8656,14 +8657,7 @@ span.h2{
 	text-transform:uppercase; 
 	width:100%;
 	}
-.hb a, 
-.hb-large a, 
-.hb-right a{
-	font-family:Open Sans, sans-serif; 
-	font-weight:400; 
-	text-transform:uppercase; 
-	text-decoration:underline; 
-	}
+
 .hb-large h2{
 	color:#000; 
 	padding-top:40px; 
@@ -8694,7 +8688,7 @@ span.h2{
 	margin-top:-45px;
 	color:#000;
 }
-.hb_inner{background:#fff; overflow:hidden;}
+.hb_inner{background:#fff; overflow:hidden; cursor: hand;}
 .hb_inner img{
 	width:100%;
 	-webkit-transition:0.3s ease-out;
@@ -9062,4 +9056,39 @@ body.order #columns {
 .beneficiu .fa-truck {
     color: #093;
     font-weight: bold;
+}
+
+
+.blog-blocks-content-inner {
+    text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 25%;
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    margin: -42px 0 0;
+    padding: 0px 10px 0px;
+    text-align: center;
+    color: #FFF !important;
+}
+
+.blog-blocks-content-inner .entry-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    margin: 0;
+    padding: 0px 0 5px;
+}
+
+.blog-blocks-content-inner h3 {
+    margin: 5px 0 5px;
+    padding: 0;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-blocks-content-inner a {
+    color: #FFF;
+    text-decoration: none;
 }

@@ -122,7 +122,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 			<div id="slider_row" class="row">
 						<div id="top_column" class="center_column col-xs-12 col-sm-12">{hook h="displayTopColumn"}</div>
 					</div>
-                <div class="alert-promo">Bratara cadou la toate comenzile!</div>
+                <div class="alert-promo">Bratara cadou la prima comanda!</div>
 				<div id="columns" class="container">
 					
 					<div class="row">
