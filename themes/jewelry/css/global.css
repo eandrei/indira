@@ -8882,10 +8882,10 @@ height:auto;
 }
 }
 
-body#order header .nav, body#order #search_block_top, body#order #block_top_menu,
+body#order #search_block_top, body#order #block_top_menu,
 body#order #footer-features, body#order .footer-container, body#order #header .shopping_cart,
 body#order .breadcrumb,
-#module-supercheckout-supercheckout header .nav, #module-supercheckout-supercheckout #search_block_top,
+#module-supercheckout-supercheckout #search_block_top,
 #module-supercheckout-supercheckout  #block_top_menu, #module-supercheckout-supercheckout #footer-features,
 #module-supercheckout-supercheckout .footer-container, #module-supercheckout-supercheckout #header .shopping_cart,
 #module-supercheckout-supercheckout .breadcrumb{
