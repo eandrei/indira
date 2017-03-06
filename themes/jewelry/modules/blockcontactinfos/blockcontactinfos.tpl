@@ -47,7 +47,7 @@
             	</li>
             {/if}
             <li><i class="icon-cc-visa"></i>Platiti in sigurata prin:
-                <img width="300" src="/themes/jewelry/img/mobil-pay.png" /></li>
+                <img width="300" src="/themes/Jewelry/img/mobil-pay.png" /></li>
         </ul>
     </div>
 </section>
