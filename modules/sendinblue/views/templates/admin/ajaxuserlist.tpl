@@ -89,7 +89,7 @@
 				{assign var=pstatus value=1}
 			{/if}
 			{if isset($sourceInfo.phone_mobile) && $sourceInfo.phone_mobile !=''}
-			
+			<input type="hidden" id = "sms_status_val" name="sms_status_val" value="{$pstatus|escape:'htmlall':'UTF-8'}">
                             {if $pstatus==1 && isset($data[$emailid].sms_exist) && $data[$emailid].sms_exist != ''}
                                 <a href="javascript:void(0)" class="ajax_sms_href" email="{$sourceInfo.email|escape:'htmlall':'UTF-8'|stripslashes}"><img class="toolTip1 imgstatus" title="{l s='Subscribe the contact' mod='sendinblue'}" id="ajax_contact_status_{$counter|intval}" src="../img/admin/disabled.gif" /></a>
                             {elseif $pstatus==0 && isset($data[$emailid].sms_exist) && $data[$emailid].sms_exist != ''}

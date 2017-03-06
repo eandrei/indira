@@ -46,7 +46,7 @@ class Psmailin
         $ch = curl_init($called_url);
         $auth_header = 'api-key:'.$this->api_key;
         $content_header = "Content-Type:application/json";
-        $track_header = "sib-plugin:ps-2.5.8";
+        $track_header = "sib-plugin:ps-2.6.1";
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array($auth_header, $content_header, $track_header));
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
@@ -1178,5 +1178,45 @@ class Psmailin
         $id = $data['id'];
         unset($data['id']);
         return $this->get("sms/".$id, Tools::jsonEncode($data));
+    }
+
+    /*
+        Update Sendinblue Partner.
+        @param {Array} data contains php array with key value pair.
+        @options data {Integer} id: 
+        @options data {String} to: partner name
+    */
+    public function updateMailinPartner($data)
+    {
+        return $this->put("account/mailin_partner", Tools::jsonEncode($data));
+    }
+
+    /*
+        Get config detail
+        @param {Array} data contains php array with key value pair.
+    */
+    public function getPluginConfig()
+    {
+        return $this->get("account/plugin_config", "");
+    }
+
+    /*
+        Get Email Status and sms status and exist or not.
+        @param {Array} data contains php array with key value pair.
+        @options data {String} to: email [Mandatory].
+    */
+    public function getUsersBlacklistStatus($data)
+    {
+        return $this->post("user/get_blacklist_status", Tools::jsonEncode($data));
+    }
+
+    /*
+        Update User subscribe status.
+        @param {Array} data contains php array with key value pair.
+        @options data {String} to: url for csv import, timeZone, NotifyUrl for send responce .
+    */
+    public function syncUsersStatus($data)
+    {
+        return $this->put("user/sync_status", Tools::jsonEncode($data));
     }
 }

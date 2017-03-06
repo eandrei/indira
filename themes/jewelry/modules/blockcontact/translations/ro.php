@@ -15,8 +15,8 @@ $_MODULE['<{blockcontact}jewelry>blockcontact_52e878b67e9d94d25425231162ef5133']
 $_MODULE['<{blockcontact}jewelry>blockcontact_c9cc8cce247e49bae79f15173ce97354'] = 'Salvează';
 $_MODULE['<{blockcontact}jewelry>blockcontact_02d4482d332e1aef3437cd61c9bcc624'] = 'Contactați-ne';
 $_MODULE['<{blockcontact}jewelry>blockcontact_75858d311c84e7ba706b69bea5c71d36'] = 'Suportul nostru este disponibil 24/7.';
-$_MODULE['<{blockcontact}jewelry>blockcontact_673ae02fffb72f0fe68a66f096a01347'] = 'Telefon:';
+$_MODULE['<{blockcontact}jewelry>blockcontact_673ae02fffb72f0fe68a66f096a01347'] = 'TEL:';
 $_MODULE['<{blockcontact}jewelry>blockcontact_736c5a7e834b7021bfa97180fc453115'] = 'Contactați echipa noastră!';
 $_MODULE['<{blockcontact}jewelry>nav_02d4482d332e1aef3437cd61c9bcc624'] = 'Contactați-ne';
-$_MODULE['<{blockcontact}jewelry>nav_320abee94a07e976991e4df0d4afb319'] = 'Telefon:';
+$_MODULE['<{blockcontact}jewelry>nav_320abee94a07e976991e4df0d4afb319'] = 'TEL:';
 $_MODULE['<{blockcontact}jewelry>blockcontact_9cfc9b74983d504ec71db33967591249'] = 'Contactaţi-ne';

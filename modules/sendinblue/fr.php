@@ -1,28 +1,4 @@
 <?php
-/**
-* 2007-2014 PrestaShop
-*
-* NOTICE OF LICENSE
-*
-* This source file is subject to the Academic Free License (AFL 3.0)
-* that is bundled with this package in the file LICENSE.txt.
-* It is also available through the world-wide-web at this URL:
-* http://opensource.org/licenses/afl-3.0.php
-* If you did not receive a copy of the license and are unable to
-* obtain it through the world-wide-web, please send an email
-* to license@prestashop.com so we can send you a copy immediately.
-*
-* DISCLAIMER
-*
-* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
-* versions in the future. If you wish to customize PrestaShop for your
-* needs please refer to http://www.prestashop.com for more information.
-*
-* @author    PrestaShop SA <contact@prestashop.com>
-* @copyright 2007-2014 PrestaShop SA
-* @license   http://opensource.org/licenses/afl-3.0.php Academic Free License (AFL 3.0)
-* International Registered Trademark & Property of PrestaShop SA
-*/
 
 global $_MODULE;
 $_MODULE = array();
@@ -75,6 +51,7 @@ $_MODULE['<{sendinblue}prestashop>sendinblue_94966d90747b97d1f0f206c98a8b1ac3'] 
 $_MODULE['<{sendinblue}prestashop>sendinblue_dd28538b67e7c720f37d3260c10d2747'] = 'sendinblue.png';
 $_MODULE['<{sendinblue}prestashop>sendinblue_5621ebf12c5f61b885a23ed959688e44'] = 'SendinBlue : LE plugin tout-en-un pour vos emails marketing et transactionnels.';
 $_MODULE['<{sendinblue}prestashop>sendinblue_049e654bfd943ae909343278fb5c99a3'] = 'Vous devez installer le module Prestashop sur votre back office Prestashop avant de pouvoir l\'utiliser';
+$_MODULE['<{sendinblue}prestashop>sendinblue_cbdbbdde4ee1097aa5722ac89e68933c'] = 'Your server configuration does not allow to send emails. Please contact you system administrator to allow outgoing connections on port 587 for following IP ranges: 94.143.17.4/32, 94.143.17.6/32 and 185.107.232.0/24.';
 $_MODULE['<{sendinblue}prestashop>sendinblue_3db63d5a4b855aec504d07307463133b'] = 'Nous avons remarqué que vous utilisez les versions précédentes de notre plugin, veuillez les désinstaller / supprimer et garder que la dernière version de SendinBlue';
 $_MODULE['<{sendinblue}prestashop>sendinblue_eb7a298d7741cef1a61147ab07237235'] = 'Contactez l\'équipe SendinBlue';
 $_MODULE['<{sendinblue}prestashop>sendinblue_44a87f7752c32d2d4dba5b25cb2a966f'] = 'Email : ';
@@ -99,7 +76,7 @@ $_MODULE['<{sendinblue}prestashop>sendinblue_95c355be2ac2b42a2c82c5da7efaee29'] 
 $_MODULE['<{sendinblue}prestashop>sendinblue_f4f70727dc34561dfde1a3c529b6205c'] = 'Paramètres';
 $_MODULE['<{sendinblue}prestashop>sendinblue_495a3b3985cc02dbf7b4111b4e913d8a'] = 'Activer le module SendinBlue';
 $_MODULE['<{sendinblue}prestashop>sendinblue_656a6828d7ef1bb791e42087c4b5ee6e'] = 'Clé API';
-$_MODULE['<{sendinblue}prestashop>sendinblue_ab07708173b94fb02480c589572ded63'] = 'Veuillez renseigner votre clé API qui est liée à votre compte SendinBlue. Elle est disponible sur cette page: https://my.sendinblue.com/advanced/apikey. Si vous ne possédez pas de compte SendinBlue, vous devez créer un compte sur le site https://www.sendinblue.com';
+$_MODULE['<{sendinblue}prestashop>sendinblue_7ba9db5a02321c8885a0af729bafc8b3'] = 'Veuillez renseigner votre clé API qui est liée à votre compte SendinBlue. Elle est disponible sur cette page: https://my.sendinblue.com/advanced/apikey. Si vous ne possédez pas de compte SendinBlue, vous devez créer un compte sur le site https://www.sendinblue.com/integration';
 $_MODULE['<{sendinblue}prestashop>sendinblue_06933067aafd48425d67bcb01bba5cb6'] = 'Mettre à jour';
 $_MODULE['<{sendinblue}prestashop>sendinblue_f7dc297e2a139ab4f5a771825b46df43'] = 'Vous avez été désinscrit avec succès';
 $_MODULE['<{sendinblue}prestashop>sendinblue_ed3cd7b3cc134222fa70602921ec27e1'] = 'Vous avez été inscrit avec succès';
@@ -138,7 +115,6 @@ $_MODULE['<{sendinblue}prestashop>sendinsyncronizeblock_33f0325251ddc8bc133cc649
 $_MODULE['<{sendinblue}prestashop>smssetting_24cb398136bc32e39be4044b0ff91466'] = 'Gestion des SMS';
 $_MODULE['<{sendinblue}prestashop>smssetting_0edc8732de384f42f037beb08312e312'] = 'Actuellement, vous avez';
 $_MODULE['<{sendinblue}prestashop>smssetting_1d850b95b3a1504ed22da3ea7a45df18'] = 'crédits SMS. Pour acheter plus de crédits, cliquez ';
-$_MODULE['<{sendinblue}prestashop>smssetting_bf8ff72dcef625a518075fb38a02a2c9'] = 'https://www.sendinblue.com/pricing?utm_source=prestashop_plugin&utm_medium=plugin&utm_campaign=module_link';
 $_MODULE['<{sendinblue}prestashop>smssetting_6a358da8dd621a4ca321e7ddf06b896e'] = 'ici';
 $_MODULE['<{sendinblue}prestashop>smssetting_81a3fe67c76884a67892eba83636e880'] = 'https://www.sendinblue.com/pricing';
 $_MODULE['<{sendinblue}prestashop>smssetting_2c4fc754fd62b802255318f0308d844a'] = 'Voulez vous être prévenu par e-mail lorsqu\'il vous reste peu de crédits ?';

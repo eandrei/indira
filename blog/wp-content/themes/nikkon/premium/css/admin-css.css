@@ -1,0 +1,91 @@
+
+.plugins-recommended {
+	
+}
+.plugins-recommended-note {
+	position: relative;
+}
+.plugins-recommended-close {
+	position: absolute;
+	top: -8px;
+	right: 0;
+	background-color: #BBB;
+	width: 25px;
+	height: 20px;
+	text-align: center;
+	padding: 3px 0 0;
+	font-weight: 700;
+	font-size: 13px;
+	color: #FFF !important;
+	border-radius: 30px;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* ---- Category ID Column ---- */
+
+.cat_id_note {
+	display: block;
+	font-size: 10px;
+	color: #999;
+}
+.column-cat_id {
+	width: 15%;
+}
+
+/* ---- Show / Hide Widget areas ---- */
+
+body.nikkon-footer-layout-standard.widgets-php #nikkon-site-footer-custom-1.widgets-sortables,
+body.nikkon-footer-layout-standard.widgets-php #nikkon-site-footer-custom-2.widgets-sortables,
+body.nikkon-footer-layout-standard.widgets-php #nikkon-site-footer-custom-3.widgets-sortables,
+body.nikkon-footer-layout-standard.widgets-php #nikkon-site-footer-custom-4.widgets-sortables,
+body.nikkon-footer-layout-standard.widgets-php #nikkon-site-footer-custom-5.widgets-sortables,
+body.nikkon-footer-layout-standard.widgets-php #nikkon-site-footer-social,
+
+body.nikkon-footer-layout-social.widgets-php #nikkon-site-footer-custom-1.widgets-sortables,
+body.nikkon-footer-layout-social.widgets-php #nikkon-site-footer-custom-2.widgets-sortables,
+body.nikkon-footer-layout-social.widgets-php #nikkon-site-footer-custom-3.widgets-sortables,
+body.nikkon-footer-layout-social.widgets-php #nikkon-site-footer-custom-4.widgets-sortables,
+body.nikkon-footer-layout-social.widgets-php #nikkon-site-footer-custom-5.widgets-sortables,
+body.nikkon-footer-layout-social.widgets-php #nikkon-site-footer-standard,
+
+body.nikkon-footer-layout-custom.nikkon-footer-custom-cols-1.widgets-php #nikkon-site-footer-custom-2.widgets-sortables,
+body.nikkon-footer-layout-custom.nikkon-footer-custom-cols-1.widgets-php #nikkon-site-footer-custom-3.widgets-sortables,
+body.nikkon-footer-layout-custom.nikkon-footer-custom-cols-1.widgets-php #nikkon-site-footer-custom-4.widgets-sortables,
+body.nikkon-footer-layout-custom.nikkon-footer-custom-cols-1.widgets-php #nikkon-site-footer-custom-5.widgets-sortables,
+
+body.nikkon-footer-layout-custom.nikkon-footer-custom-cols-2.widgets-php #nikkon-site-footer-custom-3.widgets-sortables,
+body.nikkon-footer-layout-custom.nikkon-footer-custom-cols-2.widgets-php #nikkon-site-footer-custom-4.widgets-sortables,
+body.nikkon-footer-layout-custom.nikkon-footer-custom-cols-2.widgets-php #nikkon-site-footer-custom-5.widgets-sortables,
+
+body.nikkon-footer-layout-custom.nikkon-footer-custom-cols-3.widgets-php #nikkon-site-footer-custom-4.widgets-sortables,
+body.nikkon-footer-layout-custom.nikkon-footer-custom-cols-3.widgets-php #nikkon-site-footer-custom-5.widgets-sortables,
+
+body.nikkon-footer-layout-custom.nikkon-footer-custom-cols-4.widgets-php #nikkon-site-footer-custom-5.widgets-sortables,
+body.nikkon-footer-layout-custom.widgets-php #nikkon-site-footer-standard,
+
+body.nikkon-footer-layout-none.widgets-php #nikkon-site-footer-custom-1.widgets-sortables,
+body.nikkon-footer-layout-none.widgets-php #nikkon-site-footer-custom-2.widgets-sortables,
+body.nikkon-footer-layout-none.widgets-php #nikkon-site-footer-custom-3.widgets-sortables,
+body.nikkon-footer-layout-none.widgets-php #nikkon-site-footer-custom-4.widgets-sortables,
+body.nikkon-footer-layout-none.widgets-php #nikkon-site-footer-custom-5.widgets-sortables,
+body.nikkon-footer-layout-none.widgets-php #nikkon-site-footer-standard,
+body.nikkon-footer-layout-none.widgets-php #nikkon-site-footer-social {
+	display: none !important;
+}
+
+body.widgets-php .widgets-holder-wrap {
+	box-shadow: none;
+	border: 0;
+}
+
+body.widgets-php #sidebar-1,
+body.nikkon-footer-layout-standard.widgets-php #nikkon-site-footer-standard,
+body.nikkon-footer-layout-social.widgets-php #nikkon-site-footer-social,
+body.nikkon-footer-layout-custom.widgets-php #nikkon-site-footer-custom-1,
+body.nikkon-footer-layout-custom.widgets-php #nikkon-site-footer-custom-2,
+body.nikkon-footer-layout-custom.widgets-php #nikkon-site-footer-custom-3,
+body.nikkon-footer-layout-custom.widgets-php #nikkon-site-footer-custom-4,
+body.nikkon-footer-layout-custom.widgets-php #nikkon-site-footer-custom-5 {
+	border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}

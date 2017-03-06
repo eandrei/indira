@@ -86,6 +86,8 @@
       <!-- Please select a template with the [DOUBLEOPTIN] link -->
       <div id="create-doubleoptin-templates">
         <p style="width: 90%;text-align: justify;text-justify: inter-word;">{l s='Once the form has been completed, your contact will receive an email with a link to confirm their subscription.' mod='sendinblue'}</p></div>
+        <div style="text-align: left;" class="listData {$cl_version|escape:'htmlall':'UTF-8'|stripslashes} managesubscribeBlock">{$optin_confirm|escape:'quotes':'UTF-8'}</div>
+          <div class="clearfix"></div>
       <!-- Redirect URL after click on the validation email -->
       <div class="clearfix"></div>
       <div style="padding-top: 10px;" id="doubleoptin-redirect-url-area" class="form-group clearfix"> 

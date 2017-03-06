@@ -1,0 +1,42 @@
+.upgrade-page-wrap {
+    
+}
+.upgrade-page-inner-wrap {
+	max-width: 940px;
+	padding: 20px 0;
+}
+.upgrade-page-inner-wrap a {
+	outline: none;
+	box-shadow: none;
+	text-decoration: none;
+	color: #005EAA;
+}
+.upgrade-page-inner-wrap a:hover {
+	text-decoration: underline;
+	color: #0952A9;
+}
+
+.clearboth {
+	clear: both;
+}
+
+.upgrade-result-button {
+	display: inline-block;
+	border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset !important;
+	margin: 0;
+	padding: 9px 50px 10px;
+	text-align: center;
+	font-size: 14px;
+	background-color: #006CC9;
+	color: #FFF !important;
+	text-decoration: none !important;
+}
+.upgrade-result-button:hover {
+	background-color: #0952A9;
+}
+
+.upgraded-p {
+	margin: 40px 0 10px;
+}

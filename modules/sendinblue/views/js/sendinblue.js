@@ -47,22 +47,22 @@ $(document).ready(
                     }
                 });
 
-                $(document).ready(function(e) {    
-                  $('.manage_subscribe_block input[name=subscribe_confirm_type]').click(function(){
-                     $('.manage_subscribe_block .inner_manage_box').slideUp(); 
-                     $(this).parents('.manage_subscribe_block').find('.inner_manage_box').slideDown();
-                      
-                  });
-
-                  $('.openCollapse').click(function() {
-                     
-                     if ($(this).is(":checked")){
-                          $(this).parent('.form-group').find('.collapse').slideDown();
-                     } else {
-                          $(this).parent('.form-group').find('.collapse').slideUp();
-                     }
-                  });
+                
+                $('.manage_subscribe_block input[name=subscribe_confirm_type]').click(function(){
+                    $('.manage_subscribe_block .inner_manage_box').slideUp(); 
+                    $(this).parents('.manage_subscribe_block').find('.inner_manage_box').slideDown();
+                  
                 });
+
+                $('.openCollapse').click(function() {
+                 
+                    if ($(this).is(":checked")){
+                        $(this).parent('.form-group').find('.collapse').slideDown();
+                    } else {
+                        $(this).parent('.form-group').find('.collapse').slideUp();
+                    }
+                });
+                
 
                 //doubleoptin alert functionality
 
@@ -98,20 +98,17 @@ $(document).ready(
                         str = str.replace(/[^a-zA-Z 0-9]+/g, '');                        
                         $('#sender_campaign').val(str);
                 });
-                
-                if ($('#sender_order').val() != '')
-                {
-
-                    var val = $('#sender_order').val();
-
-                    if (isInteger(val) || val.length == 0) {
+                var $sender_order = $('#sender_order');
+                var $sender_order_val = $sender_order.val();
+                if ($sender_order_val) {
+                    if (isInteger($sender_order_val) || $sender_order_val.length == 0) {
                         $("#sender_order").attr('maxlength', '11');
-                        $('#sender_order_text').text((11 - val.length));
+                        $('#sender_order_text').text((11 - $sender_order_val.length));
 
                     }
                     else {
                         $("#sender_order").attr('maxlength', '11');
-                        $('#sender_order_text').text((11 - val.length));
+                        $('#sender_order_text').text((11 - $sender_order_val.length));
 
                     }
                 }
@@ -140,8 +137,6 @@ $(document).ready(
 
                 if ($('#sender_order_message').val() != '')
                 {
-
-
                     var chars = $('#sender_order_message').val().length,
                             messages = Math.ceil(chars / 160),
                             remaining = messages * 160 - (chars % (messages * 160) || messages * 160);
@@ -166,25 +161,26 @@ $(document).ready(
                     }
                 });
 
-                if ($('#sender_shipment').val() != '')
-                {
-
-                    var val = $('#sender_shipment').val();
-                    if (isInteger(val) || val.length == 0) {
-                        $("#sender_shipment").attr('maxlength', '11');
-                        $('#sender_shipment_text').text((11 - val.length));
+                // by optimize
+                var $sender_shipment = $('#sender_shipment');
+                var $sender_shipment_val = $sender_shipment.val();
+                if ($sender_shipment_val) {
+                    if (isInteger($sender_shipment_val) || $sender_shipment_val.length == 0) {
+                        $sender_shipment.attr('maxlength', '11');
+                        $('#sender_shipment_text').text((11 - $sender_shipment_val.length));
 
                     }
                     else {
-                        $("#sender_shipment").attr('maxlength', '11');
-                        $('#sender_shipment_text').text((11 - val.length));
+                        $sender_shipment.attr('maxlength', '11');
+                        $('#sender_shipment_text').text((11 - $sender_shipment_val.length));
 
                     }
                 }
-				$("#sender_shipment").keydown(function (event) {
-					if (event.keyCode == 32) {
+                $sender_shipment.keydown(function (event) {
+                    if (event.keyCode == 32) {
                     event.preventDefault();
                 }
+
 				});
 
                 $('#sender_shipment_message').keyup(function() {
@@ -205,11 +201,9 @@ $(document).ready(
 
                 if ($('#sender_shipment_message').val() != '')
                 {
-
-
                     var chars = $('#sender_shipment_message').val().length,
-                            messages = Math.ceil(chars / 160),
-                            remaining = messages * 160 - (chars % (messages * 160) || messages * 160);
+                    messages = Math.ceil(chars / 160),
+                    remaining = messages * 160 - (chars % (messages * 160) || messages * 160);
 
                     $('#sender_shipment_message_text').text(remaining);
 
@@ -230,20 +224,16 @@ $(document).ready(
 
                     }
                 });
-
-                if ($('#sender_campaign').val() != '')
-                {
-
-
-                    var val = $('#sender_campaign').val();
-
-                    if (isInteger(val) || val.length == 0) {
+                var $sender_campaign = $('#sender_campaign');
+                var $sender_campaign_val = $sender_campaign.val();
+                if ($sender_campaign_val) {
+                    if (isInteger($sender_campaign_val) || $sender_campaign_val.length == 0) {
                         $("#sender_campaign").attr('maxlength', '11');
-                        $('#sender_campaign_text').text((11 - val.length));
+                        $('#sender_campaign_text').text((11 - $sender_campaign_val.length));
                     }
                     else {
                         $("#sender_campaign").attr('maxlength', '11');
-                        $('#sender_campaign_text').text((11 - val.length));
+                        $('#sender_campaign_text').text((11 - $sender_campaign_val.length));
                     }
                 }
 				$("#sender_campaign").keydown(function (event) {
@@ -619,11 +609,6 @@ $(document).ready(
                             }).hide().appendTo('body');
 
             $('.ajax_contacts_href').live('click', function(e) {
-                /*var sBase = location.href.substr(0, location.href.lastIndexOf("/") + 1);
-                 var sp = sBase.split('/');
-                 var lastFolder = sp[ sp.length - 2 ];
-                 var base_url = sBase.replace(lastFolder+'/', '');
-                 alert(base_url);*/
                 var email = $(this).attr('email');
                 var status = $(this).attr('status');
                 var token = jQuery("#customtoken").val();
@@ -656,12 +641,13 @@ $(document).ready(
 
                 var email = $(this).attr('email');
                 var token = jQuery("#customtoken").val();
+                var sms_blacklist_status = $(this).parent('td').find('#sms_status_val').val();
 
                 $.ajax({
                     type: "POST",
                     async: false,
                     url: base_url + "modules/sendinblue/ajaxSmsStatus.php",
-                    data: {"email": email,"token": token, "id_shop_group": id_shop_group, "id_shop":id_shop},
+                    data: {"email": email, "sms_blacklist_status":sms_blacklist_status, "token": token, "id_shop_group": id_shop_group, "id_shop":id_shop},
                     beforeSend: function() {
                         $('#ajax-busy').show();
                     },

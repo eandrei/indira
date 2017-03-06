@@ -36,7 +36,7 @@ function upgrade_module_2_5_1($module)
     Configuration::updateValue('Sendinblue_Version', $upgrade_version);
     
     //sql update
-    if (version_compare(_PS_VERSION_, '1.4.1.0', '<=')) {
+    if (version_compare(_PS_VERSION_, '1.5.2.0', '<=')) {
         Db::getInstance()->Execute('UPDATE `' . _DB_PREFIX_ . 'module` SET active = 1 WHERE name = "blocknewsletter"');
     } else {
         Module::enableByName('blocknewsletter');

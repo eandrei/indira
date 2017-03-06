@@ -39,6 +39,11 @@ if ($token != $ps_shop_name_enc) {
 $id_shop_group = Tools::getValue('id_shop_group', 'NULL');
 $id_shop = Tools::getValue('id_shop', 'NULL');
 $sendin = new Sendinblue();
+$api_key = Configuration::get('Sendin_Api_Key', '', $id_shop_group, $id_shop);
+if (!empty($api_key)) {
+    $mailin = new Psmailin('https://api.sendinblue.com/v2.0', $api_key);
+}
+
 $sendin_order_track_status = Configuration::get('Sendin_order_tracking_Status', '', $id_shop_group, $id_shop);
 if ($sendin_order_track_status == 0) {
     $handle = fopen(_PS_MODULE_DIR_ . 'sendinblue/csv/ImportOldOrdersToSendinblue.csv', 'w+');
@@ -76,24 +81,16 @@ if ($sendin_order_track_status == 0) {
         }
     }
     fclose($handle);
-    $list = str_replace('|', ',', Configuration::get('Sendin_Selected_List_Data', '', $id_shop_group, $id_shop));
-    if (preg_match('/^[0-9,]+$/', $list)) {
-        $list = $list;
-    } else {
-        $list = '';
+    $list = Configuration::get('Sendin_Selected_List_Data', '', $id_shop_group, $id_shop);
+    $list_id = explode('|', $list);
+    $data = array( "url" => $sendin->local_path . $sendin->name . '/csv/ImportOldOrdersToSendinblue.csv',
+        "listids" => $list_id,
+        "notify_url" => $sendin->local_path . 'sendinblue/EmptyImportOldOrdersFile.php?token=' . Tools::getValue('token')
+    );
+    $resp_data = $mailin->importUsers($data);
+
+    if ($resp_data['code'] == 'success') {
+        Configuration::updateValue('Sendin_order_tracking_Status', 1, '', $id_shop_group, $id_shop);
     }
-    $import_data = array();
-    $import_data['webaction'] = 'IMPORTUSERS';
-    $import_data['key'] = Configuration::get('Sendin_Api_Key', '', $id_shop_group, $id_shop);
-    $import_data['url'] = $sendin->local_path . $sendin->name . '/csv/ImportOldOrdersToSendinblue.csv';
-    $import_data['listids'] = $list;
-    $import_data['notify_url'] = $sendin->local_path . 'sendinblue/EmptyImportOldOrdersFile.php?token=' . Tools::getValue('token');
-    
-    /**
-     * List id should be optional
-     */
-    $sendin->curlRequestAsyc($import_data);
-    
-    Configuration::updateValue('Sendin_order_tracking_Status', 1, '', $id_shop_group, $id_shop);
     exit;
 }

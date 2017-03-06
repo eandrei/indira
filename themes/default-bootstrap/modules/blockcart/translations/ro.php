@@ -53,4 +53,4 @@ $_MODULE['<{blockcart}default-bootstrap>blockcart_21034ae6d01a83e702839a72ba8a77
 $_MODULE['<{blockcart}default-bootstrap>blockcart_1f87346a16cf80c372065de3c54c86d9'] = '(inclusiv TVA)';
 $_MODULE['<{blockcart}default-bootstrap>blockcart_f4e8b53a114e5a17d051ab84d326cae5'] = 'Total livrare';
 $_MODULE['<{blockcart}default-bootstrap>blockcart_300225ee958b6350abc51805dab83c24'] = 'Continuaţi cumpărăturie';
-$_MODULE['<{blockcart}default-bootstrap>blockcart_7e0bf6d67701868aac3116ade8fea957'] = 'Finalizați comanda';
+$_MODULE['<{blockcart}default-bootstrap>blockcart_7e0bf6d67701868aac3116ade8fea957'] = 'Vezi detalii cos';

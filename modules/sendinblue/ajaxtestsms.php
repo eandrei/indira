@@ -34,7 +34,11 @@ if (Tools::getValue('token') != Tools::encrypt(Configuration::get('PS_SHOP_NAME'
 $sendin = new Sendinblue();
 
 $responce_arr = array('result' => false);
-if ($sendin->sendOrderTestSms(Tools::getValue('sender'), Tools::getValue('message'), Tools::getValue('number'), Tools::getValue('iso_code'))) {
+$sender = Tools::getValue('sender');
+$message = Tools::getValue('message');
+$number = Tools::getValue('number');
+$iso_code = Tools::getValue('iso_code');
+if ($sendin->sendOrderTestSms($sender, $message, $number, $iso_code)) {
     $responce_arr = array('result' => true);
 }
 

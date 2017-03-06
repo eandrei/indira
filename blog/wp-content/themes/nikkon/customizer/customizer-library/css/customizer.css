@@ -1,0 +1,36 @@
+
+#customize-theme-controls #accordion-section-nikkon-site-layout-section .accordion-section-title:hover,
+#customize-theme-controls #accordion-section-nikkon-header-section .accordion-section-title:hover,
+#customize-theme-controls #accordion-section-nikkon-slider-section .accordion-section-title:hover,
+#customize-theme-controls #accordion-section-nikkon-blog-section .accordion-section-title:hover,
+#customize-theme-controls #accordion-section-nikkon-blocks-layout-section .accordion-section-title:hover,
+#customize-theme-controls #accordion-section-nikkon-website-section .accordion-section-title:hover,
+#customize-theme-controls #accordion-section-colors .accordion-section-title:hover,
+#customize-theme-controls #accordion-section-nikkon-typography-section .accordion-section-title:hover,
+#customize-theme-controls #accordion-section-nikkon-social-section .accordion-section-title:hover,
+#customize-theme-controls #accordion-section-nikkon-footer-section .accordion-section-title:hover {
+    background-color: #006CC9;
+    color: #FFF;
+}
+
+#customize-theme-controls #accordion-section-nikkon-site-layout-section.control-section.open .customize-section-title,
+#customize-theme-controls #accordion-section-nikkon-header-section.control-section.open .customize-section-title,
+#customize-theme-controls #accordion-section-nikkon-slider-section.control-section.open .customize-section-title,
+#customize-theme-controls #accordion-section-nikkon-blog-section.control-section.open .customize-section-title,
+#customize-theme-controls #accordion-section-nikkon-blocks-layout-section.open .customize-section-title,
+#customize-theme-controls #accordion-section-nikkon-website-section.control-section.open .customize-section-title,
+#customize-theme-controls #accordion-section-colors.control-section.open .customize-section-title,
+#customize-theme-controls #accordion-section-nikkon-typography-section.control-section.open .customize-section-title,
+#customize-theme-controls #accordion-section-nikkon-social-section.control-section.open .customize-section-title,
+#customize-theme-controls #accordion-section-nikkon-footer-section.control-section.open .customize-section-title {
+    background-color: #006CC9 !important;
+    color: #FFF !important;
+}
+
+#customize-controls .control-section .customize-section-title h3 {
+	color: inherit;
+}
+
+.nikkon-remove-section {
+	display: none !important;
+}

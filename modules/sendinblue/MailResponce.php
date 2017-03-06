@@ -53,7 +53,7 @@ if ($customer_data['newsletter'] == 1 || $newsletter_data['active'] == 1) {
             "listid_unlink" => array($Sendin_optin_list_id),
             "blacklisted_sms" => 0
         );
-    $dd = $mailin->createUpdateUser($data);
+    $mailin->createUpdateUser($data);
     $confirm_email = Configuration::get('Sendin_final_confirm_email', '', $sendin->id_shop_group, $sendin->id_shop);
     if ($confirm_email === 'yes') {
         $final_id = Configuration::get('Sendin_Final_Template_Id', '', $sendin->id_shop_group, $sendin->id_shop);

@@ -34,5 +34,8 @@ if (Tools::getValue('token') != Tools::encrypt(Configuration::get('PS_SHOP_NAME'
 $id_shop_group = Tools::getValue('id_shop_group', 'NULL');
 $id_shop = Tools::getValue('id_shop', 'NULL');
 
+$email = Tools::getValue('email');
+$sms_blacklist_status = Tools::getValue('sms_blacklist_status');
+
 $sendin = new Sendinblue();
-$sendin->updateSmsSendinStatus(Tools::getValue('email'), $id_shop_group, $id_shop);
+$sendin->updateSmsSendinStatus($email, $sms_blacklist_status, $id_shop_group, $id_shop);
