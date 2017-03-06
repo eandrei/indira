@@ -28,7 +28,7 @@
 <section id="block_contact_infos" class="footer-block col-xs-12 col-sm-4">
 	<div>
         <h4>{l s='Store Information' mod='blockcontactinfos'}</h4>
-        <ul class="toggle-footer">
+        <ul class="">
             {if $blockcontactinfos_company != ''}
             	<li>
             		<i class="icon-map-marker"></i>{$blockcontactinfos_company|escape:'html':'UTF-8'}{if $blockcontactinfos_address != ''}, {$blockcontactinfos_address|escape:'html':'UTF-8'}{/if}
@@ -42,10 +42,12 @@
             {/if}
             {if $blockcontactinfos_email != ''}
             	<li>
-            		<i class="icon-envelope-alt"></i>{l s='Email:' mod='blockcontactinfos'} 
+            		<i class="icon-envelope-alt"></i>{l s='Email:' mod='blockcontactinfos'}
             		<span>{mailto address=$blockcontactinfos_email|escape:'html':'UTF-8' encode="hex"}</span>
             	</li>
             {/if}
+            <li><i class="icon-cc-visa"></i>Platiti in sigurata prin:
+                <img width="300" src="/themes/jewelry/img/mobil-pay.png" /></li>
         </ul>
     </div>
 </section>
