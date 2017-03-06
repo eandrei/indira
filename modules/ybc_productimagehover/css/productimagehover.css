@@ -10,6 +10,7 @@
 ul.product_list.grid > li .product-container .product-image-container {
 
   margin-bottom: 13px;
+  padding: 9px;
   position: relative;
   overflow: hidden;
 }
