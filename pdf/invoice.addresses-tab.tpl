@@ -24,14 +24,20 @@
 *}
 <table id="addresses-tab" cellspacing="0" cellpadding="0">
 	<tr>
-		<td width="33%"><span class="bold"> </span><br/><br/>
-			{if isset($order_invoice)}{$order_invoice->shop_address}{/if}
-		</td>
-		<td width="33%">{if $delivery_address}<span class="bold">{l s='Delivery Address' pdf='true'}</span><br/><br/>
-				{$delivery_address}
-			{/if}
-		</td>
-		<td width="33%"><span class="bold">{l s='Billing Address' pdf='true'}</span><br/><br/>
+        <td width="45%"> <span class="bold">Vanzator</span><br/><br/>
+            <span class="bold">Furnizor</span> S.C. Indira Art Distribution S.R.L<br/>
+            <span class="bold">Nr. ord. reg. com:</span> J40/10658/09.08.2016<br/>
+            <span class="bold">C.I.F:</span> 36408630<br/>
+            <span class="bold">IBAN:</span> RO72INGB0000999906166875 <br/>
+            <span class="bold">Banca:</span> ING Unirii <br/>
+            <span class="bold">Sediul:</span> Str. Dristorului, Nr. 114 <br/>
+            Camera 2, Bl. 13C, Sc. 1, Et. 1, Ap. 1, Sector 3, Bucuresti<br/>
+            <span class="bold">Telefon:</span> 0722876455<br/>
+
+
+        </td>
+
+		<td width="45%"><span class="bold">{l s='Cumparator' pdf='true'}</span><br/><br/>
 				{$invoice_address}
 		</td>
 	</tr>

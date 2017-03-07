@@ -842,7 +842,7 @@ class OrderInvoiceCore extends ObjectModel
             return $invoice_formatted_number;
         }
 
-        $format = '%1$s%2$06d';
+        $format = 'Serie: %1$s Numar: %2$06d';
 
         if (Configuration::get('PS_INVOICE_USE_YEAR')) {
             $format = Configuration::get('PS_INVOICE_YEAR_POS') ? '%1$s%3$s/%2$06d' : '%1$s%2$06d/%3$s';
