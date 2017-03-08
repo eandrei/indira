@@ -52,7 +52,7 @@ class CashondeliveryValidationModuleFrontController extends ModuleFrontControlle
 		if (!Validate::isLoadedObject($customer))
 			Tools::redirectLink(__PS_BASE_URI__.'order.php?step=1');
 
-		if (Tools::getValue('confirm'))
+		//if (Tools::getValue('confirm'))
 		{
 			$customer = new Customer((int)$this->context->cart->id_customer);
 			$total = $this->context->cart->getOrderTotal(true, Cart::BOTH);
