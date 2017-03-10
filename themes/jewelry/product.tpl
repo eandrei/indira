@@ -382,9 +382,9 @@
                 </div> <!-- end short_description_block -->
             {/if}
             <div class="descriere-beneficii">
-                <p><b>Achizitionand acest produs beneficiezi de:</b></p>
+                <p><b>La Indirabijoux beneficiezi de:</b></p>
                 <ul class="lista-beneficii">
-                    <li class="beneficiu"><i class="fa fa-truck"></i> Livrare gratuita</li>
+                    <li class="beneficiu"><i class="fa fa-truck"></i> Livrare gratuita (comanda minima 100 RON)</li>
                     <li class="beneficiu"><i class="fa fa-thumbs-up"></i> Calitate garantata</li>
                     <li class="beneficiu"><i class="fa fa-heart"></i> Multa dragoste</li>
                 </ul>
