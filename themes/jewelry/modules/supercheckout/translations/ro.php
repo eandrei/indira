@@ -209,8 +209,6 @@ $_MODULE['<{supercheckout}jewelry>supercheckout_32224bd6487699ea66652d3dc502455d
 $_MODULE['<{supercheckout}jewelry>supercheckout_5c2dfd55fea1f5c6adef500fcb6403b4'] = 'Cost suplimentar de% s';
 $_MODULE['<{supercheckout}jewelry>supercheckout_3d9caa7200f31dc40554e13246e005d7'] = 'Dacă doriți, puteți adăuga o notă la darul';
 $_MODULE['<{supercheckout}jewelry>supercheckout_a128f329c5aeea633ced6bb9d7c56c74'] = 'Plaseaza comanda';
-$_MODULE['<{supercheckout}jewelry>supercheckout_0dcf2dc3a4cc6cca6ec23b09fc58e5a2'] = 'plasand comanda sunt de acord cu';
-$_MODULE['<{supercheckout}jewelry>supercheckout_829f96defc7c51f96edf84b190ab864a'] = 'Termeni si conditii';
 $_MODULE['<{supercheckout}jewelry>supercheckout_5d3121fc5e724daa7416a9d810e8164b'] = 'Informatii De Plata';
 $_MODULE['<{supercheckout}jewelry>supercheckout_0557fa923dcee4d0f86b1409f5c2167f'] = 'Înapoi';
 $_MODULE['<{supercheckout}jewelry>supercheckout_f262fae0a2f17e8c1eb4e9eddb0160e4'] = 'Continua';

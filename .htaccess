@@ -9,6 +9,7 @@ SetEnv HTTP_MOD_REWRITE On
 
 RewriteEngine on
 
+
 #Domain: www.indirabijoux.ro
 RewriteRule . - [E=REWRITEBASE:/]
 RewriteRule ^api$ api/ [L]
@@ -35,10 +36,6 @@ RewriteCond %{REQUEST_FILENAME} -l [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^.*$ - [NC,L]
 RewriteRule ^.*$ %{ENV:REWRITEBASE}index.php [NC,L]
-
-RedirectMatch 301 /reduceri-de-primavara /reduceri
-RedirectMatch 301 /india-mea /boho
-RedirectMatch 301 /stil-minimalist /minimal
 </IfModule>
 
 AddType application/vnd.ms-fontobject .eot
@@ -87,6 +84,7 @@ FileETag none
 ErrorDocument 404 /index.php?controller=404
 
 # ~~end~~ Do not remove this comment, Prestashop will keep automatically the code outside this comment when .htaccess will be generated again
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
