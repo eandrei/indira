@@ -36,14 +36,18 @@
 			<div class="container" >
 			{Module::getInstanceByName('bestkit_customblocks')->getBlockContent('footer-features-block')}
 			</div>
-			
+
 			{if isset($HOOK_FOOTER)}
 				<!-- Footer -->
 				<div class="footer-container">
 					<footer id="footer"  class="container">
 						<div class="row">
-						{$HOOK_FOOTER}						
-						</div>
+                        {if $page_name !='module-supercheckout-supercheckout' && $page_name !='order'}
+						    {$HOOK_FOOTER}
+                        {else}
+                            {include file="$tpl_dir./footer-checkout.tpl"}
+                        {/if}
+                        </div>
 					
 					</footer>
 				</div><!-- #footer -->
