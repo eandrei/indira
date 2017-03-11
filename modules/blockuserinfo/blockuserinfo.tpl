@@ -58,5 +58,5 @@
 			<a href="{$link->getPageLink('my-account', true)|escape:'html'}" title="{l s='Log in to your customer account' mod='blockuserinfo'}" class="login" rel="nofollow">{l s='Sign in' mod='blockuserinfo'}</a>
 		{/if}
 	</p>
-</div>
+</div
 <!-- /Block user information module HEADER -->
