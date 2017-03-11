@@ -65,4 +65,23 @@
     vertical-align: -2px;
     padding-right: 10px; }
 
+.site-top-bar-left {
+    float: left;
+    width: 70%;
+    background-color: #FFF;
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.08) inset;
+    color:#3C3C3C;
+}
+
+.site-top-bar-left .social-icon {
+    box-shadow: -1px 0 0 rgba(0, 0, 0, 0.08) inset;
+    font-size: 15px;
+    color: inherit;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
 /*# sourceMappingURL=blockcontact.css.map */

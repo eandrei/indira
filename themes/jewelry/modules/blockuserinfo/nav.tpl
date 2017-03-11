@@ -7,12 +7,10 @@
 <div class="header_user_info">
 	{if $is_logged}
 		<a class="logout" href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log me out' mod='blockuserinfo'}">
-			{l s='Sign out' mod='blockuserinfo'}
+            <i class="fa fa-user"> {l s='Sign out' mod='blockuserinfo'}</i>
 		</a>
 	{else}
-		<a class="login" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log in to your customer account' mod='blockuserinfo'}">
-			{l s='Sign in' mod='blockuserinfo'}
-		</a>
+        <a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log in to your customer account' mod='blockuserinfo'}" class="social-icon"><i class="fa fa-user"> {l s='Sign in' mod='blockuserinfo'}</i></a>
 	{/if}
 </div>
 <!-- /Block usmodule NAV -->

@@ -5764,7 +5764,7 @@ header {
     header .banner .row {
       margin: 0px; }
   header .nav {
-      padding: 6px 30px;
+      padding: 0px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
     header .nav .row {

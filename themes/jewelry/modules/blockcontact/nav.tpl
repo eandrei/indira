@@ -22,11 +22,11 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div id="contact-link" {if isset($is_logged) && $is_logged} class="is_logged"{/if}>
-	<a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcontact'}">{l s='Contact us' mod='blockcontact'}</a>
+
+<div class="site-top-bar-left">
+    <a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcontact'}" class="social-icon social-email"><i class="fa fa-envelope-o"></i></a>
+    <a href="https://www.facebook.com/indirabijoux1/" target="_blank" title="Urmareste-ne pe Facebook" class="social-icon social-facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/indirabijoux/" target="_blank" title="Urmareste-ne pe Instagram" class="social-icon social-instagram"><i class="fa fa-instagram"></i></a>
+    <a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcontact'}" class="social-icon"><i class="fa fa-phone"> {$telnumber}</i></a>
 </div>
-{if $telnumber}
-	<span class="shop-phone{if isset($is_logged) && $is_logged} is_logged{/if}">
-		<i class="icon-phone"></i>{l s='Call us now:' mod='blockcontact'} <strong>{$telnumber}</strong>
-	</span>
-{/if}
+
