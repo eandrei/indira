@@ -56,6 +56,7 @@
 {/if}
 {include file="$tpl_dir./global.tpl"}
 
+{literal}
 <!-- Google Code for Remarketing Tag -->
 <!--------------------------------------------------
 Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
@@ -74,5 +75,6 @@ Remarketing tags may not be associated with personally identifiable information 
         <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/859933323/?guid=ON&amp;script=0"/>
     </div>
 </noscript>
+{/literal}
 	</body>
 </html>
