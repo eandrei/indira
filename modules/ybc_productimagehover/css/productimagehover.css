@@ -12,7 +12,6 @@ ul.product_list.grid > li .product-container .product-image-container {
   margin-bottom: 13px;
   padding: 9px;
   position: relative;
-  overflow: hidden;
 }
 /*----------------------zoom effect------------*/
 .product-image-container .zoom:nth-child(2),
