@@ -100,7 +100,7 @@
 						{/if}
 						{if isset($product.new) && $product.new == 1}
 							<a class="new-box" href="{$product.link|escape:'html':'UTF-8'}">
-								<span class="new-label">{l s='New'}</span>
+								<span class="new-label">{l s='Nou'}</span>
 							</a>
 						{/if}
 						{if isset($product.on_sale) && $product.on_sale && isset($product.show_price) && $product.show_price && !$PS_CATALOG_MODE}
