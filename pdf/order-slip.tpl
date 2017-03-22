@@ -90,12 +90,24 @@
 	<tr>
 		<td colspan="6" class="left">
 
-			{$payment_tab}
+
 
 		</td>
 		<td colspan="1">&nbsp;</td>
 	</tr>
+    <tr>
+        <td colspan="7" class="left small">
 
+            <table>
+                <tr>
+                    <td>
+                        <p>{$legal_free_text|escape:'html':'UTF-8'|nl2br}</p>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
 	<!-- Hook -->
 	{if isset($HOOK_DISPLAY_PDF)}
 	<tr>

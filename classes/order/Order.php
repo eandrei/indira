@@ -1169,7 +1169,15 @@ class OrderCore extends ObjectModel
         if (Configuration::get('PS_INVOICE_RESET')) {
             $sql .= ' WHERE DATE_FORMAT(`date_add`, "%Y") = '.(int)date('Y');
         }
-        return Db::getInstance()->getValue($sql);
+        $lastInvoiceNumber = Db::getInstance()->getValue($sql);
+        $lastReturnInvoiceNumber = Db::getInstance(_PS_USE_SQL_SLAVE_)->getValue('
+		SELECT MAX(invoice_number) FROM `'._DB_PREFIX_.'order_slip`' , 0);
+
+        if ($lastReturnInvoiceNumber > $lastInvoiceNumber) {
+            $lastInvoiceNumber = $lastReturnInvoiceNumber;
+        }
+
+        return $lastInvoiceNumber;
     }
 
     public static function setLastInvoiceNumber($order_invoice_id, $id_shop)
@@ -1194,7 +1202,13 @@ class OrderCore extends ObjectModel
                 FROM `'._DB_PREFIX_.'order_invoice`'.(Configuration::get('PS_INVOICE_RESET') ?
                 ' WHERE DATE_FORMAT(`date_add`, "%Y") = '.(int)date('Y') : '');
             $new_number = DB::getInstance()->getValue($new_number_sql);
-            
+
+            $lastReturnInvoiceNumber = Db::getInstance(_PS_USE_SQL_SLAVE_)->getValue('
+		      SELECT MAX(invoice_number) FROM `'._DB_PREFIX_.'order_slip`' , 0);
+
+            if ($lastReturnInvoiceNumber > $new_number) {
+                $new_number = $lastReturnInvoiceNumber;
+            } 
             $sql .= (int)$new_number;
         }
 

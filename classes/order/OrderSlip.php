@@ -71,6 +71,8 @@ class OrderSlipCore extends ObjectModel
     /** @var int */
     public $order_slip_type = 0;
 
+    public $invoice_number;
+
     /**
      * @see ObjectModel::$definition
      */
@@ -92,6 +94,7 @@ class OrderSlipCore extends ObjectModel
             'date_add' =>                array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
             'date_upd' =>                array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
             'order_slip_type' =>        array('type' => self::TYPE_INT, 'validate' => 'isInt'),
+            'invoice_number' =>        array('type' => self::TYPE_INT),
         ),
     );
 
@@ -150,6 +153,29 @@ class OrderSlipCore extends ObjectModel
         'FROM `'._DB_PREFIX_.'order_slip_detail`'
         .($id_order_slip ? ' WHERE `id_order_slip` = '.(int)($id_order_slip) : '')
         .($id_order_detail ? ' WHERE `id_order_detail` = '.(int)($id_order_detail) : ''));
+    }
+
+    public function getInvoiceNumberFormatted($id_lang, $id_shop = null)
+    {
+
+        $invoice_formatted_number = Hook::exec('actionInvoiceNumberFormatted', array(
+            get_class($this) => $this,
+            'id_lang' => (int)$id_lang,
+            'id_shop' => (int)$id_shop,
+            'number' => (int)$this->invoice_number
+        ));
+
+        if (!empty($invoice_formatted_number)) {
+            return $invoice_formatted_number;
+        }
+
+        $format = 'Serie: %1$s Numar: %2$06d';
+
+        if (Configuration::get('PS_INVOICE_USE_YEAR')) {
+            $format = Configuration::get('PS_INVOICE_YEAR_POS') ? '%1$s%3$s/%2$06d' : '%1$s%2$06d/%3$s';
+        }
+
+        return sprintf($format, Configuration::get('PS_INVOICE_PREFIX', (int)$id_lang, null, (int)$id_shop), $this->invoice_number, date('Y', strtotime($this->date_add)));
     }
 
     /**
@@ -264,12 +290,21 @@ class OrderSlipCore extends ObjectModel
         return OrderSlip::create($order, $product_list, $shipping);
     }
 
+    public static function getInvoiceNumber() {
+        $invoiceNumber = Db::getInstance(_PS_USE_SQL_SLAVE_)->getValue('
+		SELECT MAX(number) + 1  FROM `'._DB_PREFIX_.'order_invoice`' , 0);
+
+        return $invoiceNumber;
+    }
+
     public static function create(Order $order, $product_list, $shipping_cost = false, $amount = 0, $amount_choosen = false, $add_tax = true)
     {
         $currency = new Currency((int)$order->id_currency);
         $order_slip = new OrderSlip();
         $order_slip->id_customer = (int)$order->id_customer;
         $order_slip->id_order = (int)$order->id;
+
+        $order_slip->invoice_number = self::getInvoiceNumber();
         $order_slip->conversion_rate = $currency->conversion_rate;
 
         if ($add_tax) {

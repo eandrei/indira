@@ -52,7 +52,7 @@ class HTMLTemplateOrderSlipCore extends HTMLTemplateInvoice
         // header informations
         $this->date = Tools::displayDate($this->order_slip->date_add);
         $prefix = Configuration::get('PS_CREDIT_SLIP_PREFIX', Context::getContext()->language->id);
-        $this->title = sprintf(HTMLTemplateOrderSlip::l('%1$s%2$06d'), $prefix, (int)$this->order_slip->id);
+        $this->title = $this->order_slip->getInvoiceNumberFormatted(Context::getContext()->language->id,(int)$this->order->id_shop);
 
         $this->shop = new Shop((int)$this->order->id_shop);
     }
@@ -66,7 +66,7 @@ class HTMLTemplateOrderSlipCore extends HTMLTemplateInvoice
     {
         $this->assignCommonHeaderData();
         $this->smarty->assign(array(
-            'header' => HTMLTemplateOrderSlip::l('Credit slip'),
+            'header' => HTMLTemplateOrderSlip::l('Invoice'),
         ));
 
         return $this->smarty->fetch($this->getTemplate('header'));
@@ -143,7 +143,12 @@ class HTMLTemplateOrderSlipCore extends HTMLTemplateInvoice
                 }
             }
         }
+        $legal_free_text = Hook::exec('displayInvoiceLegalFreeText', array('order' => $this->order));
+        if (!$legal_free_text) {
+            $legal_free_text = Configuration::get('PS_INVOICE_LEGAL_FREE_TEXT', (int)Context::getContext()->language->id, null, (int)$this->order->id_shop);
+        }
 
+        $originalInvoice = OrderInvoiceCore::getInvoiceByNumber($this->order->invoice_number);
         $this->smarty->assign(array(
             'order' => $this->order,
             'order_slip' => $this->order_slip,
@@ -154,7 +159,9 @@ class HTMLTemplateOrderSlipCore extends HTMLTemplateInvoice
             'invoice_address' => $formatted_invoice_address,
             'addresses' => array('invoice' => $invoice_address, 'delivery' => $delivery_address),
             'tax_excluded_display' => $tax_excluded_display,
-            'total_cart_rule' => $total_cart_rule
+            'total_cart_rule' => $total_cart_rule,
+            'legal_free_text' => $legal_free_text,
+            'original_invoice_number' => $originalInvoice->getInvoiceNumberFormatted((int)Context::getContext()->language->id, (int)$this->order->id_shop)
         ));
 
         $tpls = array(
@@ -188,7 +195,20 @@ class HTMLTemplateOrderSlipCore extends HTMLTemplateInvoice
      */
     public function getFilename()
     {
-        return 'order-slip-'.sprintf('%06d', $this->order_slip->id).'.pdf';
+        $id_lang = Context::getContext()->language->id;
+        $id_shop = (int)$this->order->id_shop;
+        $format = '%1$s%2$06d';
+
+        if (Configuration::get('PS_INVOICE_USE_YEAR')) {
+            $format = Configuration::get('PS_INVOICE_YEAR_POS') ? '%1$s%3$s-%2$06d' : '%1$s%2$06d-%3$s';
+        }
+
+        return sprintf(
+            $format,
+            Configuration::get('PS_INVOICE_PREFIX', $id_lang, null, $id_shop),
+            $this->order_slip->invoice_number,
+            date('Y', strtotime($this->order_slip->date_add))
+        ).'.pdf';
     }
 
     /**
