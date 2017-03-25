@@ -27,6 +27,6 @@
     <a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcontact'}" class="social-icon social-email"><i class="fa fa-envelope-o"></i></a>
     <a href="https://www.facebook.com/indirabijoux1/" target="_blank" title="Urmareste-ne pe Facebook" class="social-icon social-facebook"><i class="fa fa-facebook"></i></a>
     <a href="https://www.instagram.com/indirabijoux/" target="_blank" title="Urmareste-ne pe Instagram" class="social-icon social-instagram"><i class="fa fa-instagram"></i></a>
-    <a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact us' mod='blockcontact'}" class="social-icon"><i class="fa fa-phone"> {$telnumber}</i></a>
+    <a href="tel:{$telnumber}" title="{l s='Call us' mod='blockcontact'}" class="social-icon"><i class="fa fa-phone"> {$telnumber}</i></a>
 </div>
 
