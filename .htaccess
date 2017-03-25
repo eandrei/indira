@@ -30,6 +30,11 @@ RewriteRule ^c/([a-zA-Z_-]+)(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/c/$1$2.jpg
 # AlphaImageLoader for IE and fancybox
 RewriteRule ^images_ie/?([^/]+)\.(jpe?g|png|gif)$ js/jquery/plugins/fancybox/images/$1.$2 [L]
 
+Redirect 301 /india-mea /boho
+Redirect 301 /reduceri-de-primavara /minimal
+Redirect 301 /reduceri /minimal
+Redirect 301 /bijuterii-noi /noutati
+
 # Dispatcher
 RewriteCond %{REQUEST_FILENAME} -s [OR]
 RewriteCond %{REQUEST_FILENAME} -l [OR]

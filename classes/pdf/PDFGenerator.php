@@ -176,7 +176,7 @@ class PDFGeneratorCore extends TCPDF
     {
         $this->writeHTML($this->footer);
         if ($this->watermark) {
-            $this->Image(_PS_BASE_URL_ . '/pdfback.png', 5, 35, 200, 200, '', '', '', true, 72);
+            $this->Image(_PS_BASE_URL_ . '/pdfback.png', 5, 35, 200, 200, '', '', '', true);
         }
         $this->FontFamily = self::DEFAULT_FONT;
         $this->writeHTML($this->pagination);
