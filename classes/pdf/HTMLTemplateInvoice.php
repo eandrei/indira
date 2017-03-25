@@ -31,6 +31,7 @@ class HTMLTemplateInvoiceCore extends HTMLTemplate
 {
     public $order;
     public $order_invoice;
+    public $watermark;
     public $available_in_your_account = false;
 
     /**
@@ -41,7 +42,11 @@ class HTMLTemplateInvoiceCore extends HTMLTemplate
     public function __construct(OrderInvoice $order_invoice, $smarty, $bulk_mode = false)
     {
         $this->order_invoice = $order_invoice;
+
         $this->order = new Order((int)$this->order_invoice->id_order);
+        if ($this->order->current_state == 6) {
+            $this->watermark = True;
+        }
         $this->smarty = $smarty;
 
         // If shop_address is null, then update it with current one.
@@ -271,7 +276,7 @@ class HTMLTemplateInvoiceCore extends HTMLTemplate
             'ecotax_taxes' => $total_taxes - $product_taxes - $wrapping_taxes - $shipping_taxes,
             'total_taxes' => $total_taxes,
             'total_paid_tax_excl' => $this->order_invoice->total_paid_tax_excl,
-            'total_paid_tax_incl' => $this->order_invoice->total_paid_tax_incl
+            'total_paid_tax_incl' => $this->order_invoice->total_paid_tax_incl,
         );
 
         foreach ($footer as $key => $value) {

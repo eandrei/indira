@@ -39,6 +39,7 @@ class PDFGeneratorCore extends TCPDF
     public $pagination;
     public $content;
     public $font;
+    public $watermark;
 
     public $font_by_lang = array(
         'ja' => 'cid0jp',
@@ -81,6 +82,9 @@ class PDFGeneratorCore extends TCPDF
     {
         parent::__construct($orientation, 'mm', 'A4', true, 'UTF-8', $use_cache, false);
         $this->setRTL(Context::getContext()->language->is_rtl);
+
+
+
     }
 
     /**
@@ -110,8 +114,9 @@ class PDFGeneratorCore extends TCPDF
      *
      * @param string $footer HTML
      */
-    public function createFooter($footer)
+    public function createFooter($footer, $watermark)
     {
+        $this->watermark = $watermark;
         $this->footer = $footer;
     }
 
@@ -170,6 +175,9 @@ class PDFGeneratorCore extends TCPDF
     public function Footer()
     {
         $this->writeHTML($this->footer);
+        if ($this->watermark) {
+            $this->Image(_PS_BASE_URL_ . '/pdfback.png', 5, 35, 200, 200, '', '', '', true, 72);
+        }
         $this->FontFamily = self::DEFAULT_FONT;
         $this->writeHTML($this->pagination);
     }
