@@ -5776,6 +5776,7 @@ header {
     header .row > .container {
       position: relative; }
     header .row #header_logo {
+        padding: 6px;
 	  text-align:center;	  }
 	     header .row #header_logo img {
 		display:inline-block;
