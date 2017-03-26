@@ -320,7 +320,7 @@ ul.sf-menu li li li.sfHover ul {
         content: "\f0c9";
 		color:#fff;
         position: absolute;
-        right: 15px;
+        left: 15px;
         top: 18px;
         font-size: 26px; }
       .cat-title.active:after {

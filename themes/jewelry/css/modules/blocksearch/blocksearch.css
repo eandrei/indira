@@ -26,6 +26,8 @@
     width: 100%;
 	}  
 	  }
+
+  .sf-search .btn.button-search,
   #search_block_top .btn.button-search {
     background: none;
     display: block;

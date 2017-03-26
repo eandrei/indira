@@ -5776,17 +5776,16 @@ header {
     header .row > .container {
       position: relative; }
     header .row #header_logo {
-      padding-top: 30px;
 	  text-align:center;	  }
 	     header .row #header_logo img {
 		display:inline-block;
 		 }
       @media (max-width: 992px) {
         header .row #header_logo {
-          padding-top: 40px; } }
+          } }
       @media (max-width: 767px) {
         header .row #header_logo {
-          padding-top: 20px; }
+           }
           header .row #header_logo img {
             margin: 0 auto; } }
   @media (min-width: 767px) {

@@ -490,3 +490,26 @@
 #layer_cart .button-medium i{
 	display:none;
 }
+
+.shopping_cart_mobile {
+    float:right;
+    width: 15%;
+    padding-top: 11px;
+}
+.shopping_cart_mobile sup {
+    left: 30px;
+    font-size: 14px;
+    color: red;
+}
+
+.shopping_cart_mobile a {
+    width: 29px;
+    height: 29px;
+    background: url(shopper53.svg) no-repeat;
+    background-size: cover;
+    color: #000;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    content: "\ ";
+}
