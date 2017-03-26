@@ -736,6 +736,7 @@ class Blocktopmenu extends Module
             $this->smarty->assign('MENU_SEARCH', Configuration::get('MOD_BLOCKTOPMENU_SEARCH', null, $shop_group_id, $shop_id));
             $this->smarty->assign('MENU', $this->_menu);
             $this->smarty->assign('this_path', $this->_path);
+            $this->smarty->assign('cart_qties', $this->context->cart->nbProducts());
         }
 
         $html = $this->display(__FILE__, 'blocktopmenu.tpl', $this->getCacheId());
