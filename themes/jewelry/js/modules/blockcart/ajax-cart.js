@@ -23,6 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 */
 $(document).ready(function(){
+    $('.shopping_cart_mobile .ajax_cart_quantity').text($('.shopping_cart .ajax_cart_quantity').text());
 	ajaxCart.overrideButtonsInThePage();
 
 	$(document).on('click', '.block_cart_collapse', function(e){
