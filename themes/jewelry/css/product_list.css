@@ -525,7 +525,7 @@ Product list(Index page) Styles
     ul.product_list.grid > li .product-container .content_price {
     }
     ul.product_list.grid > li {
-        height: 270px;
+        height: 280px;
     }
     ul.product_list.grid > li .right-block {
         min-height:150px;
