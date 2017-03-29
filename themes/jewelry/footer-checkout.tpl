@@ -15,7 +15,7 @@
 <section class="blockcategories_footer footer-block col-xs-12 col-sm-3">
     <h4><i class="fa fa-lock"></i> Cumperi in siguranta</h4>
     <p>Toate datele sunt transmise securizat pentru cumparaturi in deplina siguranta</p>
-    <img width="300" src="/themes/Jewelry/img/mobil-pay.png" data-pin-nopin="true">
+    <img width="300" src="/themes/jewelry/img/mobil-pay.png" data-pin-nopin="true">
 </section>
 
 </div>
