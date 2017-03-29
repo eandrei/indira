@@ -170,7 +170,7 @@
 									</span>
 								{elseif (isset($product.quantity_all_versions) && $product.quantity_all_versions > 0)}
 									<span style="color:#41c1ca;" class="label-in-stock">
-										{l s='In stock'}
+										{l s='In stoc'}
 									</span>
 								{else}
 									<span class="label-out-of-stock" style="color:black">
