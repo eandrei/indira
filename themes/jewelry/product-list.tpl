@@ -169,7 +169,7 @@
 										{if $product.quantity <= 0}{if $product.allow_oosp}{if isset($product.available_later) && $product.available_later}{$product.available_later}{else}{l s='In Stock'}{/if}{else}{l s='Out of stock'}{/if}{else}{if isset($product.available_now) && $product.available_now}{$product.available_now}{else}{l s='In Stock'}{/if}{/if}
 									</span>
 								{elseif (isset($product.quantity_all_versions) && $product.quantity_all_versions > 0)}
-									<span class="label-stock-low">
+									<span class="label-in-stock">
 										{l s='In stock'}
 									</span>
 								{else}
