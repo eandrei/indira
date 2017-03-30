@@ -620,8 +620,13 @@ header .row #header_logo,
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#index .col-xs-12 {
+    padding:0px;
+}
 
 .col-xs-1,
 .col-xs-2,
@@ -8620,7 +8625,7 @@ content:"\f095";
 	
 .hb{
 	margin-right:15px;
-    margin-top:15px;
+    margin-top:10px;
 	float:left;
 	}
 
@@ -8741,7 +8746,6 @@ width:100%;
 	padding-bottom:0px;}
 .hb, .hb-right{
 width:100%;
-margin-bottom:20px;
 }
 .hb{margin-right:0px;}
 .hb-large{ width:100%; margin-bottom:30px;}
