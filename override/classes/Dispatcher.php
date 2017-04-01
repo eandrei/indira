@@ -311,14 +311,18 @@ class Dispatcher extends DispatcherCore
 						}
 			}
 		$req_uri = explode('/', $this->request_uri);
-			if (preg_match('/\?/', $req_uri[1]))
+            $afterSlash = null;
+            if (isset($req_uri[1])) {
+                $afterSlash = $req_uri[1];
+            }
+			if (preg_match('/\?/', $afterSlash))
 			{
-				$req_uri_qmark = explode('?', $req_uri[1]);
+				$req_uri_qmark = explode('?', $afterSlash);
 				$req_uri[1] = $req_uri_qmark[0];
 			}
-			if ($controller == 'index' || preg_match('/^\/index.php(?:\?.*)?$/', $this->request_uri) || $req_uri[1] == '')
+			if ($controller == 'index' || preg_match('/^\/index.php(?:\?.*)?$/', $this->request_uri) || $afterSlash == '')
 				$controller = (_PS_VERSION_ >= '1.6.0' || _PS_VERSION_ >= '1.6.0.0') ? $this->useDefaultController() : $this->default_controller;
-				$check_url_type_existance = (int)$this->getKeyExistance($req_uri[1]);
+				$check_url_type_existance = (int)$this->getKeyExistance($afterSlash);
 				$get_controller_page = $this->getControllerPageById($check_url_type_existance);
 				if ($check_url_type_existance > 0)
 				$controller = $get_controller_page;
