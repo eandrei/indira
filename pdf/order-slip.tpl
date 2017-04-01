@@ -71,7 +71,7 @@
 		<!-- Code TVA -->
 		<td colspan="6" class="left">
 
-			{$tax_tab}
+
 
 		</td>
 		<td colspan="1">&nbsp;</td>
