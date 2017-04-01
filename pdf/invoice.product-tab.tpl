@@ -30,9 +30,6 @@
 		<th class="product header small" width="{$layout.product.width}%">{l s='Product' pdf='true'}</th>
 		<th class="product header small" width="{$layout.tax_code.width}%">{l s='Tax Rate' pdf='true'}</th>
 
-		{if isset($layout.before_discount)}
-			<th class="product header small" width="{$layout.unit_price_tax_excl.width}%">{l s='Base price' pdf='true'} <br /> {l s='(Tax excl.)' pdf='true'}</th>
-		{/if}
 
 		<th class="product header-right small" width="{$layout.unit_price_tax_excl.width}%">{l s='Unit Price' pdf='true'} <br /> {l s='(Tax excl.)' pdf='true'}</th>
 		<th class="product header small" width="{$layout.quantity.width}%">{l s='Qty' pdf='true'}</th>
@@ -74,15 +71,6 @@
 				{$order_detail.order_detail_tax_label}
 			</td>
 
-			{if isset($layout.before_discount)}
-				<td class="product center">
-					{if isset($order_detail.unit_price_tax_excl_before_specific_price)}
-						{displayPrice currency=$order->id_currency price=$order_detail.unit_price_tax_excl_before_specific_price}
-					{else}
-						--
-					{/if}
-				</td>
-			{/if}
 
 			<td class="product right">
 				{displayPrice currency=$order->id_currency price=$order_detail.unit_price_tax_excl_including_ecotax}
