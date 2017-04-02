@@ -122,8 +122,7 @@
 }
 
 #supercheckout-fieldset select {
-    margin: 0 !important;
-    padding: 4px 3px 4px !important;
+    padding: 0px 4px 0px !important;
 }
 
 #supercheckout-fieldset small {
@@ -260,7 +259,7 @@
     width: 29%;
     float: left;
     margin-left: 1% !important;
-    background-color: rgba(0, 0, 0, 0) !important;
+    padding: 0 2%;
 }
 
 #supercheckout-fieldset #columnleft-3 {
@@ -917,6 +916,7 @@
 
 #supercheckout-fieldset div.supercheckout-container div.input-region {
     float: left;
+    width: 50%;
 }
 
 #supercheckout-fieldset div.supercheckout-container div.input-region .input-text {
@@ -932,7 +932,7 @@
 }
 
 #supercheckout-fieldset div.supercheckout-container div.input-region select {
-    width: 91% !important;
+
 }
 
 #supercheckout-fieldset .group-select li {
@@ -1213,8 +1213,6 @@
 }
 
 #checkoutShippingAddress li {
-    width: 290px;
-    height: 37px;
     line-height: 37px;
     margin: 0 0 8px 0;
     position: relative;
@@ -1234,12 +1232,12 @@
 }
 
 #checkoutShippingAddress .input-box.input-city {
-    width: 116px;
+    width: 48%;
     float: left;
 }
 
 #checkoutShippingAddress .input-box.input-region {
-    padding-left: 5px;
+    padding-left: 10px;
     margin-top:1px;
 }
 
@@ -1318,8 +1316,6 @@
 
 #supercheckout-fieldset #checkoutLogin {
     color:#000000 !important;
-    padding-left: 5px !important;
-/*    padding-bottom: 10px !important;*/
 }
 
 #supercheckout-fieldset .errorsmall {
@@ -1357,7 +1353,7 @@
 }
 
 #supercheckout-fieldset .columnleftsort {
-
+    background: #f7f7f7;
 }
 
 #supercheckout-fieldset  #payment-method table.radio td:first-child{
@@ -1446,13 +1442,11 @@
 }
 
 #supercheckout-fieldset select.supercheckout-large-field {
-    width: 98%;
     border-radius:3px !important;
 }
 
 #supercheckout-fieldset .supercheckout-extra-wrap {
-    padding-top:5px !important;
-    padding-right: 6% !important;
+    margin: 0 0 8px 0;
 }
 
 #supercheckout-fieldset table.supercheckout-form tr td:first-child {
@@ -1498,8 +1492,16 @@
 }
 
 
-@media only screen and (min-width: 750px) and (max-width: 1025px) {
+@media (min-width: 750px) and (max-width: 1200px) {
 
+    .input-firstname {
+     width: 100% !important;
+     margin: 0 0 8px 0 !important;
+ }
+    .input-lastname {
+        width: 100% !important;
+        margin: 0 !important;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1000px) {
@@ -2012,7 +2014,7 @@ div.radio span{
 }
 
 #supercheckout-new-customer-form{
-    margin-top:15px;
+    padding: 0 0 8px 0;
 }
 
 #column-2-lower{

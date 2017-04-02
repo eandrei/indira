@@ -119,6 +119,10 @@
                 {/if}
 
                 <div class="supercheckout-column-left columnleftsort" id="columnleft-1" style="width:{$settings['column_width'][$layout_name][1]*$multiplier|escape:'htmlall':'UTF-8'}%">
+                    <div class="supercheckout-column-title">
+                        <div class="supercheckout-column-title-number">1</div>
+                        <div class="supercheckout-numbers">{l s='Delivery Address' mod='supercheckout'}</div>
+                    </div>
                     <div  class="supercheckout-blocks" data-column="{$settings['design']['login'][$layout_name]['column']|intval}" data-row="{$settings['design']['login'][$layout_name]['row']|intval}" data-column-inside="{$settings['design']['login'][$layout_name]['column-inside']|intval}"  >
 
                         <div id="checkoutLogin">
@@ -126,10 +130,6 @@
                             {if $logged}
 
                             {else}
-                                <div class="supercheckout-extra-wrap">
-                                    {l s='Email' mod='supercheckout'}<span class="supercheckout-required">*</span><br />
-                                    <input type="text" id="email" name="supercheckout_email" value="" class="supercheckout-large-field" />
-                                </div>
                                 <div id="supercheckout-option" style="display:block">
                                     <div class="supercheckout-extra-wrap">
                                         {if $settings['checkout_option'] eq 0}
@@ -143,18 +143,21 @@
 
                                     <div class="supercheckout-extra-wrap">
                                         {if $settings['checkout_option'] eq 2 || ($settings['enable_guest_checkout'] eq 0 && $settings['checkout_option'] eq 1)}
-                                            <input type="radio" name="checkout_option" value="2" id="register_checkout" checked="checked" />
+                                            <input type="radio" name="checkout_option" value="2" id="register_checkout"  />
                                         {else}
-                                            <input type="radio" name="checkout_option" value="2" id="register_checkout" />
+                                            <input type="radio" name="checkout_option" value="2" id="register_checkout" checked="checked" />
                                         {/if}
                                         <label for="register_checkout">{l s='Create an account for later use' mod='supercheckout'}</label>
                                         <br />
                                     </div>
                                 </div>
+                                <div class="supercheckout-extra-wrap">
+                                    <input type="text" id="email" name="supercheckout_email" value="" placeholder="Email" class="supercheckout-large-field" />
+                                </div>
+
                                 <div id="supercheckout-login-box" style="display:{if $settings['checkout_option'] eq 0}block{else}none{/if};">
                                     <div id="supercheckout-login-password-box" class="supercheckout-extra-wrap">
-                                        {l s='Password' mod='supercheckout'}<span class="supercheckout-required">*</span><br />
-                                        <input type="password" id="password" name="supercheckout_password" onkeydown="checkAction(event)" value="" class="supercheckout-large-field" />
+                                        <input type="password" id="password" name="supercheckout_password" onkeydown="checkAction(event)" value="" placeholder="{l s='Password' mod='supercheckout'}" class="supercheckout-large-field" />
                                     </div>
                                     <div id="supercheckout-login-action" class="supercheckout-extra-wrap">
                                         <div id="forgotpasswordlink"><a href="{$forgotten_link|escape:'htmlall':'UTF-8'}">{l s='Forgot Password' mod='supercheckout'}</a></div>
@@ -164,15 +167,13 @@
                                     </div>
                                 </div>
                                 <div id="supercheckout-new-customer-form" style="display:{if $settings['checkout_option'] neq 0}block{else}none{/if};">
+
+
+                                    <div class="supercheckout-large-field">
+                                        <input type="password" id="password" name="customer_personal[password]" placeholder="{l s='Password' mod='supercheckout'}" value="" class="supercheckout-large-field" />
+                                    </div>
+
                                     <table id="customer_person_information_table" class="supercheckout-form" style="margin-bottom:0 !important;">
-                                        <tr id="new_customer_password" class="sort_data"  data-percentage="0" style="display:{if $settings['checkout_option'] eq 2}block{else}none{/if};" >
-                                            <td>
-                                                <div class="inline-fields" style="margin-right: 18px;">{l s='Password' mod='supercheckout'}:<span style="display:inline;" class="supercheckout-required">*</span></div>
-                                                <div class="supercheckout-large-field">
-                                                    <input type="password" id="password" name="customer_personal[password]" value="" class="supercheckout-large-field" />
-                                                </div>
-                                            </td>
-                                        </tr>
                                         {foreach from=$settings['customer_personal'] key='cus_per_info' item='cus_info_field'}
                                             {if $settings['customer_personal'][$cus_per_info][$user_type]['display'] eq 1}
                                                 <tr class="sort_data"  data-percentage="{$settings['customer_personal'][$cus_per_info]['sort_order']|intval}" >
@@ -280,10 +281,7 @@
                                 {/if}
                                 <div class="supercheckout-checkout-content"></div>
 
-                                <div class="supercheckout-column-title">
-                                    <div class="supercheckout-column-title-number">1</div>
-                                    <div class="supercheckout-numbers">{l s='Delivery Address' mod='supercheckout'}</div>
-                                </div>
+
                                 {if $addresses}
                                     <div class="supercheckout-extra-wrap">
                                         <input type="radio" name="shipping_address_value" value="0" id="shipping-address-existing" checked="checked" />
@@ -338,12 +336,7 @@
                                                 </select>
 
                                             </div>
-                                            <div class="input-box input-postcode">
-                                                <script>var show_shipping_postcode = {$settings['shipping_address']['postcode'][$user_type]['display']|escape:'htmlall':'UTF-8'};</script>
 
-                                                <input placeholder="{l s={$settings['shipping_address']['postcode']['title']|escape:'htmlall':'UTF-8'} mod='supercheckout'}" maxlength="10" required id="shipping:postcode" type="text" name="shipping_address[postcode]" value="" class="supercheckout-large-field" />
-
-                                            </div>
                                         </li>
                                         <select style="display:none" name="shipping_address[id_country]" class="supercheckout-large-field"><option value="36" selected="selected">Romania</option></select>
                                         <li class="clearfix">
