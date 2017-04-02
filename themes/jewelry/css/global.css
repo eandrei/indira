@@ -6273,7 +6273,7 @@ table.table_block td {
 
 .price {
   font-size: 13px;
-  color: #777;
+  color: #000;
   white-space: nowrap; }
 
 .price.product-price {
@@ -9071,7 +9071,8 @@ body.order #columns {
 }
 
 .ajax_cart_shipping_cost,
-.cart-totals__shipping  .cart-totals__row__amount {
+.cart-totals__shipping  .cart-totals__row__amount,
+.free_shipping {
     color: #093;
     font-weight: bold;
     font-size: 15px;

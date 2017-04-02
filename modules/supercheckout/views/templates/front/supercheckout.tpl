@@ -1181,7 +1181,7 @@
                             {if $total_shipping_tax_exc <= 0 && !isset($virtualCart)}
                                 <tr id="cart_total_delivery" style="{if !isset($carrier->id) || is_null($carrier->id)}display:none;{/if}">
                                     <td class="title"><b>{l s='Shipping' mod='supercheckout'}</b></td>
-                                    <td class="value"><span id="total_shipping" class="price">{l s='Free Shipping' mod='supercheckout'}</span> </td>
+                                    <td class="value"><span id="total_shipping" class="price free_shipping">{l s='Free Shipping' mod='supercheckout'}</span> </td>
                                 </tr>
                             {else}
                                 {if $use_taxes && $total_shipping_tax_exc != $total_shipping}
