@@ -160,7 +160,7 @@
                                         <div id="forgotpasswordlink"><a href="{$forgotten_link|escape:'htmlall':'UTF-8'}">{l s='Forgot Password' mod='supercheckout'}</a></div>
                                         <br>
                                         <input type="hidden" name="SubmitLogin" value="SubmitLogin" />
-                                        <input type="button" value="{l s='Login' mod='supercheckout'}" id="button-login" class="orangebuttonsmall" /><img src="{$module_image_path|escape:'htmlall':'UTF-8'}loading12.gif" style="display:none;"/><br />
+                                        <input type="button" value="{l s='Login' mod='supercheckout'}" id="button-login" class="orangebutton" /><img src="{$module_image_path|escape:'htmlall':'UTF-8'}loading12.gif" style="display:none;"/><br />
                                     </div>
                                 </div>
                                 <div id="supercheckout-new-customer-form" style="display:{if $settings['checkout_option'] neq 0}block{else}none{/if};">
