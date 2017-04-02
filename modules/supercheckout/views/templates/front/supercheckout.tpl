@@ -618,8 +618,7 @@
                         </div>
 
                         <div style="{if $settings['payment_method']['enable'] eq 0}display:none;{/if}" class="supercheckout-blocks" data-column="{$settings['design']['payment_method'][$layout_name]['column']|intval}" data-row="{$settings['design']['payment_method'][$layout_name]['row']|intval}" data-column-inside="{$settings['design']['payment_method'][$layout_name]['column-inside']|intval}">
-
-
+                          <div class="supercheckout-numbers">Metoda De Plata</div>
 
                             <div id="payment-method">
                                 {if isset($payment_methods['not_required'])}
@@ -632,6 +631,7 @@
                                             <div class="permanent-warning">{$payment_methods['warning']|escape:'htmlall':'UTF-8'}</div>
                                         {/if}
                                     </div>
+
                                     {if isset($payment_methods['methods']) && count($payment_methods['methods']) gt 0}
                                         <table class="radio">
                                             {foreach from=$payment_methods['methods'] item='payment_method'}
