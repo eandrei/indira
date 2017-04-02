@@ -1340,8 +1340,7 @@ function updateCartSummary(json){
             break;
     }
 
-    $('.cart_discount').each(function(){$(this).remove();});
-    $('.cart_total_voucher').remove();
+
     
     if (discount_count){
 

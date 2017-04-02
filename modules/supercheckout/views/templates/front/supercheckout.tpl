@@ -1204,7 +1204,6 @@
                                 {/if}
                             {/if}
                         {/if}
-
                         {if $use_taxes}
                             <tr>
                                 <td class="title"><b>{l s='Total Tax' mod='supercheckout'}</b></td>
@@ -1226,7 +1225,7 @@
                                     </b>
                                 </td>
                                 <td class="value">
-                                    <span class="price"  id="total_discount">
+                                    <span class="price price-percent-reduction small"  id="total_discount">
                                         {if $use_taxes && $priceDisplay == 0}
                             {assign var='total_discounts_negative' value=$total_discounts * -1}
                         {else}
@@ -1236,14 +1235,7 @@
                                     </span>
                                 </td>                                
                             </tr>
-                            {if sizeof($discounts)}
-                            {foreach $discounts as $discount}
-                                <tr id="cart_discount_{$discount.id_discount|escape:'htmlall':'UTF-8'}" class="cart_discount" style="display:{if $logged}{if $settings['order_total_option']['voucher']['logged']['display'] eq 1}{else}none{/if}{else}{if $settings['order_total_option']['voucher']['guest']['display'] eq 1}{else}none{/if}{/if};">
-                                    <td class="title"><b>{$discount.name|escape:'htmlall':'UTF-8'}<a href="javascript:void(0)" onclick="removeDiscount('{$discount.id_discount|intval}')"><div title="Redeem" class="removeProduct"></div></a></td></b></td>
-                                    <td class="value"><span class="price">{if !$priceDisplay}{displayPrice price=$discount.value_real*-1}{else}{displayPrice price=$discount.value_tax_exc*-1}{/if}</span> </td>
-                                </tr>
-                            {/foreach}
-                        {/if}
+
                             <!-- Order total end -->
                             {if $voucherAllowed}
 

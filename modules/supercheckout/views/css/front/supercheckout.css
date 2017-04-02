@@ -805,7 +805,7 @@
 #supercheckout-fieldset table.supercheckout-totals td.title {
     width: 60%;
     text-align: right;
-    color:#696969 !important;
+    color:#000;
 }
 
 #supercheckout-fieldset table.supercheckout-totals td.value {
@@ -1258,7 +1258,6 @@
 #supercheckout-fieldset .price {
     font-size:13px !important;
     font-weight: bold !important;
-    color:#000000 !important;
     float:right;
 
 }

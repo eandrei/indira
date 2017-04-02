@@ -433,7 +433,7 @@
                         </a>
                     {/if}
                 </div>
-                <div class="cart-totals__row__amount">{if !$priceDisplay}{displayPrice price=$discount.value_real*-1}{else}{displayPrice price=$discount.value_tax_exc*-1}{/if}</div>
+                <div class="cart-totals__row__amount price-percent-reduction">{if !$priceDisplay}{displayPrice price=$discount.value_real*-1}{else}{displayPrice price=$discount.value_tax_exc*-1}{/if}</div>
 
             </div>
         {/foreach}
