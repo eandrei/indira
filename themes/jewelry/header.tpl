@@ -130,7 +130,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 			<div id="slider_row" class="row">
 						<div id="top_column" class="center_column col-xs-12 col-sm-12">{hook h="displayTopColumn"}</div>
 					</div>
-                <div class="alert-promo"><a style="color:#FFF" href="/minimal">Astazi te pacalim cu preturile! Aplica codul "1aprilie" in cos pentru a afla pretul real!</a></div>
+               <!-- <div class="alert-promo"><a style="color:#FFF" href="/minimal">Astazi te pacalim cu preturile! Aplica codul "1aprilie" in cos pentru a afla pretul real!</a></div> -->
 				<div id="columns" class="container">
 					
 					<div class="row">
