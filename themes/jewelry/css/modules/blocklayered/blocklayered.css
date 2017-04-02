@@ -143,9 +143,13 @@
 .layered_list:hover {
   font-weight: bold; }
 
+
 .layered_ajax_loader p {
-  margin: 20px 0;
-  text-align: center; }
+  width:100%;
+    float:left;
+  text-align: center;
+
+}
 
 .hide-action {
   text-align: center;
@@ -160,12 +164,41 @@
   max-height: 200px;
   overflow-x: auto; }
 
+
+#layered_block_left .title_block {
+    display: none;
+}
+
+.layered_price .layered_subtitle_heading {
+    display: none;
+}
+
+
+.layered_filter, .layered_price {
+    float:left;
+}
+#enabled_filters {
+    display: none;
+}
+#layered_price_range {
+    font-size: 12px;
+}
+#layered_ajax_loader {float:left;width: 100%;    text-align: center;}
+#layered_block_left.block {
+    margin: 0px;
+}
+
+#layered_block_left {
+
+}
+
 .layered_filter {
-  border-bottom: 1px solid #eee; }
+    margin-right: 2px;
+ }
   .layered_filter label {
     font-weight: normal; }
   .layered_filter layered_subtitle {
-    font-size: 1.2 em; }
+    font-size: 1.2em; }
 
 #layered_block_left ul li {
   min-width: 50%;

@@ -9138,3 +9138,8 @@ body.order #columns {
 }
 
 #header .nav .container { padding: 0px;}
+
+.content_sortPagiBar {
+    float:left;
+    width:100%;
+}
