@@ -122,7 +122,7 @@
 
 .layered_slider_container {
   margin: 6px 0 6px 10px;
-  width: 91%; }
+  width: 89%; }
 
 .layered_slider {
   margin-top: 5px; }
@@ -176,6 +176,7 @@
 
 .layered_filter, .layered_price {
     float:left;
+    margin-right: 5px;
 }
 #enabled_filters {
     display: none;
