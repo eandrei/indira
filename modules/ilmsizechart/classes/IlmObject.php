@@ -74,6 +74,7 @@ class IlmObject extends ObjectModel
     {
         $sql = 'SELECT * FROM `' . _DB_PREFIX_ . 'ilmsizechart`';
         $charts = Db::getInstance()->ExecuteS($sql);
+        $id_value = null;
         foreach ($charts as $chart)
         {
             $catgs = unserialize($chart['category']);
