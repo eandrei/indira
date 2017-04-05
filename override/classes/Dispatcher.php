@@ -310,7 +310,15 @@ class Dispatcher extends DispatcherCore
 							break;
 						}
 			}
+
+
+            //ANDREiHACK
+        if ($_SERVER['QUERY_STRING']) {
+            $this->request_uri = str_replace('?' . $_SERVER['QUERY_STRING'], '', $this->request_uri);
+        }
+
 		$req_uri = explode('/', $this->request_uri);
+
             $afterSlash = null;
             if (isset($req_uri[1])) {
                 $afterSlash = $req_uri[1];
