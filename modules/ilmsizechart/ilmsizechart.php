@@ -247,20 +247,22 @@ class ILMSizeChart extends Module
             }
             $table .= '</tr>';
         }
-        for ($i = 1; $i <= $value['row']; $i++)
-        {
-            $table .= '<tr>';
-            for ($j = 0; $j <= $value['col']; $j++)
+        if ($value) {
+            for ($i = 1; $i <= $value['row']; $i++)
             {
-                if ($j == 0 && $value['chart_type'] != 1 && $value['chart_type'] != 3)
+                $table .= '<tr>';
+                for ($j = 0; $j <= $value['col']; $j++)
                 {
-                    foreach ($labels as $label)
-                        $table .= (($label['id_label'] == $sizes[$i][$j]) ? '<td class="ilmrow"><b>' . $label['title'] . '</b></td>' : '');
+                    if ($j == 0 && $value['chart_type'] != 1 && $value['chart_type'] != 3)
+                    {
+                        foreach ($labels as $label)
+                            $table .= (($label['id_label'] == $sizes[$i][$j]) ? '<td class="ilmrow"><b>' . $label['title'] . '</b></td>' : '');
+                    }
+                    elseif ($j > 0)
+                        $table .= '<td>' . $sizes[$i][$j] . '</td>';
                 }
-                elseif ($j > 0)
-                    $table .= '<td>' . $sizes[$i][$j] . '</td>';
+                $table .= '</tr>';
             }
-            $table .= '</tr>';
         }
         $table .= '</table>';
         $this->context->smarty->assign(
