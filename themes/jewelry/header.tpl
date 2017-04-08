@@ -131,7 +131,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 						<div id="top_column" class="center_column col-xs-12 col-sm-12">{hook h="displayTopColumn"}</div>
 					</div>
                 <div class="alert-promo"><a style="color:#FFF" href="/reduceri">
-                        <img src="/themes/jewelry/img/banner_paste.jpg" title="Reduceri paste" alt="Reducer de paste" />
+                      Reduceri de pana la 50%
                     </a></div>
 				<div id="columns" class="container">
 					
