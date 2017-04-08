@@ -130,11 +130,15 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 			<div id="slider_row" class="row">
 						<div id="top_column" class="center_column col-xs-12 col-sm-12">{hook h="displayTopColumn"}</div>
 					</div>
-                <div class="alert-promo"><a style="color:#FFF" href="/reduceri">
-                      Reduceri de pana la 50%
-                    </a></div>
+                <div class="alert-promo">
+                        <div class="hb promo-image">
+                            <a style="color:#FFF" href="/reduceri">
+                        <img src="/themes/jewelry/img/banner_paste.jpg" title="Reduceri paste" alt="Reducer de paste" />
+                    </a>
+                </div>
+                </div>
 				<div id="columns" class="container">
-					
+
 					<div class="row">
 						{if isset($left_column_size) && !empty($left_column_size)}
 						<div id="left_column" class="column col-xs-12 col-sm-{$left_column_size|intval}">{$HOOK_LEFT_COLUMN}</div>

@@ -9060,12 +9060,25 @@ body#order header .row #header_logo,
     background-color: #98d9e3;
     border-color: transparent;
     color: #fff;
-    padding: 10px;
     margin: auto;
     text-align: center;
     font-size: 18px;
 }
 
+.promo-image {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    float: none;
+}
+
+@media (max-width: 480px) {
+    .promo-image {
+        width: 100%;
+    }
+
+}
 body.order #columns {
     padding-top:20px;
 }
