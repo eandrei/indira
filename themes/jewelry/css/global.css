@@ -7062,7 +7062,7 @@ div.star a:hover {
 .pack_content {
   margin: 10px 0 10px 0; }
 .sf-menu > li:last-child > a {
-  
+
 }
 .confirmation {
   margin: 0 0 10px;
@@ -9154,4 +9154,8 @@ body.order #columns {
 .content_sortPagiBar {
     float:left;
     width:100%;
+}
+
+#new-products .nbrItemPage {
+    display: none;
 }
