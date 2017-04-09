@@ -77,6 +77,7 @@ class PDFCore
         $this->pdf_renderer->setFontForLang(Context::getContext()->language->iso_code);
         foreach ($this->objects as $object) {
 
+
             $this->pdf_renderer->startPageGroup();
             $template = $this->getTemplateObject($object);
             if (!$template) {
@@ -90,8 +91,14 @@ class PDFCore
                 }
             }
 
+            $watermark = false;
+            if ($this->template == 'Invoice') {
+                $order = new Order((int)$object->id_order);
+                if ($order->current_state == 6) {
+                    $watermark = True;
+                }
+            }
 
-            $watermark = $template->watermark;
             $template->assignHookData($object);
 
             $this->pdf_renderer->createHeader($template->getHeader());

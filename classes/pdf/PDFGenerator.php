@@ -175,9 +175,7 @@ class PDFGeneratorCore extends TCPDF
     public function Footer()
     {
         $this->writeHTML($this->footer);
-        if ($this->watermark) {
-            $this->Image(_PS_BASE_URL_ . '/pdfback.png', 5, 35, 200, 200, '', '', '', true);
-        }
+
         $this->FontFamily = self::DEFAULT_FONT;
         $this->writeHTML($this->pagination);
     }
@@ -220,10 +218,15 @@ class PDFGeneratorCore extends TCPDF
      */
     public function writePage()
     {
+
+
         $this->SetHeaderMargin(5);
         $this->SetFooterMargin(21);
         $this->setMargins(10, 40, 10);
         $this->AddPage();
+        if ($this->watermark) {
+            $this->Image(_PS_BASE_URL_ . '/pdfback.png', 5, 35, 200, 200, '', '', '', true);
+        }
         $this->writeHTML($this->content, true, false, true, false, '');
     }
 
