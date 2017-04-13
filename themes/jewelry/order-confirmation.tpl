@@ -48,6 +48,7 @@
         {literal}
         fbq('track', 'Purchase', {
             value: fbTotal,
+            content_type: 'product',
             currency: 'RON'
         });
         {/literal}

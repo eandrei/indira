@@ -666,14 +666,22 @@
     <script>
 
         var fbPrice = {$productPrice};
+        var productId = {$product->id};
         {literal}
+
         fbq('track', 'ViewContent', {
+            content_ids: [productId],
+            content_type: 'product',
             value: fbPrice,
             currency: 'RON'
         });
+
+
         $(document).ready( function() {
             jQuery('#add_to_cart').on('click', function(){
                 fbq('track', 'AddToCart', {
+                    content_ids: [productId],
+                    content_type: 'product',
                     value: fbPrice,
                     currency: 'RON'
                 });
