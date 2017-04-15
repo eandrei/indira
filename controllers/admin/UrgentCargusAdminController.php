@@ -85,7 +85,7 @@ class UrgentCargusAdminController extends AdminController {
                     }
 
                     // obtin produsele din comanda
-                    $contents[] = $p['product_quantity'].' buc. '.$p['product_name'];
+                    $contents[] = $p['product_quantity'].' buc. '. str_replace('argint', '', $p['product_name']);
                 }
                 $volume = ceil($volume);
 
@@ -175,11 +175,13 @@ class UrgentCargusAdminController extends AdminController {
                     die('Nu am putut obtine indicativul judetului destinatarului');
                 }
 
+                $awbName = trim(implode(' ', array($address->lastname, $address->firstname)));
+
                 // adaug awb-ul in baza de date
                 $sql = "INSERT INTO awb_urgent_cargus SET
                                 order_id = '".$id."',
                                 pickup_id = '".addslashes(Configuration::get('_URGENT_PUNCT_RIDICARE_', $id_lang = NULL))."',
-                                name = '".addslashes($address->company ? $address->company : trim(implode(' ', array($address->lastname, $address->firstname))))."',
+                                name = '".addslashes($awbName)."',
                                 locality_id = '0',
                                 locality_name = '".addslashes($address->city)."',
                                 county_id = '0',

@@ -78,7 +78,7 @@
 
 {if isset($followup)}
 <p class="bold">{l s='Click the following link to track the delivery of your order'}</p>
-<a href="{$followup|escape:'html':'UTF-8'}">{$followup|escape:'html':'UTF-8'}</a>
+<a target="_blank" href="{$followup|escape:'html':'UTF-8'}">AWB: {$order->shipping_number}</a>
 {/if}
 
 <div class="adresses_bloc">

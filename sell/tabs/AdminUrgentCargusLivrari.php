@@ -76,6 +76,8 @@ class AdminUrgentCargusLivrari extends AdminTab {
                     $errors[] = addslashes($id);
                 } else {
                     $update = Db::getInstance()->execute("UPDATE awb_urgent_cargus SET barcode = '".$barcode."' WHERE id = '".addslashes($id)."'");
+                    $trackingUpdate = Db::getInstance()->execute("UPDATE psjn_order_carrier SET tracking_number = '".$barcode."' WHERE id_order = '".addslashes($row[0]['order_id'])."'");
+
                     if ($update == 1) {
                         $success[] = addslashes($id);
                     } else {
