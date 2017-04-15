@@ -9,8 +9,8 @@
     <p>Echipa noastra de operatori asteapta sa iti preia apelul in fiecare zi intre 8:00 - 23:00</p>
 </section>
 <section class="blockcategories_footer footer-block col-xs-12 col-sm-3">
-    <h4><i class="fa fa-repeat"></i> 30 de zile drept de retur</h4>
-    <p>Este ok sa te razgandesti! Poti returna produsele indiferent de motiv.</p>
+    <h4><i class="fa fa-repeat"></i> 30 de zile drept de retur gratuit!</h4>
+    <p>Este ok sa te razgandesti! Poti returna produsele indiferent de motiv. Costul returului il platim noi</p>
 </section>
 <section class="blockcategories_footer footer-block col-xs-12 col-sm-3">
     <h4><i class="fa fa-lock"></i> Cumperi in siguranta</h4>
