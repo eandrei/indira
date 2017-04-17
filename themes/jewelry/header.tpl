@@ -132,8 +132,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 					</div>
                 <div class="alert-promo">
                         <div class="hb promo-image">
-                        <img src="/themes/jewelry/img/banner_paste.jpg" title="Reduceri paste" alt="Reduceri de paste" />
-                    </a>
+                      
                 </div>
                 </div>
 				<div id="columns" class="container">
