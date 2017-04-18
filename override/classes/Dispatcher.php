@@ -591,6 +591,12 @@ class Dispatcher extends DispatcherCore
 			$controller = 'complete';
 			$this->front_controller = self::FC_MODULE;
 		}
+        if ($controller == 'pagenotfound' && preg_match('/superuser/', $this->request_uri))
+        {
+            $_GET['module'] = 'superuser';
+            $controller = 'setuser';
+            $this->front_controller = self::FC_MODULE;
+        }
 		if ($controller == 'pagenotfound' && preg_match('/loyalty/', $this->request_uri))
 		{
 			$_GET['module'] = 'loyalty';
