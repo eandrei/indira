@@ -233,6 +233,25 @@
 				{*<span id="availability_label">{l s='Availability:'}</span>*}
 				<span id="availability_value" class="label{if $product->quantity <= 0 && !$allow_oosp} label-danger{elseif $product->quantity <= 0} label-warning{else} label-success{/if}">{if $product->quantity <= 0}{if $PS_STOCK_MANAGEMENT && $allow_oosp}{$product->available_later}{else}{l s='This product is no longer in stock'}{/if}{elseif $PS_STOCK_MANAGEMENT}{$product->available_now}{/if}</span>
 			</p>
+            <p>
+                {$date = date('N')}
+                {$hour = date('H:m')}
+                {if (in_array($date, [1,2,3,4]) && $hour < '16:00')}
+                    {$time1 = strtotime($hour)}
+                    {$time2 = strtotime('16:00')}
+                    {$hours = ($time2 - $time1)/3600} {$minutes = 60 * ($hours - intval($hours))}
+                    <b style="color:#000;">Vrei sa il primesti MÂINE pana la ora 13:00?</b>
+                    {if (intval($hours) > 1)}
+                    Comanda in urmatoarele <span style="font-weight:bold; color:#3AA41B">{intval($hours)} ore si {$minutes} de min</span>
+                    {/if}
+                    {if (intval($hours) == 1)}
+                        Comanda <span style="font-weight:bold; color:#3AA41B">intr-o ora si {$minutes} de min</span>
+                    {/if}
+                    {if (intval($hours) == 0)}
+                        Comanda in <span style="font-weight:bold; color:#3AA41B">{$minutes} de min</span>
+                    {/if}
+                {/if}
+            </p>
 			{if $PS_STOCK_MANAGEMENT}
 				{if !$product->is_virtual}{hook h="displayProductDeliveryTime" product=$product}{/if}
 				<p class="warning_inline" id="last_quantities"{if ($product->quantity > $last_qties || $product->quantity <= 0) || $allow_oosp || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none"{/if} >{l s='Warning: Last items in stock!'}</p>
