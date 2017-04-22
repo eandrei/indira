@@ -1,8 +1,0 @@
-Salut {firstname} {lastname},
-
-Comanda {id_order} din {order_date} a fost expediata cu Urgent Cargus.
-Numarul de AWB este: {awb}
-
-Puteti verifica statusul expeditiei pe site-ul nostru, in sectiunea `Urmareste comanda`, pe site-ul Urgent Cargus sau folosind aplicatiile mobile Urgent Cargus pentru Android si iOS.
-
-Multumim!

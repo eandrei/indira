@@ -1,0 +1,3 @@
+The following cron jobs have been running for too long and have been restarted:
+{jobs}
+This might indicate that there are issues that need to be resolved, especially if this happens frequently!

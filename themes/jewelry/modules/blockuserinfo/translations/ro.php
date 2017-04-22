@@ -18,6 +18,6 @@ $_MODULE['<{blockuserinfo}jewelry>blockuserinfo_d4151a9a3959bdd43690735737034f27
 $_MODULE['<{blockuserinfo}jewelry>blockuserinfo_b6d4223e60986fa4c9af77ee5f7149c5'] = 'Contul Meu';
 $_MODULE['<{blockuserinfo}jewelry>nav_2cbfb6731610056e1d0aaacde07096c1'] = 'Vizualizare cont de client';
 $_MODULE['<{blockuserinfo}jewelry>nav_4b877ba8588b19f1b278510bf2b57ebb'] = 'Deconectează-mă';
-$_MODULE['<{blockuserinfo}jewelry>nav_c87aacf5673fada1108c9f809d354311'] = 'Deconectare';
+$_MODULE['<{blockuserinfo}jewelry>nav_c87aacf5673fada1108c9f809d354311'] = ' ';
 $_MODULE['<{blockuserinfo}jewelry>nav_d4151a9a3959bdd43690735737034f27'] = 'Conectați-vă la contul de client';
 $_MODULE['<{blockuserinfo}jewelry>nav_b6d4223e60986fa4c9af77ee5f7149c5'] = 'Autentificare';

@@ -1,5 +1,5 @@
 /**
- * 2007-2016 PrestaShop
+ * 2007-2017 PrestaShop
  *
  * NOTICE OF LICENSE
  *
@@ -18,7 +18,7 @@
  * needs please refer to http://www.prestashop.com for more information.
  *
  * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright 2007-2016 PrestaShop SA
+ * @copyright 2007-2017 PrestaShop SA
  * @license   http://opensource.org/licenses/afl-3.0.php Academic Free License (AFL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  */
@@ -531,6 +531,34 @@ $(document).ready(
                     }
                 });
             });
+
+            //automation enable and disable function
+            $(".clssubmitautomation").click(function() {
+                var automation_radio = $('input:radio[name=automation_radio]:checked').val();
+                var automsg = $('#automsg').val();
+
+                if (automation_radio == 0) {
+                    var resp = confirm(automsg);
+                    if (resp === false) {
+                        return;
+                    }
+                }
+                $.ajax({
+                    type: "POST",
+                    async: false,
+                    url: base_url + "modules/sendinblue/ajaxAutomation.php",
+                    data: {"automation_radio": automation_radio, "token": token, "id_shop_group":id_shop_group, "id_shop":id_shop},
+                    beforeSend: function() {
+                        $('#ajax-busy').show();
+                    },
+                    success: function(msg) {
+
+                        $('#ajax-busy').hide();
+
+                    }
+                });
+            });
+            //end finction
 
             $(".smtptestclick").click(function() {
                 var smtptest = jQuery(this).val();

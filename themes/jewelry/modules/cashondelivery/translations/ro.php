@@ -2,7 +2,7 @@
 
 global $_MODULE;
 $_MODULE = array();
-$_MODULE['<{cashondelivery}jewelry>cashondelivery_1f9497d3e8bac9b50151416f04119cec'] = 'Numerar - la livrarea coletului';
+$_MODULE['<{cashondelivery}jewelry>cashondelivery_1f9497d3e8bac9b50151416f04119cec'] = 'Ramburs la curier';
 $_MODULE['<{cashondelivery}jewelry>cashondelivery_7a3ef27eb0b1895ebf263ad7dd949fb6'] = 'Acceptare plata la livrare';
 $_MODULE['<{cashondelivery}jewelry>cashondelivery_b7ada96a0da7ee7fb5371cca0b036d5c'] = 'Plata la livrare';
 $_MODULE['<{cashondelivery}jewelry>validation_644818852b4dd8cf9da73543e30f045a'] = 'Du-te inapoi la \"Verifica comanda\"';

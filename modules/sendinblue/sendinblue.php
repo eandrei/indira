@@ -74,7 +74,7 @@ class Sendinblue extends Module
         $this->name = 'sendinblue';
         $this->tab = 'emailing';
         $this->author = 'SendinBlue';
-        $this->version = '2.6.1';
+        $this->version = '2.6.3';
         $this->module_key = 'fa4c321492032ab1bdeea359aa1e4e3d';
         $this->sib_api_url = 'https://api.sendinblue.com/v2.0';
         
@@ -432,7 +432,7 @@ class Sendinblue extends Module
      */
     public function install()
     {
-        if (parent::install() == false || $this->registerHook('OrderConfirmation') === false || $this->registerHook('leftColumn') === false || $this->registerHook('rightColumn') === false || $this->registerHook('top') === false || $this->registerHook('footer') === false || $this->registerHook('createAccount') === false || $this->registerHook('createAccountForm') === false || $this->registerHook('updateOrderStatus') === false) {
+        if (parent::install() == false || $this->registerHook('OrderConfirmation') === false || $this->registerHook('header') === false || $this->registerHook('rightColumn') === false || $this->registerHook('top') === false || $this->registerHook('footer') === false || $this->registerHook('createAccount') === false || $this->registerHook('createAccountForm') === false || $this->registerHook('updateOrderStatus') === false) {
             return false;
         }
         
@@ -1765,6 +1765,11 @@ WHERE email = "' . pSQL($this->email) . '"');
         // send test sms to check if SMS is working or not.
         if (Tools::isSubmit('notify_sms_mail')) {
             $this->sendSmsNotify();
+        }
+
+        // automation activation.
+        if (Tools::isSubmit('submitautomation')) {
+            $this->automationMsg();
         }
         
         // update SMTP configuration in PrestaShop
@@ -3153,6 +3158,7 @@ WHERE email = "' . pSQL($this->email) . '"');
             $this->_html.= $this->syncronizeBlockCode();
             $this->_html.= $this->mailSendBySmtp();
             $this->_html.= $this->codeDeTracking();
+            $this->_html.= $this->automationTracking();
             $this->_html.= $this->mailSendBySms();
             $this->_html.= $this->displayNewsletterEmail();
         }
@@ -3364,7 +3370,7 @@ WHERE email = "' . pSQL($this->email) . '"');
      */
     public function uninstall()
     {
-        $this->unregisterHook('leftColumn');
+        $this->unregisterHook('header');
         $this->unregisterHook('rightColumn');
         $this->unregisterHook('top');
         $this->unregisterHook('footer');
@@ -3394,6 +3400,8 @@ WHERE email = "' . pSQL($this->email) . '"');
         Configuration::deleteByName('Sendin_optin_list_id');
         Configuration::deleteByName('Sendin_Final_Template_Id');
         Configuration::deleteByName('Sendin_Dubleoptin_Template_Id');
+        Configuration::deleteByName('Sendin_Automation_Status');
+        Configuration::deleteByName('Sendin_Automation_Key');
         
         if (Configuration::get('Sendin_Api_Smtp_Status')) {
             Configuration::updateValue('Sendin_Api_Smtp_Status', 0);
@@ -3430,10 +3438,11 @@ WHERE email = "' . pSQL($this->email) . '"');
         
         return parent::uninstall();
     }
-    public function hookupdateOrderStatus()
+    public function hookupdateOrderStatus($params)
     {
-        $id_order_state = Tools::getValue('id_order_state');
-        $id_order = Tools::getValue('id_order');
+        $id_order = !empty($params['id_order']) ? $params['id_order'] : Tools::getValue('id_order');
+        $id_order_state = !empty($params['newOrderStatus']->id) ? $params['newOrderStatus']->id : Tools::getValue('id_order_state');
+
         if ($id_order_state == 4 && Configuration::get('Sendin_Api_Sms_shipment_Status', '', $this->id_shop_group, $this->id_shop) == 1 && Configuration::get('Sendin_Sender_Shipment_Message', '', $this->id_shop_group, $this->id_shop) != '' && is_numeric($id_order) == true) {
             $order = new Order($id_order);
             $address = new Address((int)$order->id_address_delivery);
@@ -4444,6 +4453,66 @@ WHERE email = "' . pSQL($this->email) . '"');
 
         if (!empty($api_key)) {
             return new Psmailin($this->sib_api_url, $api_key);
+        }
+    }
+
+    /**
+    * Check configration and add automation script in Header in PS site.
+    */
+    public function hookDisplayHeader()
+    {
+        if (!$this->checkModuleStatus()) {
+            return false;
+        }
+
+        $automation_status = Configuration::get('Sendin_Automation_Status', '', $this->id_shop_group, $this->id_shop);
+        if ($automation_status == 1) {
+            $ma_key = Configuration::get('Sendin_Automation_Key', '', $this->id_shop_group, $this->id_shop);
+            if (!empty($ma_key)) {
+                return '<script type="text/javascript"> 
+                window.sendinblue=window.sendinblue||[];
+                window.sendinblue.methods=["identify","init","group","track","page","trackLink"];
+                window.sendinblue.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);
+                    window.sendinblue.push(t);return window.sendinblue}};
+                    for(var i=0;i<window.sendinblue.methods.length;i++){var key=window.sendinblue.methods[i];
+                        window.sendinblue[key]=window.sendinblue.factory(key)}window.sendinblue.load=function(){if(document.getElementById("sendinblue-js"))return;
+                        var e=document.createElement("script");e.type="text/javascript";e.id="sendinblue-js";
+                        e.async=true;e.src=("https:"===document.location.protocol?"https://":"http://")+"s.sib.im/automation.js";
+                        var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)};
+                        window.sendinblue.SNIPPET_VERSION="1.0";window.sendinblue.load();
+                window.sendinblue.client_key="'.$ma_key.'";window.sendinblue.page();
+                </script>';
+            }
+        }
+    }
+    /**
+    * Automation bock display .
+    */
+    public function automationTracking()
+    {
+        $automation_status = Configuration::get('Sendin_Automation_Status', '', $this->id_shop_group, $this->id_shop);
+        Tools::safeOutput($_SERVER['REQUEST_URI']);
+        $this->context->smarty->assign('auto_status', $automation_status);
+        $this->context->smarty->assign('cl_version', $this->cl_version);
+
+        return $this->display(__FILE__, 'views/templates/admin/automation.tpl');
+    }
+    /**
+    * Displays Automation status.
+    */
+    public function automationMsg()
+    {
+        $this->registerHook('header');
+        $automation_status = Configuration::get('Sendin_Automation_Status', '', $this->id_shop_group, $this->id_shop);
+
+        $automation_Key = Configuration::get('Sendin_Automation_Key', '', $this->id_shop_group, $this->id_shop);
+
+        if ($automation_status == 1 && !empty($automation_Key)) {
+            return $this->redirectPage($this->l('Your Marketing Automation script is installed correctly.'), 'SUCCESS');
+        } else if ($automation_status == 2 && empty($automation_Key)) {
+            return $this->redirectPage($this->l("To activate Marketing Automation (beta), please go to your SendinBlue's account or contact us at contact@sendinblue.com"), 'ERROR');
+        } else if ($automation_status == 0) {
+            return $this->redirectPage($this->l("Your Marketing Automation script has been uninstalled"), 'ERROR');
         }
     }
 }

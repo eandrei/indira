@@ -2,16 +2,14 @@
 
 Salut {firstname} {lastname},
 
-Your order has been shipped 
-
-Your order with the reference {order_name} has been shipped.
+Comanda ta a fost expediata. 
+Comanda ta cu numarul de referinta {order_name} a fost expediata
 
 Va multumim ca ati cumparat de la {shop_name}! 		 
 
-You can review your order and download your invoice from the
-"Order history" [{history_url}] section of your
-customer account by clicking "My account"
-[{my_account_url}] on our shop. 
+Poti sa revizuiesti comanda si sa descarci factura de la 
+"Istoric Comenzi" [{history_url}] sectiune a contului tau de client din cadrul meniului Contul meu
+[{my_account_url}] odin magazinul nostru.
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 
