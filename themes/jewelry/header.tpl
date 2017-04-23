@@ -131,9 +131,12 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 						<div id="top_column" class="center_column col-xs-12 col-sm-12">{hook h="displayTopColumn"}</div>
 					</div>
                 <div class="alert-promo">
-                        <div class="hb promo-image">
-                      
-                </div>
+                        <div class="hb promo-image" style="margin-top: 0px; ">
+                            <a href="/reduceri">
+                                 <img src="/themes/jewelry/img/bogo.jpg" title="Reduceri" alt="Al doilea produs gratis" />
+                            </a>
+                          </div>
+
                 </div>
 				<div id="columns" class="container">
 
