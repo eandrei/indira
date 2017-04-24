@@ -7062,7 +7062,8 @@ div.star a:hover {
 .pack_content {
   margin: 10px 0 10px 0; }
 .sf-menu > li:last-child > a {
-
+    color: red !important;
+    font-weight: bold;
 }
 .confirmation {
   margin: 0 0 10px;
@@ -9056,7 +9057,7 @@ body#order header .row #header_logo,
 
 .alert-promo {
     background-size: cover;
-    background-color: #98d9e3;
+    background-color: #119379;
     border-color: transparent;
     color: #fff;
     margin: auto;

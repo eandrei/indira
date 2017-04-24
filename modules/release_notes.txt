@@ -1,0 +1,148 @@
+
+1.4.0
+- New: updated to work with Prestashop 1.7
+- Fix: issue where gift certificate set to work with specific products still work on shipping even though none have been selected
+
+1.3.8
+- Fix: mail issue with 1.6.1.5 and up
+- Fix: updated code so Prestashop Loyalty points take AwoCoupon discount into account
+
+1.3.7
+- New: Automatic discounts
+- New: Fine tuning of multi coupon selection
+- New: Tag a coupon
+- New: Special tag {exclusive} which forces a coupon to be exclusive
+- New: Front end description field for coupons
+- Fix: pagination issue in Prestashop 1.6.1
+
+1.3.6
+- New: Minimum product quantity selection in function type coupon and shipping
+- Fix: in Preatashop 1.6.1, shipping discount not taken into account in Gift certificate - REQUIRES MANUAL UPDATE TO override/classes/Cart.php
+- Fix: rounding issue in discount calculated for each item in cart, although the overall discount was correct
+
+1.3.5
+- New: Display coupons assigned to customer groups in user front end user account
+- Fix: Fatal error in Prestashp 1.6.1.2 when checking out with a coupon code - REQUIRES MANUAL UPDATE TO classes/Cart.php AND classes/order/Order.php OVERRIDES
+
+1.3.4
+- Fix: issue with filtering in Prestashop 1.6.1
+
+1.3.3
+- Fix: updates for Prestashop 1.6.1
+
+1.3.2
+- Fix: error in override/classes/Cart.php that affects adding orders in the backend
+- Fix: language selection issue with Prestashop 1.6
+
+1.3.1
+- New: Add the tag {instock_only} to customer note of a coupon to exclude it from products that are out of stock
+- Fix: problem with 1.4.x where order does not complete due to a fatal error
+
+1.3.0
+- Fixed problem with 1.5.x and gift certificates where if the order total after discounts is 0 and 'Calculate discount before tax (giftcert)' is set to 'no' and order has shipping costs including tax, an error is thrown when validating the order
+- Fixed problem with orders where the stock of a product is discounted twice when using a coupon if 'Calculate discount before tax' is set to 'no'
+- Fixed problem with adding coupon code from order backend
+- Fixed problem where entering orders through backend you could not use an AwoCoupon code
+
+1.2.9
+- Updated logic for tax after discount to work better within Prestashop 1.6 system - REQUIRES MANUAL UPDATE TO classes/Cart.php OVERRIDE
+
+1.2.8
+- Added ability to restrict coupon by Country and/or State
+- Updated shipping coupons to allow selecting assests product, category, manufacturer, vendor, instead of just products
+- Added Exclude specials checkbox to Buy X Get Y coupons
+- Fixed issues with Prestashop 1.6 where filtering and ordering of admin list did not work
+
+1.2.7
+- Added translatable coupon error descriptions for front end
+- Fixed an error where entering multiple gift certificates will keep discounting the shipping without taking into account what a previous gift ertificate has done
+- Fixed an error when calling Cart::getOrderTotal for orders that have been confirmed which does not return AwoCoupon discount if exists, used by some Payment methods - REQUIRES UPDATE TO OVERRIDE
+
+1.2.6
+- Added the ability to resend purchased voucher emails
+- Added the feature to move purchased voucher balance view to the first account that uses the voucher
+- Added the feature that displays customer specific coupon codes within the cart summary under the "Take advantage of our exclusive offers:" section - REQUIRES UPDATE TO OVERRIDE
+
+1.2.5
+- Added ability to see AwoCoupon coupons used in order
+- Updated Email system to use Prestashop Swift
+- Fixed error where checking 'Exclude gift certificates' when creating a coupon with function type 'Gift Certificate' does not work
+- Fixed error for Prestashop 1.5.3 in front end 'my account'
+- Logic update: previously category exclude coupons required all the product categories to be in the exclude list before excluding; this is updated so if any of the product category is in the exclude list, the product is automatically excluded
+
+1.2.4
+- Updated Frontend templates to be overwritable in theme
+- Updated front end icon
+- Updated date to use Prestashop date format
+- Fixed configuration issue where setting 'Enable Store Coupons' to no would default back to yes
+- Fixed issue where using a coupon that set the order total to 0 would automatically sent customer a coupon voucher - REQUIRES UPDATE TO OVERRIDE
+
+
+1.2.3
+- Added support for Prestashop 1.6
+- Updated Buy X Get Y Add Product to Cart Automatically function: if product has an attribute, instead of not adding the product, the default attribute is looked up and used to add the product to the cart
+- In Prestashop 1.5, fixed so that no database error is thrown when using a coupon code on order complete if you have debug mode turned on
+- Updated coupon generation to generate new coupon for gift certificates within a parent coupon
+- Fixed ajax so it works without modifying core files for some types of installations
+- Added the ability to view Vouchers in the front end
+
+1.2.2
+- Added storing of full coupon details in database
+- Updated the logic of Buy X Get Y Amount discounts, which previously only discounted once but now discounts as many times as the customer qualifies for the discount
+- Fixed issue where discount recorded is always 0 if you have the default currency conversion rate set to 0
+- Fixed error where number of uses for parent coupons are set
+- Fixed language display problems when setting up a coupon from the non default store
+
+1.2.1
+- Added the use of PDF's within a gift certificate email
+- Added new menu system
+- Updated to work with Prestashop 1.5.6
+- Fixed issue in multiple language shop where the english version of the product name is always displayed under gift certificates
+- Fixed issue where a coupon with limited use restrictions or gift certificate can be over used if in different shopping carts simultaneously, requires manual update of override/classes/order.php file
+
+1.2.0
+- Updated reports shop filter to work with all relevant reports
+- Fixed problem with duplicating a profile in version 1.1.9
+
+1.1.9
+- Updated to support multiple languages for profile emails
+- Updated logic so Exclude product on specials works on products discounted from the original price as well as products marked on sale
+
+1.1.8
+- Updated depracated code to be fully compatible with Prestashop 1.5
+- Added support for AwoAffiliate Prestashop
+- Fixed error where Purchased gift certificate report was not loading
+
+1.1.7
+- Added 2 options that give you the ability to select how gift certificate and coupons are treated, before or after tax
+- For Prestashop 1.5.x, added multistore ability, where you can create a coupon code for one or more stores
+
+1.1.6
+- Fixed issue where amount discounts are not correctly converted in multiple currency stores
+- Fixed issue with shipping costs and gift certificates for Prestashop version 1.5.0 and up
+
+1.1.5
+- Added the ability to automatically add products to shopping cart for Buy X Get Y coupons
+- Removed restriction where customer is forced to sign in to use number of uses per customer coupons. Instead the order email is used to validate the number of uses.  It is not 100% backwards compatible, but will work for any usage entered after this update.
+
+1.1.4
+- Fixed error with where a mysql error is displayed when generating a gift certificate if using imported codes for puchasing gift certificates
+
+1.1.3
+- Added the ability to select specific assets (product/category/vendor/manufacturer) and specific shipping when creating a gift certificate
+
+1.1.2
+- Added the ability to set the Buy X product to match the Buy Y product even if you select multiple products in a Buy X Get Y coupon
+- Fixed javascript expiration problem, where a valid expiration date is not accepted
+- Fixed version display problem, even after upgrade, receiving warning to upgrade
+- Fixed make license permanent warning, even after license has been made permanent
+
+1.1.1
+- Fixed issue with value definition coupons not saving
+- Fixed error which causes system default coupons not to be updated in Prestashop 1.4.x by call to undefined function update() in Discount.php
+
+1.1.0
+- Updated to work with Prestashop 1.5
+
+1.0.0
+- New module

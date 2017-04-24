@@ -1,0 +1,48 @@
+/**
+ * @component AwoCoupon Pro
+ * @copyright Copyright (C) Seyi Awofadeju - All rights reserved.
+ * @Website : http://awodev.com
+ **/
+ 
+.graph {
+	background-color: #f7f7f7;
+	border: solid 1px black;
+}
+
+.graph td {
+	font-family: verdana, arial, sans serif;
+}
+
+.graph thead th {
+	border-bottom: double 3px black;
+	font-family: verdana, arial, sans serif;
+	padding: 1em;
+	background-color: #f7f7f7;
+}
+
+.graph tfoot td {
+	border-top: solid 1px #999999;
+	font-size: x-small;
+	text-align: center;
+	padding: 0.5em;
+	color: #666666;
+}
+
+.bar {
+	background-color: white;
+	text-align: right;
+	border-left: solid 1px black;
+	padding-right: 0.5em;
+	width: 300px;
+}
+
+.bar div { 
+	border-top: solid 2px #0077DD;
+	background-color: #004080;
+	border-bottom: solid 2px #002266;
+	text-align: right;
+	color: white;
+	float: left;
+	padding-top: 0;
+	height: 1em;
+}

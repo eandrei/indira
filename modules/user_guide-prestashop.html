@@ -1,0 +1,966 @@
+<div style="color:red;font-size:25px;font-weight:bold;">
+This documentation is out of date, please refer to the <a href="http://awodev.com/documentation/awocoupon-pro">online version</a> for the up to date version.
+</div><br />
+<style>
+.title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: x-large;
+	padding-bottom:2px;
+	border-bottom:1px solid #bbbbbb;
+	margin-bottom:15px;
+}
+.title2 {
+	font-size: large;
+	font-weight: bold;
+	padding-top: 15px;
+	border-bottom:1px solid #bbbbbb;
+	margin-bottom: 7px;
+}
+.title3 {
+	padding-top: 5px;
+	font-weight: bold;
+	border-bottom:1px solid #bbbbbb;
+}
+
+.desc {
+	padding-left:10px;
+	margin-bottom:35px;
+}
+.desc2, .desc3 {
+	padding-left:15px;
+}
+.codeparent {
+	margin:20px;
+	margin-top:5px;
+	margin-left:40px;
+}
+.codephp {
+	margin-bottom:2px;
+	width:600px;
+	font-size:x-small;
+	text-align:right;
+}
+.code {
+	margin: 0px;
+	padding: 6px;
+	border: 1px inset;
+	width: 600px;
+	height: 50px;
+	text-align: left;
+	overflow: auto;
+	background-color:#eeeeee;
+}
+.toc {
+	border:1px solid #bbbbbb;
+	background-color:#eeeeee;
+	padding:10px;
+	margin-bottom:35px;
+}
+ul li { 
+	background-image: none;
+	list-style-type:inherit;
+	list-style-position:inside;
+}
+ul.square { list-style-type:square; }
+ul.circle { list-style-type:circle; }
+</style>
+<br>
+
+<div class="toc">
+<b>Table of Contents</b><br>
+1. <a href="#Introduction">Introduction</a><br/>
+2. <a href="#Installation">Installation</a><br/>
+&nbsp; &nbsp; &nbsp;2.1 <a href="#System-Requirements">System Requirements</a><br/>
+&nbsp; &nbsp; &nbsp;2.2 <a href="#Installation-1">AwoCoupon Pro</a><br/>
+3. <a href="#Administration">Using the Software - Administration</a><br/>
+&nbsp; &nbsp; &nbsp;3.1 <a href="#Getting-Around">Getting Around</a><br/>
+&nbsp; &nbsp; &nbsp;3.2 <a href="#Coupons">Coupons</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1 <a href="#new-coupon">New Coupon (fields)</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.1 <a href="#new-coupon/function-type">Function Type</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.2 <a href="#new-coupon/coupon-code">Coupon Code</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.3 <a href="#new-coupon/published">Published</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.4 <a href="#new-coupon/percent-amount">Percent or Amount</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.5 <a href="#new-coupon/discount-type">Discount Type</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.6 <a href="#new-coupon/value">Value</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.7 <a href="#new-coupon/value-definition">Value Definition</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.8 <a href="#new-coupon/number-uses-total">Number of Uses (Total)</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.9 <a href="#new-coupon/number-uses-per">Number of Uses (Per Customer)</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.10 <a href="#new-coupon/minimum-value">Minimum Value</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.11 <a href="#new-coupon/startdate">Start Date</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.12 <a href="#new-coupon/expiration">Expiration</a><br/>
+
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.13 <a href="#new-coupon/dontmix">Don't Mix Products</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.14 <a href="#new-coupon/auto-product">Automatically add to cart 'Get Y' product</a><br/>
+
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.15 <a href="#new-coupon/exclude-discount">Exclude Products on Special</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.16 <a href="#new-coupon/exclude-giftcert">Exclude Gift Certificate Products</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.17 <a href="#new-coupon/customertype">Customer Type</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.18 <a href="#new-coupon/customers">Customers</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.19 <a href="#new-coupon/shoppergroup">Shopper Group</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.20 <a href="#new-coupon/products">Asset Type - Products</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.21 <a href="#new-coupon/categories">Asset Type - Categories</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.22 <a href="#new-coupon/manufacturers">Asset Type - Manufacturers</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.23 <a href="#new-coupon/vendors">Asset Type - Vendors</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.24 <a href="#new-coupon/shipping">Asset Type - Shipping</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.25 <a href="#new-coupon/parent">Asset Type - Coupons</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.26 <a href="#new-coupon/shop-restrict">Shop Restriction</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.1.27 <a href="#new-coupon/admin-note">Description</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.2 <a href="#coupon-generate">Generate Coupons</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.2.1 <a href="#coupon-generate/template">Template</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.2.2.2 <a href="#coupon-generate/number">Number</a><br/>
+&nbsp; &nbsp; &nbsp;3.3 <a href="#giftcert">Gift Certificates</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1 <a href="#giftcert/product">New Gift Certificate Product (fields)</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1.1 <a href="#giftcert/product/product">Product</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1.2 <a href="#giftcert/product/template">Template</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1.3 <a href="#giftcert/product/image">Profile Image</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1.4 <a href="#giftcert/product/published">Published</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1.5 <a href="#giftcert/product/expiration">Expiration</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1.6 <a href="#giftcert/product/vendorname">Vendor Name</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1.7 <a href="#giftcert/product/vendoremail">Vendor Email</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1.8 <a href="#giftcert/product/recptnameid">Recipient Name ID</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1.9 <a href="#giftcert/product/recptemailid">Recipient Email ID</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.1.10 <a href="#giftcert/product/recptmesgid">Recipient Message ID</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.2 <a href="#giftcert/code">Codes (fields)</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.2.1 <a href="#giftcert/code/product">Product</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.2.2 <a href="#giftcert/code/couponcode">Coupon Code</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.2.3 <a href="#giftcert/code/status">Status</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.3.2.4 <a href="#giftcert/code/note">Admin Note</a><br/>
+&nbsp; &nbsp; &nbsp;3.4 <a href="#giftcert/profile">Profile (fields)</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.4.1 <a href="#giftcert/profile/title">Title</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.4.2 <a href="#giftcert/profile/fromname">From Name</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.4.3 <a href="#giftcert/profile/fromemail">From Email</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.4.4 <a href="#giftcert/profile/subject">Email Subject</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.4.5 <a href="#giftcert/profile/bcc">BCC Admin</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.4.6 <a href="#giftcert/profile/minlen">Minimum code length</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.4.7 <a href="#giftcert/profile/maxlen">Maximum code length</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.4.8 <a href="#giftcert/profile/type">Message Type</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.4.9 <a href="#giftcert/profile/imageconfig">Image Configuration</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.4.10 <a href="#giftcert/profile/body">Email Body</a><br/>
+&nbsp; &nbsp; &nbsp;3.5 <a href="#history-uses">History of Uses</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.5.1 <a href="#history-uses/coupons">Coupons</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.5.2 <a href="#history-uses/giftcerts">Gift Certificates</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.5.3 <a href="#history-uses/orders">Orders</a><br/>
+&nbsp; &nbsp; &nbsp;3.6 <a href="#import">Import</a><br/>
+&nbsp; &nbsp; &nbsp;3.7 <a href="#reports">Reports</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.7.1 <a href="#reports/how-to-run">How to run a report</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.7.2 <a href="#reports/how-to-export">How to export a report</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.7.3 <a href="#reports/coupon-list">Coupon List</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.7.4 <a href="#reports/coupon-usage-total">Coupon Usage vs. Total sales</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.7.5 <a href="#reports/coupon-usage-location">Coupon Usage vs. Location</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.7.6 <a href="#reports/history-uses-coupons">History of Uses - Coupons</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.7.7 <a href="#reports/history-uses-giftcerts">History of Uses - Gift Certificates</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.7.8 <a href="#reports/purchased-giftcert-list">Purchased Gift Certificate List</a><br/>
+&nbsp; &nbsp; &nbsp;3.8 <a href="#configuration">Configuration</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.1 <a href="#configuration/store-coupons">Enable store Coupons</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.2 <a href="#configuration/discount-tax-giftcert">Calculate the discount before tax (Gift Certificates)</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.3 <a href="#configuration/discount-tax-coupon">Calculate the discount before tax (Coupons)</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.4 <a href="#configuration/multiple-coupons">Enable Multiple Coupons</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.5 <a href="#configuration/delete-expired">Delete expired coupons x days after expiration</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.6 <a href="#configuration/case-sensitve">Case Sensitive Coupon Code</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.7 <a href="#configuration/csv-delimiter">CSV Delimiter</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.8 <a href="#configuration/giftcert-products">Gift Certificate Products</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.8.1 <a href="#configuration/giftcert-products/vendor/activate">Vendor Activate</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.8.2 <a href="#configuration/giftcert-products/vendor/subject">Vendor Email Subject</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.8.3 <a href="#configuration/giftcert-products/vendor/body">Vendor Email Body</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.8.4 <a href="#configuration/giftcert-products/vendor/voucher">Vendor {vouchers}</a><br/>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3.8.9 <a href="#configuration/error-messages">Custom Error Messages</a><br/>
+4. <a href="#Example-Usage">Example Usage</a><br/>
+&nbsp; &nbsp; &nbsp;4.1 <a href="#Example-1">Example 1</a><br/>
+&nbsp; &nbsp; &nbsp;4.2 <a href="#Example-2">Example 2</a><br/>
+&nbsp; &nbsp; &nbsp;4.3 <a href="#Example-3">Example 3</a><br/>
+&nbsp; &nbsp; &nbsp;4.4 <a href="#Example-4">Example 4</a><br/>
+&nbsp; &nbsp; &nbsp;4.4 <a href="#Example-5">Example 5</a><br/>
+5. <a href="#Troubleshooting">Troubleshooting</a><br/>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="title" id="Introduction">1 Introduction</div> 
+<div class="desc">
+	AwoCoupon Pro is a coupon system that allows you to do many different things not part of the basic coupon system.  Here are a few of its features:
+	<ul><li>Product(s) specific discounts</li>
+		<li>Category(s) specific discounts</li>
+		<li>Manufacturer(s) specific discounts</li>
+		<li>Vendor(s) specific discounts</li>
+		<li>Customer(s) specific discounts</li>
+		<li>Shopper Group(s) specific discounts</li>
+		<li>Shipping Coupons</li>
+		<li>The ability to only trigger coupons if a minimum cart total is reached</li>
+		<li>The ability to set expiration dates</li>
+		<li>The ability to restrict the number of times a coupon can be used by either a single user or in total</li>
+		<li>Easy management of all coupons</li>
+		<li>Gift Certificates</li>
+		<li>History of Uses</li>
+		<li>Import feature</li>
+		<li>Generate coupons</li>
+		<li>Reports</li>
+		<li>.... and more</li>
+	</ul>
+</div>
+
+<div class="title" id="Installation">2 Installation</div>
+<div class="desc">
+	Backup your site before starting the installation process.  Please read through the instructions carefully.
+	<div class="title2" id="System-Requirements">2.1 System requirements</div>
+	<div class="desc2">
+		<div>Prestashop 1.4.1 and up, 1.5.x</div>
+		<div>PHP 5</div>
+	</div>
+	<div class="title2" id="Installation-1">2.2 AwoCoupon Pro</div>
+	<div class="desc2">
+		1. &nbsp; Download AwoCoupon Pro to a location on your computer<br/>
+		2. &nbsp; Log into Prestashop Administration<br/>
+		3. &nbsp; Go to modules<br/>
+		4. &nbsp; Select "Add a module from my computer" <br/>
+		5. &nbsp; Find and select the file, com_awocoupon.zip, downloaded to your computer<br/>
+		6. &nbsp; Click "Upload this module"<br/>
+		7. &nbsp; Under "Pricing and Promotion" section, find AwoCoupon Pro<br/>
+		8. &nbsp; Click the "Install" button<br/>
+		9. &nbsp; After successful install, go to Payment->AwoCoupon->Configuration to get started <br />
+		10. &nbsp; The override folder is populated with AwoCoupon code and is updated automatically, but if the update fails you can find the override files here:<br />
+		<b>Be sure to backup any of these files if they already exist in your shop</b><br />
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Prestashop 1.4.x<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; - copy modules/awocoupon/prestashop/override14/classes/Cart.php to override/classes/Cart.php<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; - copy modules/awocoupon/prestashop/override14/classes/Discount.php to override/classes/Discount.php<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; - copy modules/awocoupon/prestashop/override14/classes/Order.php to override/classes/Order.php<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; - copy modules/awocoupon/prestashop/override14/controllers/ParentOrderController.php to override/controllers/ParentOrderController.php<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Prestashop 1.5.x<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; - copy modules/awocoupon/prestashop/override15/classes/Cart.php to override/classes/Cart.php<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; - copy modules/awocoupon/prestashop/override15/classes/CartRule.php to override/classes/CartRule.php<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; - copy modules/awocoupon/prestashop/override15/classes/order/Order.php to override/classes/order/Order.php<br />
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; - copy modules/awocoupon/prestashop/override15/controllers/front/ParentOrderController.php to override/controllers/front/ParentOrderController.php<br />
+		
+	
+		
+		<br /><br />
+	</div>
+</div>
+
+
+<div class="title" id="Administration">3 Using the software - Administration</div>
+<div class="desc">
+	Now that we have finished the installation, we can look closely at the features presented in this application.
+	<div class="title2" id="Getting-Around">3.1 Getting Around</div>
+	<div class="desc2">
+		Log into the administration screen and go to Payment &raquo; AwoCoupon.  Here you will see the control
+		panel.  It shows the general statistics of what coupons you currently have configured as well as a list
+		of menus.  From here you can enter a new coupon, view configured coupons, manage imports, view reports,
+		and a variety of other features.
+	</div>
+	<div class="title2" id="coupons">3.3 Coupons</div>
+	<div class="desc2">
+		This screen shows a list of coupons that have been created.  At the top, there is a list of filters and a search field to help you find coupons efficiently.  A coupon can be published, unpublished, deleted, or edited from this screen.
+		<div class="title3" id="new-coupon">3.2.1 New Coupon (fields)</div>
+		<div class="desc3">
+			To add a new coupon, select "New Coupon" from the control panel, or "New" from the coupons list.
+			<br/>Fields:
+			<div style="padding-left:15px;">
+				<div class="title3" id="new-coupon/function-type">3.2.1.1 Function Type</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div class="desc3">Coupon: used as a normal coupon.</div>
+					<div class="desc3">Gift Certificate: used as a gift certificate for products only. </div>
+					<div class="desc3">Shipping: create coupons for shipping </div>
+					<div class="desc3">Buy X Get Y: special promotion coupons such as buy 1 get 1 free, buy 3 for 2, etc</div>
+					<div class="desc3">Parent: create coupons for other coupons</div>
+				</div>
+				<div class="title3" id="new-coupon/coupon-code">3.2.1.2 Coupon Code</div>
+				<div class="desc3">
+					Enter a unique coupon code of up to 32 characters
+				</div>
+				<div class="title3" id="new-coupon/published">3.2.1.3 Published</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div class="desc3">Published: active coupon</div>
+					<div class="desc3">Unpublished: inactive coupon </div>
+					<div class="desc3">Template: inactive coupon used in the generation of coupons in external plugins </div>
+				</div>
+				<div class="title3" id="new-coupon/percent-amount">3.2.1.4 Percent or Amount</div>
+				<div class="desc3">
+					<div>Not used with gift certificates</div>
+					<div><u>Options</u></div>
+					<div class="desc3">Percent: coupon takes a percentage of value </div>
+					<div class="desc3">Amount: coupon is an actual figure that is subtracted from total  </div>
+				</div>
+				<div class="title3" id="new-coupon/discount-type">3.2.1.5 Discount Type</div>
+				<div class="desc3">
+					<div>This option can only be used when an asset is selected, otherwise it should be set to "Overall".</div>
+					<div><u>Options (Shipping)</u></div>
+					<div class="desc3">Overall: The shipping discount is given if any of the products from the product list are in the cart.  If no product is selected, then it is assumed all the products are valid </div>
+					<div class="desc3">Specific: The shipping discount is given if all the products in the cart are also in the coupon's product list. </div>
+					<div><u>Options (Everything Else)</u></div>
+					<div class="desc3">Overall: The discount is calculated as a percentage of the overall total in the shopping cart </div>
+					<div class="desc3">Specific: The discount is calculated as a percentage of the total of the products configured in the coupon that are in the shopping cart </div>
+				</div>
+				<div class="title3" id="new-coupon/value">3.2.1.6 Value</div>
+				<div class="desc3">
+					<u>Number</u>: this is the value of the coupon and is dependent on the Percent or Amount field to determine how it is calculated
+				</div>
+				<div class="title3" id="new-coupon/value-definition">3.2.1.7 Value Definition</div>
+				<div class="desc3">
+					<div>Not used with gift certificates or function type 2 of shipping.</div>
+					<u>Defined input</u>: this field is used instead of the value field if you want to create progressive coupons.  Progressive coupons are coupons that are based on the number of products customers buy.  For example, you could have a progressive coupon that says if a customer buys 1 item, then give him/her a 10% discount.  But if the customer buys 2 items then give him/her a 20% discount... etc etc. Using the example just mentioned, the input would look like 1-10;2-20;.  You can also set the maximum number of products that get a percent off.  Using the same example, lets say you want to give a 20% discount up to 10 items and then no more discounts.  This can be done with the following value: 1-10;2-20;11-0;.  The input field is very specific.  As a definition this can be broken down to [quantity]-[value];[quantity]-[value];...etc etc.
+					<br><br>By default the product count is done on all products selected.  For example if you have products A, B, and C, then 2 A's are treated the same as 1 A and 1 B, in terms of the count.  By clicking the checkbox 'Apply Distinct Count', then 2 A's are treated as 1 product while 1 A and 1 B are treated as 2 products.
+				</div>
+				<div class="title3" id="new-coupon/number-uses-total">3.2.1.8 Number of uses (Total)</div>
+				<div class="desc3">
+					<div>Not used with gift certificates</div>
+					<div><u>Number</u>: the number of uses as a total across all users.  If left blank, there is no limit.  </div>
+				</div>
+				<div class="title3" id="new-coupon/number-uses-per">3.2.1.9 Number of uses (Per Customer)</div>
+				<div class="desc3">
+					<div>Not used with gift certificates</div>
+					<div><u>Number</u>: the number of uses as per customer. If left blank, there is no limit.  </div>
+				</div>
+				<div class="title3" id="new-coupon/minimum-value">3.2.1.10 Minimum Value</div>
+				<div class="desc3">
+					<div>Not used with gift certificates</div>
+					<div><u>Options</u></div>
+					<div class="desc3">Overall: tests the minimum value on the order total </div>
+					<div class="desc3">Specific: if selected specific assets (product, category, vendor, etc), then test the minumum value only on the those items </div>
+					<div><u>Number</u>: this is the minimum value of the product total in the shopping cart before a coupon can take effect.  If set to 0 or left blank, then there is no minimum value. </div>
+				</div>
+				<div class="title3" id="new-coupon/startdate">3.2.1.11 Start Date</div>
+				<div class="desc3">
+					<u>Date/Time</u>: the date/time the coupon/gift certificate begins to be active.  If entered has to be in the format YYYY-MM-DD hh:mm:ss.  If left blank, then it is valid from the time it is entered.
+				</div>
+				<div class="title3" id="new-coupon/expiration">3.2.1.12 Expiration</div>
+				<div class="desc3">
+					<u>Date/Time</u>: the date/time the coupon/gift certificate expires.  If entered has to be in the format YYYY-MM-DD hh:mm:ss.  If left blank, then it never expires.
+				</div>
+				
+				
+				<div class="title3" id="new-coupon/dontmix">3.2.1.13 Don't Mix Products</div>
+				<div class="desc3">
+					<u>Checkbox</u>: used in buy x get y for the product selections. If checked, then Buy X product has to be the same as Get Y product. If not checked, then can mix and match provided products are on the buy x get y lists.
+				</div>
+				<div class="title3" id="new-coupon/auto-product">3.2.1.14 Automatically add to cart 'Get Y' product</div>
+				<div class="desc3">
+					<u>Checkbox</u>: used in buy x get y. If checked, AwoCoupon will attempt to add product Get Y to the shopping cart. Note it may not be able to for any number of reasons including the product is out of stock or the product requires attributes to be selected.
+				</div>
+				
+				
+				
+				<div class="title3" id="new-coupon/exclude-discount">3.2.1.15 Exclude Products on Special</div>
+				<div class="desc3">
+					<u>Checkbox</u>: If checked, the coupon discount will not apply to products that are on special or discounted.
+				</div>
+				<div class="title3" id="new-coupon/exclude-giftcert">3.2.1.16 Exclude Gift Certificate Products</div>
+				<div class="desc3">
+					<u>Checkbox</u>: If checked, the gift certificate discount will not apply to products that are tagged as gift certificate products.
+				</div>
+
+
+
+				<div class="title3" id="new-coupon/customertype">3.2.1.17 Customer Type</div>
+				<div class="desc3">
+					<div>Not used with gift certificates</div>
+					<div><u>Options</u></div>
+					<div class="desc3">Customer: create coupons for specific customer(s)</div>
+					<div class="desc3">Shopper Group: create coupons for specific shopper group(s) </div>
+				</div>
+				<div class="title3" id="new-coupon/customers">3.2.1.18 Customers</div>
+				<div class="desc3">
+					<div>Not used with gift certificates</div>
+					<div><u>Multiple selection</u>: shows all your customers.  Selection of customers will activate the coupon only for those customers.</div>
+				</div>
+				<div class="title3" id="new-coupon/shoppergroup">3.2.1.19 Shopper Group</div>
+				<div class="desc3">
+					<div>Not used with gift certificates</div>
+					<div><u>Multiple selection</u>: shows all your shopper groups.  Selection of shopper groups will activate the coupon only for those customers within a shopper group.</div>
+				</div>
+
+
+				<div class="title3" id="new-coupon/products">3.2.1.20 Asset Type - Products</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div class="desc3">Include: treats the selection as inclusive, allowing those items within the coupon </div>
+					<div class="desc3">Exclude: treats the selection as exclusive, excluding those items from the coupon </div>
+					<div><u>Multiple selection</u>: shows all your products.</div>
+				</div>
+				<div class="title3" id="new-coupon/categories">3.2.1.21 Asset Type - Categories</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div class="desc3">Include: treats the selection as inclusive, allowing those items within the coupon </div>
+					<div class="desc3">Exclude: treats the selection as exclusive, excluding those items from the coupon </div>
+					<div><u>Multiple selection</u>: shows all your categories.</div>
+				</div>
+				<div class="title3" id="new-coupon/manufacturers">3.2.1.22 Asset Type - Manufacturers</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div class="desc3">Include: treats the selection as inclusive, allowing those items within the coupon </div>
+					<div class="desc3">Exclude: treats the selection as exclusive, excluding those items from the coupon </div>
+					<div><u>Multiple selection</u>: shows all your manufacturers.</div>
+				</div>
+				<div class="title3" id="new-coupon/vendors">3.2.1.23 Asset Type - Vendors</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div class="desc3">Include: treats the selection as inclusive, allowing those items within the coupon </div>
+					<div class="desc3">Exclude: treats the selection as exclusive, excluding those items from the coupon </div>
+					<div><u>Multiple selection</u>: shows all your vendors.</div>
+				</div>
+				<div class="title3" id="new-coupon/shipping">3.2.1.24 Asset Type - Shipping</div>
+				<div class="desc3">
+					<div>Only used with function type of Shipping</div>
+					<div><u>Options</u></div>
+					<div class="desc3">Include: treats the selection as inclusive, allowing those items within the coupon </div>
+					<div class="desc3">Exclude: treats the selection as exclusive, excluding those items from the coupon </div>
+					<div><u>Multiple selection</u>: shows all your shipping.</div>
+				</div>
+				<div class="title3" id="new-coupon/parent">3.2.1.25 Asset Type - Coupons</div>
+				<div class="desc3">
+					<div>Only used with function type of Parent</div>
+					<div>This option allows you to join multiple coupons into one coupon by adding them as assets.  When a customer uses a parent coupon, then depending on the process type (see below) the coupon is processed as such.</div>
+					<div><u>Options (Process type):</u>
+						<div class="desc3">First found match</div>
+						<div class="desc3">Lowest value coupon</div>
+						<div class="desc3">Highest value coupon</div>
+						<div class="desc3">All that apply</div>
+						<div class="desc3">ONLY if all apply</div>
+					</div>
+					<div><u>Multiple selection</u>: shows all coupons that are not function type 2 of parent.</div>
+				</div>
+				<div class="title3" id="new-coupon/shop-restrict">3.2.1.26 Shop Restriction</div>
+				<div class="desc3">
+					<div>This option is only available for Prestashop 1.5.x that have multistore enabled</div>
+					<div>This option gives you a list of shops in your multi store and can be used to restrict a coupon to one or more shops.</div>
+					<div><u>Multiple selection</u>: shows all shops in your multistore.</div>
+				</div>
+				<div class="title3" id="new-coupon/admin-note">3.2.1.27 Description</div>
+				<div class="desc3">
+					<u>Text</u>: Internal note about the coupon
+				</div>
+			</div>
+		</div>
+		<div class="title3" id="coupon-generate">3.2.2 Generate Coupons</div>
+		<div class="desc3">
+			To generate coupons, select the "Generate Coupons" button from the coupon list page.
+			<br/>Fields:
+			<div style="padding-left:15px;">
+				<div class="title3" id="coupon-generate/template">3.2.2.1 Template</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div><u>Single selection</u>: Shows all the cuopon templates created within AwoCoupon.  To create a new template, add a new coupon and under the 'Published' dropdown, select 'Template'.</div>
+				</div>
+				<div class="title3" id="coupon-generate/number">3.2.2.2 Number</div>
+				<div class="desc3">
+					<u>Number</u>: this is the value for the number of coupons you want to create using the template coupon selected in 3.2.2.1.
+				</div>
+			</div>
+		</div>	
+	
+	</div>
+	<div class="title2" id="giftcert">3.3 New Gift Certificate Product (fields)</div>
+	<div class="desc2">
+		<div class="title3" id="giftcert/product">3.3.1 New Gift Certificate Product (fields)</div>
+		<div class="desc3">
+			Setting up a gift certificate product is the final step to creating a sellable gift certificate. Before doing this step, make sure you setup a product within the catalog which you wish to sell as a gift certificate. Once that is setup, you can then add a new gift certificate product within AwoCoupon. This means that when the gift certificate product is purchased and the payment has been confirmed,  the code(s) of the gift certificate(s) purchased is/are automatically generated and emailed to the customer. 
+			<br /><br />To add a new gift certificate product, select "Add New" from the Gift Certificate Products list. 
+			<br/>Fields:
+			<div style="padding-left:15px;">
+				<div class="title3" id="giftcert/product/product">3.3.1.1 Product</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div><u>Single selection</u>: a textbox, which allows you to start typing the product name.  After a few letters, a dropdown is displayed of possible products which can be selected.</div>
+				</div>
+				<div class="title3" id="giftcert/product/template">3.3.1.2 Template</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div><u>Single selection</u>: shows a list of all coupon templates created within AwoCoupon.</div>
+				</div>
+				<div class="title3" id="giftcert/product/image">3.3.1.3 Profile Image</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div><u>Single selection</u>: shows all gift certificate profiles setup within AwoCoupon.</div>
+				</div>
+				<div class="title3" id="giftcert/product/published">3.3.1.4 Published</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div class="desc3">Published: active gift certificate product</div>
+					<div class="desc3">Unpublished: inactive gift certificate product </div>
+				</div>
+				<div class="title3" id="giftcert/product/expiration">3.3.1.5 Expiration</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div class="desc3">Days: sets the expiration x days from when the gift certificate was created </div>
+					<div class="desc3">Months: sets the expiration x months from when the gift certificate was created. Assumes 30 days in a month. </div>
+					<div class="desc3">Years: sets the expiration x years from when the gift certificate was created. Assumes 365 days in a year. </div>
+					<div><u>Number</u>: if both the dropdown and textfield are left blank, there is no expiration.  </div>
+				</div>
+				<div class="title3" id="giftcert/product/vendorname">3.3.1.6 Vendor Name</div>
+				<div class="desc3">
+					<div><u>Text</u>: Optional.  The name of the vendor who will redeem the voucher.  Used to send an email to the vendor if enabled in configuration. </div>
+				</div>
+				<div class="title3" id="giftcert/product/vendoremail">3.3.1.7 Vendor Email</div>
+				<div class="desc3">
+					<div><u>Text</u>: Optional.  The email of the vendor who will redeem the voucher.  Used to send an email to the vendor if enabled in configuration.</div>
+				</div>
+				<div class="title3" id="giftcert/product/recptnameid">3.3.1.8 Recipient Name ID</div>
+				<div class="desc3">
+					<div><u>Number</u>: Optional.  If the customer can enter a name for the voucher, then the custom field will have to be set up.  This can be setup within the product that is being sold under the customization tab.  The value entered here is the number shown in front of the text field for entering a name.</div>
+				</div>
+				<div class="title3" id="giftcert/product/recptemailid">3.3.1.9 Recipient Email ID</div>
+				<div class="desc3">
+					<div><u>Number</u>: Optional.  If the customer can enter a email for the voucher, then the custom field will have to be set up.  This can be setup within the product that is being sold under the customization tab.  The value entered here is the number shown in front of the text field for entering a email.</div>
+				</div>
+				<div class="title3" id="giftcert/product/recptmesgid">3.3.1.10 Recipient Message ID</div>
+				<div class="desc3">
+					<div><u>Number</u>: Optional.  If the customer can enter a message for the voucher, then the custom field will have to be set up.  This can be setup within the product that is being sold under the customization tab.  The value entered here is the number shown in front of the text field for entering a message.</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="title3" id="giftcert/code">3.3.2 Codes</div>
+		<div class="desc3">
+			There are certain cases were you would like to choose your own codes.  AwoCoupon Pro gives you this ability.  Using a csv file in the format specified, you can upload your own codes that will be used instead of auto generated codes.  If there are no more usable codes, an auto generated code will be used in that case.
+			<br /><br />
+			The csv input format:
+			
+			<ul>
+				<li>[Column A] Coupon Code - can have up to 32 alphanumeric characters and must be unique per coupon</li>
+				<li>[Column B] Status - accepted values: Active, Inactive</li>
+				<li>[Column C] Admin Note - a note about the coupon or leave blank</li>
+			</ul>
+
+			<br />To import gift certificate product codes, select "Add New" from the codes list. 
+			<br/>Fields:
+			<div style="padding-left:15px;">
+				<div class="title3" id="giftcert/code/product">3.3.2.1 Product</div>
+				<div class="desc3">
+					<div><u>Options</u></div>
+					<div><u>Single selection</u>: shows all your products that have been tagged as gift certificate products.</div>
+				</div>
+				<div class="title3" id="giftcert/code/couponcode">3.3.2.2 Coupon Code</div>
+				<div class="desc3">
+					<div><u>CSV Input - Text</u></div>
+					<div>Enter a unique coupon code of up to 32 characters</div>
+				</div>
+				<div class="title3" id="giftcert/code/status">3.3.2.3 Status</div>
+				<div class="desc3">
+					<div><u>CSV Input - Option</u></div>
+					<div class="desc3">Active: the code is not used and can be assigned</div>
+					<div class="desc3">Inactive: the code is not used and cannot be assigned </div>
+					<div class="desc3">Value Used: the code is used (cannot assign this status in the csv file) </div>
+				</div>
+				<div class="title3" id="giftcert/code/note">3.3.2.4 Admin Note</div>
+				<div class="desc3">
+					<div><u>CSV Input - Text</u></div>
+					<div>Internal note about the coupon</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+	</div>	
+	
+	
+	
+	
+	
+	
+	<div class="title2" id="giftcert/profile">3.4 Profile (fields)</div>
+	<div class="desc3">
+		A gift certificate profile is the configuration for generating an automated gift certificate after it has been purchased on the front end.
+		You can create as many profiles as you want.
+		<br /><br />To add a new gift certificate profile, select "Add New" from the Profile list. 
+		<br/>Fields:
+		<div style="padding-left:15px;">
+			<div class="title3" id="giftcert/profile/title">3.4.1 Title</div>
+			<div class="desc3">
+				<u>Title</u>: the title of the profile.
+			</div>
+			<div class="title3" id="giftcert/profile/fromname">3.4.2 From Name</div>
+			<div class="desc3">
+				<u>Text</u>: this is the from name in the email which is being sent to a customer after ordering a gift certificate. If left blank, the Store Name is used. 
+			</div>
+			<div class="title3" id="giftcert/profile/fromemail">3.4.3 From Email</div>
+			<div class="desc3">
+				<u>Email</u>: this is the from email address in the email which is being sent to a customer after ordering a gift certificate. If left blank, the Store contact email is used. 
+			</div>
+			<div class="title3" id="giftcert/profile/subject">3.4.4 Email Subject</div>
+			<div class="desc3">
+				<u>Text</u>: this is the subject in the email which is being sent to a customer after ordering a gift certificate.
+			</div>
+			<div class="title3" id="giftcert/profile/bcc">3.4.5 BCC Admin</div>
+			<div class="desc3">
+				<u>Checkbox</u>: If checked, a blind carbon copy of the email will be sent to the email address entered in the From Email.
+			</div>
+			<div class="title3" id="giftcert/profile/type">3.4.8 Message Type</div>
+			<div class="desc3">
+				<div><u>Options</u></div>
+				<div class="desc3">Text: automated gift certificate email should be sent as text mail</div>
+				<div class="desc3">HTML: automated gift certificate email should be sent as HTML mail </div>
+			</div>
+			<div class="title3" id="giftcert/profile/imageconfig">3.4.9 Image Configuration</div>
+			<div class="desc3">
+				<div>Only available in Message Type of "HTML"</div>
+				<div>Gift Certificate Image [<u>Options</u>]: the image used to generate the gift certificate image.  The images are located at /modules/awocoupon/giftcert/images.  Custom images of types .png and .jpg can be added to this folder for more selection.</div>
+				<br /><div>The following fields are used to generate the gift certificate image</div>
+				<ul style="padding-top:0;margin-top:0;">
+					<li>Coupon Code - the auto generated code</li>
+					<li>Value - the value of the gift certificate code</li>
+					<li>Expiration - the expiration date of the gift certificate</li>
+					<li>Free Text [1,2,3] - 3 fields with any custom text.  All tags except for {image_embed} and {vouchers} can be used in these fields.  Tags are listed in section 3.4.10.</li>
+				</ul>
+				
+				<div>The following items are what can be controlled when manipulating text within the image</div>
+				<ul style="padding-top:0;margin-top:0;">
+					<li>Text: for the free text fields it is text, for expiration it is an option allowing you to select the format in which the date is displayed or not displayed at all.</li>
+					<li>Align [<u>Options</u>]: this is the alignment of the text, it can be left, middle, or right aligned.</li>
+					<li>Padding [<u>Number</u>]: this is the padding from either the left or right, depending on what is picked for Align.</li>
+					<li>Y-Axis [<u>Number</u>]: this is the height at which the text is placed.</li>
+					<li>Font [<u>Options</u>]: this is the font selection for the text.  The fonts are located in /modules/awocoupon/giftcert/fonts.  More fonts can be added to that folder for more selection.</li>
+					<li>Font Size [<u>Number</u>]: this is the size of the font selected</li>
+					<li>Font Color [<u>Options</u>]: this is the color of the font selected</li>
+				</ul>
+			</div>
+			<div class="title3" id="giftcert/profile/body">3.4.10 Email Body</div>
+			<div class="desc3">
+				<u>Text</u>: this is the message in the email which is being sent to a customer after ordering a gift certificate. {vouchers} is required in message type of "Text" since it will be replaced with the gift certificate(s) ordered.
+				<ul>
+					<li>{store_name}</li>
+					<li>{siteurl}</li>
+					<li>{vouchers} - the gift certificate codes generated for the customer</li>
+					<li>{image_embed} - for html images, embed the gift certificate images into the email</li>
+					<li>{purchaser_first_name} - the customer's first name</li>
+					<li>{purchaser_last_name} - the customer's first name</li>
+					<li>{recipient_name} - the receiver's name</li>
+					<li>{recipient_email} - the receiver's email</li>
+					<li>{recipient_message} - the message that the customer writes when purchasing the gift certificate</li>
+					<li>{today_date} - the current date</li>
+					<li>{order_id} - the order id</li>
+					<li>{order_date} - the date the order was created</li>
+					<li>{order_total} - the order total</li>
+					<li>{product_name} - the name of the product being purchased.  If multiple and used in email, names are comma separated</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="title2" id="history-uses">3.5 History of Uses</div>
+	<div class="desc2">
+		The history of uses displays transactions of the customer within the store.
+		
+		<div class="title3" id="history-uses/coupons">3.5.1 Coupons</div>
+		<div class="desc3">
+			This screen displays all the customers that have used a coupon/gift certificate during the ordering process. 
+		</div>
+		
+		<div class="title3" id="history-uses/giftcerts">3.5.2 Gift Certificates</div>
+		<div class="desc3">
+			This screen displays all the gift certificates in your store including the value, value used, balance, and customer who ordered it (if any).
+		</div>
+		
+		<div class="title3" id="history-uses/orders">3.5.3 Orders</div>
+		<div class="desc3">
+			This screen displays all the orders in which gift certificates where purchased.  It displays the order number and the gift certificate codes of the order.
+		</div>
+	</div>
+	<div class="title2" id="import">3.6 Import</div>
+	<div class="desc2">
+		<div>The import feature allows the user to import multiple coupons by uploading a csv file. </div>
+		<br>
+		<div>A sample of the file is displayed at the bottom of the screen. Each row represents one coupon. Capitalization of letters is irrelevant.</div>
+		<div>Field Values:</div>
+		<div>
+			<ul><li>ID - must be unique per coupon</li>
+				<li>Coupon Code - can have up to 32 alphanumeric characters and must be unique per coupon</li>
+				<li>Published - published or unpublished (see section 3.2.1.3 for more details)</li>
+				<li>Function Type - coupon or gift certificate, shipping, buy x get y, or parent (see section 3.2.1.1 for more details)</li>
+				<li>Percent or Amount - percent or amount (see section 3.2.1.4 for more details)</li>
+				<li>Discount Type - overall or specific (see section 3.2.1.5 for more details)</li>
+				<li>Value - a number or leave blank if using Value definition field (see section 3.2.1.6 for more details)</li>
+				<li>Value Definition - see section 3.2.1.6 on how to define progressive values</li>
+				<li>Number of uses (Total) - total numer of time the coupon can be used (see section 3.2.1.8 for more details)</li>
+				<li>Number of uses (Per customer) - number of times each customer can use the coupon (see section 3.2.1.9 for more details)</li>
+				<li>Minimum Value
+					<ul class="square">
+						<li>first column needs to be set to either overall, specific, or left blank</li>
+						<li>second column requires a number (if the first column has been populated)</li>
+						<li>see section 3.2.1.10 for more details</li>
+					</ul>
+				</li>
+				<li>Start Date - date in YYYYMMDD format, or left blank if no start date (see section 3.2.1.11 for more details)</li>
+				<li>Expiration - date in YYYYMMDD format, or left blank if no expiration date (see section 3.2.1.12 for more details)</li>
+				<li>Customer
+					<ul class="square">
+						<li>[first column] Customer Type - customer or shopper group (see section 3.2.1.17 for more details)</li>
+						<li>[second column]
+							<div>
+								<ul class="circle">
+									<li>for customer enter the user IDs seperated by a comma</li>
+									<li>for shopper group enter the shopper group IDs seperated by comma</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>Asset 1
+					<ul class="square">
+						<li>first column (type): product, category, vendor, manufacturer, shipping</li>
+						<li>second column (mode): include or exclude the asset</li>
+						<li>third column (number): the number of assets (only used by Buy X get Y)</li>
+						<li>fourth column: comma separated IDs of the asset</li>
+					</ul>
+				</li>
+				<li>Asset 2
+					<ul class="square">
+						<li>first column (type): product, category, vendor, manufacturer, shipping</li>
+						<li>second column (mode): include or exclude the asset</li>
+						<li>third column (number): the number of assets (only used by Buy X get Y)</li>
+						<li>fourth column: comma separated IDs of the asset</li>
+					</ul>
+				</li>
+				<li>Exclude Products on Special - valid values include 'Yes', 'No' or leave blank. If left blank, no is assumed  (see section 3.2.1.15 for more details) </li>
+				<li>Exclude Gift Certificate Products- valid values include 'Yes', 'No' or leave blank. If left blank, no is assumed  (see section 3.2.1.16 for more details)</li>
+				<li>Description - a note about the coupon or leave blank</li>
+				<li>Process Type - used by Parent and Buy X Get Y coupons
+					<ul class="square">
+						<li>for parent: first, lowest, highest, all, allonly</li>
+						<li>for buy x get y: first, lowest, highest</li>
+					</ul>
+				</li>
+				<li>Maximum Discount Qty - only used by Buy X get Y to set the maximum number of discounts</li>
+			</ul>
+		</div>
+		<div>Before uploading the file, there are 2 options to consider.  </div>
+		<div style="padding-left:20px;">		- Exclude the First Row: select the checkbox if you have a header row</div>
+		<div style="padding-left:20px;">		- Even with errors in the batch, Save coupons with no errors: This options is a mare choice of preference as some users prefer to fix errors and re-upload the whole file while others prefer to re-upload the corrected rows only.  Checking the box will save any coupons that do not have errors and unchecking the box will save all coupons only if there are no errors.</div>
+
+		<br>
+		<div>To upload the csv file click the browse button, open your csv file and click the "Upload" button. Any errors will be clearly displayed on the screen, and you will be notified of any savings.</div>
+		<div>You can view the successfully imported coupons in the Coupons list.</div>
+		
+	</div>
+	<div class="title2" id="reports">3.7 Reports</div>
+	<div class="desc2">
+		There are six standard reports offered within AwoCoupon Pro.
+		
+		<div class="title3" id="reports/how-to-run">3.7.1 How to run a report</div>
+		<div class="desc3">
+			1)	Choose "Reports" from the menu.<br />
+			2)	From the Reports drop down, choose a report you want to run.<br />
+			3)	If you want to see all the data available without further specifiction, click the "Run Report" button. A new window will open displaying the report.<br />
+			4)	If you want to further narrow down the data you are interested in, make your selections under Order Details and/or Coupon Details section.<br />
+			5)	Once you have all the parameters selected click the "Run Report" button. A new window will open displaying the report.
+		</div>
+		
+		<div class="title3" id="reports/how-to-export">3.7.2 How to export a report</div>
+		<div class="desc3">
+			1)	Run a report<br />
+			2)	When the new window opens with your report, click on the MS Excel icon located next to the report name on the left. A new window will open offering you the option to save the report.<br />
+			3)	Click the save button and save the report on your computer. <br />
+			Note: reports will be exported as a csv. file
+		</div>
+		
+		<div class="title3" id="reports/coupon-list">3.7.3 Coupon List</div>
+		<div class="desc3">
+			This report shows you the list of coupons you have created within AwoCoupon Pro. Since it is exportable as a csv file, it can be imported back into AwoCoupon Pro, if for instance, any of your coupons were mistakenly deleted. 
+		</div>
+		<div class="title3" id="reports/coupon-usage-total">3.7.4 Coupon Usage vs. Total Sales</div>
+		<div class="desc3">
+			This report lets you analyze the coupon usage compared to total sales, allowing you to see how many sales were perhaps generated by your coupon promotion and the revenue these sales brought to your business. Report is supported by graphical view too.
+		</div>
+		<div class="title3" id="reports/coupon-usage-location">3.7.5 Coupon Usage vs. Location</div>
+		<div class="desc3">
+			This report lets you evaluate customers relative to their geographical location and their responsiveness to a specific coupon promotion.  This proves to be helpful if your marketing campaigns are location specific, as it helps you to target a local consumer base more effectively.  
+		</div>
+		<div class="title3" id="reports/history-uses-coupons">3.7.6 History of Uses - Coupons</div>
+		<div class="desc3">
+			This report displays all the customers that have used a coupon during the ordering process.  It is easy to analyze user's tendency to take advantage of coupon promotions and determine customer loyalty.  
+		</div>
+		<div class="title3" id="reports/history-uses-giftcerts">3.7.7 History of Uses - Gift Certificates</div>
+		<div class="desc3">
+			This report displays all the gift certificates within your store.  With this report, you can view the value and balance left on all gift certificates.  
+		</div>
+		<div class="title3" id="reports/purchased-giftcert-list">3.7.8 Purchased Gift Certificate List</div>
+		<div class="desc3">
+			This report displays all the gift certificates that were purcased from your storefront.  With this report, you can determine the user details of the purchaser.  
+		</div>
+	</div>
+	<div class="title2" id="configuration">3.8 Configuration</div>
+	<div class="desc2">
+		<div class="title3" id="configuration/store-coupons">3.8.1 Enable Store Coupons</div>
+		<div class="desc3">
+			This option allows you to use Prestashop Coupons along with AwoCoupon.  When a code is put in, it is first run through AwoCoupon to see if it exists.  If the code is not found, then the Prestashop Coupon process is called.  AwoCoupon takes precedence over the store Coupon.  If the code exists within AwoCoupon (no matter if it is published or not), then the code is processed through the AwoCoupon system.  Also note that codes processed through the Prestashop Coupon System will be limited to the flexibility of Prestashop Coupons.
+		</div>
+		
+
+		<div class="title3" id="configuration/discount-tax-giftcert">3.8.2 Calculate the discount before tax (Gift Certificates)</div>
+		<div class="desc3">
+			This option allows you to enable true discount before tax for gift certificates.  Set to "yes" for discount before tax and "no" for discount after tax.
+		</div>
+		<div class="title3" id="configuration/discount-tax-coupon">3.8.3 Calculate the discount before tax (Coupons)</div>
+		<div class="desc3">
+			This option allows you to enable true discount before tax for coupons.  Set to "yes" for discount before tax and "no" for discount after tax.
+		</div>
+		
+		
+		
+		<div class="title3" id="configuration/multiple-coupons">3.8.4 Enable Multiple Coupons</div>
+		<div class="desc3">
+			This option allows you to enable the use of multiple coupons.  Entering an integer in the text field will limit the number of coupons that can be accepted.  If for example 2 is entered, then the maximum number of coupons that will be accepted at once will be 2.
+		</div>
+		<div class="title3" id="configuration/delete-expired">3.8.5 Delete expired coupons x days after expiration</div>
+		<div class="desc3">
+			This option enables expired coupons to be automatically deleted.  You can set the offset in days.  So if you set the offset for 3 days, then all coupons that expire today will be deleted in 3 days.
+		</div>
+		<div class="title3" id="configuration/case-sensitve">3.8.6 Case Sensitive Coupon Code</div>
+		<div class="desc3">
+			This option allows you to change the case sensitivity of coupon codes.  By default coupon codes are case sensitive.
+		</div>
+		<div class="title3" id="configuration/csv-delimiter">3.8.7 CSV Delimiter</div>
+		<div class="desc3">
+			This option allows you to change the delimiter of csv files.  This would work for both importing and exporting (through reports).  By default a comma is used as the delimiter.  You have the option to change it to a semi-colon.
+		</div>
+		<div class="title3" id="configuration/giftcert-products">3.8.8 Gift Certificate Products</div>
+		<div class="desc3">
+			Configuration for gift certificate products.
+			<div class="title3" id="configuration/giftcert-products/vendor/activate">3.8.8.1 Vendor Activate</div>
+			<div class="desc3">
+				If this feature is activated then an email is sent to the Vendor notifying them of the voucher purchase at the same time the voucher is emailed to the customer.  For this to work, the vendor email has to be setup within the gift certificate product.
+			</div>
+			<div class="title3" id="configuration/giftcert-products/vendor/subject">3.8.8.2 Vendor Email Subject</div>
+			<div class="desc3">
+				The subject of the vendor email.  You can use dynamic tags in Email Body.
+			</div>
+			<div class="title3" id="configuration/giftcert-products/vendor/body">3.8.8.3 Vendor Email Body</div>
+			<div class="desc3">
+				The message being sent to the vendor.  The dynamic tags include:
+				<br />- {vendor_name}
+				<br />- {vouchers}
+				<br />- {purchaser_first_name}
+				<br />- {purchaser_last_name}
+				<br />- {today_date}
+				<br />- {order_id}
+			</div>
+			<div class="title3" id="configuration/giftcert-products/vendor/voucher">3.8.8.4 Vendor {vouchers}</div>
+			<div class="desc3">
+				This field allows you to format the {vouchers} tag.  There can be multiple vouchers and this lets you format it in the way you like.  By default the format of the vouchers tag is:
+				<br />[code1] - [price1] - [product name]
+				<br />[code2] - [price2] - [product name]
+				<br />....
+				<br />You can also use any of the dynamic tags in Email Body.
+			</div>
+		</div>
+		<div class="title3" id="configuration/error-messages">3.8.9 Custom Error Messages</div>
+		<div class="desc3">
+			With the default installation of AwoCoupon Pro, the error message seen by the customer if a coupon is rejected is the default message: "Coupon code not found" You might want to change this note to display a more specific message. For example, there are coupons which require the user to login before it can be used. Instead of displaying the default message, you can change it to a more appropriate text such as "Please Login to use this coupon". To do this, click in the error display box, type your message and press the save button.  
+		</div>
+	</div>
+</div>
+
+
+<div class="title" id="Example-Usage">4 Example Usage</div>
+<div class="desc">
+The customer and product field are multiple selection boxes.  So you can select none, one, or multiple customers and/or products for every coupon configured.
+	<div class="title2" id="Example-1">4.1 Example 1</div>
+	<div class="desc2">
+		Function Type: Coupon
+		<br/>Coupon Code: COUPONCODE1
+		<br/>Published: Published
+		<br/>Percent or Amount: Percent
+		<br/>Discount Type: Overall
+		<br/>Value: 25
+		<br/>Value Definition: <i>blank</i>
+		<br/>Number of Uses Total: <i>blank</i>
+		<br/>Number of Uses Per Customer: 1
+		<br/>Minimum Value: <i>blank</i>
+		<br/>Expiration: <i>blank</i>
+		<br/>Customer: <i>None chosen</i>
+		<br/>Asset: <i>None chosen</i>
+		<br>This coupon will work for all products and all customers (including any new registrations) for exactly 1 time per customer.  It will take 25% off the total value of the shopping cart.  The coupon never expires.  The customer is required to have an account to be able to use this code.
+	</div>
+	<div class="title2" id="Example-2">4.2 Example 2</div>
+	<div class="desc2">
+		Function Type: Coupon
+		<br/>Coupon Code: COUPONCODE2
+		<br/>Published: Published
+		<br/>Percent or Amount: Amount
+		<br/>Discount Type: Overall
+		<br/>Value: 25
+		<br/>Value Definition: <i>blank</i>
+		<br/>Number of Uses Total: <i>blank</i>
+		<br/>Number of Uses Per Customer: <i>blank</i>
+		<br/>Minimum Value: 100
+		<br/>Expiration: 2020-10-17
+		<br/>Customer: <i>2 chosen</i>
+		<br/>Asset Type: Category
+		<br/>Asset Selection: Include <i>3 chosen</i>
+		<br>This coupon will work for the 2 customers chosen as long as their shopping cart total has a minimum total of 100 and at least one product in the cart is in the category of one of the 3 chosen categories in the coupon.  It will take $25 off the total value and it is a permanent coupon so it will work everytime used as long as the criteria are met.  The coupon will become invalid on October 17, 2020.
+	</div>
+	<div class="title2" id="Example-3">4.3 Example 3</div>
+	<div class="desc2">
+		Function Type: Coupon
+		<br/>Coupon Code: COUPONCODE3
+		<br/>Published: Published
+		<br/>Percent or Amount: Percent
+		<br/>Discount Type: Specific
+		<br/>Value: <i>blank</i>
+		<br/>Value Definition: 2-10;5-20;7-25;
+		<br/>Number of Uses Total: <i>blank</i>
+		<br/>Number of Uses per Customer: 3
+		<br/>Minimum Value: 120
+		<br/>Expiration: <i>blank</i>
+		<br/>Customer: <i>7 chosen</i>
+		<br/>Asset Type: Product
+		<br/>Asset Selection: Include <i>3 chosen</i>
+		<br>This coupon will work for the 7 customers chosen as long as their shopping cart has a minimum total of 120 and at least one product in the cart is one of the 3 chosen in the coupon.  Since the discount type is set to specific, the percentage discount only applies to the products listed in the coupon.  If a customer has 1 of any of the 3 products, he/she would get no discount.  If the customer has 2 of any of the 3 products, a discount of 10% will be given for the 2 products.  If the customer has 5 (total quantity) of any of the 3 products, a discount of 20% will be given for the 5 products.  And lastly if the customer has 7 or more of the 3 products, a discount of 25% will be given on the 7 or more products.  Each of the customers selected can use this coupon a total of 3 times.  Since it has no expiration date, it never expires, but with the restrictions set, it effectively expires after all 7 customers use the coupon on 3 seperate occasions each.
+	</div>
+	<div class="title2" id="Example-4">4.4 Example 4</div>
+	<div class="desc2">
+		Function Type: Shipping
+		<br/>Coupon Code: COUPONCODE4
+		<br/>Published: Published
+		<br/>Percent or Amount: Amount
+		<br/>Value: 5
+		<br/>Number of Uses Total: 100
+		<br/>Number of Uses Per Customer: <i>blank</i>
+		<br/>Minimum Value: <i>blank</i>
+		<br/>Expiration: <i>blank</i>
+		<br/>Customer: <i>blank</i>
+		<br/>Asset Selection: Exclude <i>2 chosen</i>
+		<br>Anybody can use this coupon (an account is not required) and it will work for exactly 100 times.  This is great for campaigns saying the first 100 orders get "fill in the blank".  The total value in products bought has to be 100 or over.  As long as the shipping selected is one of the ones supported and it is NOT one of the ones selected in the coupon, $5 will be taken off of the shipping cost.  If the cost of shipping is less than $5 then the cost of shipping will be used instead.
+	</div>
+	<div class="title2" id="Example-5">4.5 Example 5</div>
+	<div class="desc2">
+		Function Type: Gift Certificate
+		<br/>Coupon Code: COUPONCODE5
+		<br/>Published: Published
+		<br/>Value: 35
+		<br/>Expiration: <i>blank</i>
+		<br>This creates a gift certificate coupon.  Gift certificate coupons only deduct from the products, not the shipping cost.  This coupon can be used as many times as is needed to use up the value of 35.
+	</div>	
+</div>
+
+<div class="title" id="Troubleshooting">5 Troubleshooting</div>
+<div class="desc">If you are having problems with coupons being accepted, there are a few things you can try:
+	<ul>
+		<li>Go to AwoCoupon->Configuration->Error tab and change the error messages to something more identifiable, to see why a coupon fails.</li>
+		<li>FTP into your webroot and verify these files are within your override folder:
+			<ul>
+				<li>/override/classes/Cart.php</li>
+				<li>/override/classes/Order.php</li>
+				<li>/override/classes/Discount.php</li>
+				<li>/override/controllers/ParentOrderController.php</li>
+			</ul>
+			These files would have been added when you first installed AwoCoupon.  If you already had these override files, your originals were saved with the postfix .awocoupon.php.  You will need to merge the files in order to get your original function back.
+		</li>
+	</ul>
+</div>
