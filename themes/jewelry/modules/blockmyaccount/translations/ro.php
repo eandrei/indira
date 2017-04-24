@@ -11,4 +11,4 @@ $_MODULE['<{blockmyaccount}jewelry>blockmyaccount_9132bc7bac91dd4e1c453d4e96edf2
 $_MODULE['<{blockmyaccount}jewelry>blockmyaccount_e45be0a0d4a0b62b15694c1a631e6e62'] = 'Adresele mele';
 $_MODULE['<{blockmyaccount}jewelry>blockmyaccount_63b1ba91576576e6cf2da6fab7617e58'] = 'Informaţiile mele personale';
 $_MODULE['<{blockmyaccount}jewelry>blockmyaccount_95d2137c196c7f84df5753ed78f18332'] = 'Cupoanele mele';
-$_MODULE['<{blockmyaccount}jewelry>blockmyaccount_c87aacf5673fada1108c9f809d354311'] = 'Deconectare';
+$_MODULE['<{blockmyaccount}jewelry>blockmyaccount_c87aacf5673fada1108c9f809d354311'] = ' ';

@@ -1,0 +1,110 @@
+/**
+ * @component AwoCoupon Pro
+ * @copyright Copyright (C) Seyi Awofadeju - All rights reserved.
+ * @Website : http://awodev.com
+ **/
+
+div.gridOuter { position: relative; }
+div.gridInner { overflow: auto; }
+
+
+/* LOOKS */
+div.gridInner {
+	/*margin: auto; (messes up ff) */
+	border-left:1px solid #cccccc;
+}
+div.gridInner table {
+	background-color: #FDFBEB;
+	border: none;
+	margin:0; 
+	padding:0; 
+	border-collapse: collapse;
+}
+div.gridInner td,th {
+	/*text-overflow:ellipsis;  (messes up ff)
+	overflow:hidden; */
+
+	page-break-inside:avoid;
+	color: #000;
+	padding-right: 5px;
+	text-align: left;
+	border-bottom: solid 1px #d8d8d8;
+	border-left: solid 1px #d8d8d8;
+}
+div.gridInner thead td, thead th {
+	text-align: center;
+	font-size: 14px; 
+	background-color: #FDF5E6 ;
+	color: #236B8E;
+	font-weight: bold;
+	border-top: solid 1px #d8d8d8;
+	
+	padding-left:4px;
+	padding-right:4px;
+	white-space:nowrap;
+	background-color:#f7f7f7; 
+	color:#000000; 
+	font-weight:bold; 
+	border:1px solid #cccccc;
+	background: buttonface; 
+	border: 1px outset #ffffff; 
+	cursor: default;
+	border-top: 1px solid buttonhighlight; 
+	border-left: 1px solid buttonhighlight;
+	border-right: 1px solid buttonshadow;
+	border-bottom: 1px solid buttonshadow;
+	height:20px;
+}
+div.gridInner tbody{
+	border:0px;
+}
+div.gridInner tbody td.count {
+	padding-left:4px;
+	padding-right:4px;
+	white-space:nowrap;
+	background-color:#f7f7f7; 
+	color:#000000; 
+	font-weight:bold; 
+	border:1px solid #cccccc;
+	background: buttonface; 
+	border: 1px outset #ffffff; 
+	cursor: default;
+	border-top: 1px solid buttonhighlight; 
+	border-left: 1px solid buttonhighlight;
+	border-right: 1px solid buttonshadow;
+	border-bottom: 1px solid buttonshadow;
+	height:20px;
+}
+div.gridInner tbody td, tbody th{
+	white-space:nowrap;
+	border-left:1px solid #777777; 
+	border-bottom:1px solid #cccccc;
+	border-right: 1px solid #CCC;
+	padding-left:4px; 
+	padding-right:4px; 
+	color:#555555; 
+	height:16px;
+}
+div.gridInner tbody tr.alt {
+	background-color: #FFFCDE;
+	border-bottom: none;
+	border-left: none;
+	border-right: 1px solid #CCC;
+	border-top: 1px solid #DDD;
+	padding: 2px 3px 3px 4px
+	
+}
+
+div.gridInner tfoot td, tfoot th	{
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #ffefd5;
+	color: #236B8E;
+	border-top: solid 1px #708090;
+  /*text-wrap:suppress;*/
+  
+ 
+}
+
+

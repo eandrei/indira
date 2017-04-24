@@ -1,0 +1,18 @@
+/* CSS Document */
+
+.toolbarBox .process-icon-testEmagMarketplaceConnection { background-image: url('../img/process-icon-preview.png');}
+.toolbarBox .process-icon-nextEmagMarketplaceStep { background-image: url('../img/process-icon-next.png');}
+.toolbarBox .process-icon-previousEmagMarketplaceStep { background-image: url('../img/process-icon-back.png');}
+.toolbarBox .process-icon-finalEmagMarketplaceStep { background-image: url('../img/process-icon-save.png');}
+.toolbarBox .process-icon-reUploadEmagMarketplaceProducts  { background-image: url('../img/process-icon-refresh-index.png');}
+.toolbarBox .process-icon-downloadEmagMarketplaceLocalities { background-image: url('../img/process-icon-refresh-index.png');}
+.toolbarBox .process-icon-downloadEmagMarketplaceCategories { background-image: url('../img/process-icon-refresh-index.png');}
+
+.process-icon-circle-arrow-right:before { content: "\f0a9"; }
+.panel-heading-action .process-icon-previousEmagMarketplaceStep:before { content: "\f0a8"; }
+.panel-heading-action .process-icon-downloadEmagMarketplaceCategories:before { content: "\f019"; }
+.panel-heading-action .process-icon-nextEmagMarketplaceStep:before { content: "\f0a9"; }
+.panel-heading-action .process-icon-finalEmagMarketplaceStep:before { content: "\f01b"; }
+.panel-heading-action .process-icon-reUploadEmagMarketplaceProducts:before { content: "\f01b"; }
+
+.icon-AdminEmagMarketplaceMain:before { content: "\f09d"; }

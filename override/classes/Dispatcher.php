@@ -238,6 +238,10 @@ class Dispatcher extends DispatcherCore
 	{
 		if (defined('_PS_ADMIN_DIR_'))
 			$_GET['controllerUri'] = Tools::getvalue('controller');
+	  if ($_SERVER['QUERY_STRING'] && $this->request_uri) {
+            $this->request_uri = str_replace('?' . $_SERVER['QUERY_STRING'], '', $this->request_uri);
+        }
+
 		if ($this->controller)
 		{
 			$_GET['controller'] = $this->controller;
