@@ -32,7 +32,7 @@
             <span class="bold">Banca:</span> ING Unirii <br/>
             <span class="bold">Sediul:</span> Str. Dristorului, Nr. 114 <br/>
             Camera 2, Bl. 13C, Sc. 1, Et. 1, Ap. 1, Sector 3, Bucuresti<br/>
-            <span class="bold">Telefon:</span> 0722876455<br/>
+            <span class="bold">Telefon:</span>0726 963 030<br/>
 
 
         </td>
