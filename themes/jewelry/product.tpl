@@ -236,10 +236,10 @@
             <p>
                 {$date = date('N')}
                 {$hour = date('H:m')}
-                {if (in_array($date, [1,2,3,4,5]) && $hour < '16:00')}
+                {if (0 && in_array($date, [1,2,3,4,5]) && $hour < '16:00')}
                     {$time1 = strtotime($hour)}
                     {$time2 = strtotime('16:00')}
-                    {$hours = ($time2 - $time1)/3600} {$minutes = 60 * ($hours - intval($hours))} 
+                    {$hours = ($time2 - $time1)/3600} {$minutes = 60 * ($hours - intval($hours))}
                     <b style="color:#000;">Vrei sa primesti coletul MÂINE pana la ora 13:00?</b>
                     {if (intval($hours) > 1)}
                     Comanda in urmatoarele <span style="font-weight:bold; color:#3AA41B">{intval($hours)} ore si {$minutes} de min</span>
