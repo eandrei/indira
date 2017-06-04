@@ -1,0 +1,86 @@
+<style type="text/css">
+/* SERVED FONTS -  */
+@font-face {
+    font-family:'BrandonText-RegularItalic';
+    font-weight: normal;
+    font-style: italic;
+    src: url('//indirabijoux.ro/emails/html-email-support/2B26E2_0_0.eot');
+    src: url('//indirabijoux.ro/emails/html-email-support/2B26E2_0_0.eot?#iefix') format('embedded-opentype'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_0_0.woff') format('woff'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_0_0.ttf') format('truetype'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_0_0.svg#wf') format('svg');
+}
+@font-face {
+    font-family:'BrandonText-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('//indirabijoux.ro/emails/html-email-support/2B26E2_1_0.eot');
+    src: url('//indirabijoux.ro/emails/html-email-support/2B26E2_1_0.eot?#iefix') format('embedded-opentype'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_1_0.woff') format('woff'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_1_0.ttf') format('truetype'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_1_0.svg#wf') format('svg');
+}
+@font-face {
+    font-family:'BrandonText-Medium';
+    font-weight: bold;
+    font-style: normal;
+    src: url('//indirabijoux.ro/emails/html-email-support/2B26E2_2_0.eot');
+    src: url('//indirabijoux.ro/emails/html-email-support/2B26E2_2_0.eot?#iefix') format('embedded-opentype'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_2_0.woff') format('woff'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_2_0.ttf') format('truetype'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_2_0.svg#wf') format('svg');
+}
+@font-face {
+    font-family:'BrandonGrotesque-Bold';
+    font-weight: bold;
+    font-style: normal;
+    src: url('//indirabijoux.ro/emails/html-email-support/2B26E2_6_0.eot');
+    src: url('//indirabijoux.ro/emails/html-email-support/2B26E2_6_0.eot?#iefix') format('embedded-opentype'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_6_0.woff') format('woff'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_6_0.ttf') format('truetype'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_6_0.svg#wf') format('svg');
+}
+@font-face {
+    font-family:'BrandonGrotesque-Light';
+    font-weight: normal;
+    font-style: normal;
+    src: url('//indirabijoux.ro/emails/html-email-support/2B26E2_5_0.eot');
+    src: url('//indirabijoux.ro/emails/html-email-support/2B26E2_5_0.eot?#iefix') format('embedded-opentype'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_5_0.woff') format('woff'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_5_0.ttf') format('truetype'),
+    url('//indirabijoux.ro/emails/html-email-support/2B26E2_5_0.svg#wf') format('svg');
+}
+@font-face {
+    font-family:'Grad-Bold';
+    font-weight: bold;
+    font-style: normal;
+    src: url('//indirabijoux.ro/emails/html-email-support/2FF577_0_0.eot');
+    src: url('//indirabijoux.ro/emails/html-email-support/2FF577_0_0.eot?#iefix') format('embedded-opentype'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_0_0.woff2') format('woff2'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_0_0.woff') format('woff'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_0_0.ttf') format('truetype'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_0_0.svg#wf') format('svg');
+}
+@font-face {
+    font-family:'Grad';
+    font-weight: normal;
+    font-style: normal;
+    src: url('//indirabijoux.ro/emails/html-email-support/2FF577_1_0.eot');
+    src: url('//indirabijoux.ro/emails/html-email-support/2FF577_1_0.eot?#iefix') format('embedded-opentype'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_1_0.woff2') format('woff2'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_1_0.woff') format('woff'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_1_0.ttf') format('truetype'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_1_0.svg#wf') format('svg');
+}
+@font-face {
+    font-family:'Grad-Italic';
+    font-weight: normal;
+    font-style: italic;
+    src: url('//indirabijoux.ro/emails/html-email-support/2FF577_2_0.eot');
+    src: url('//indirabijoux.ro/emails/html-email-support/2FF577_2_0.eot?#iefix') format('embedded-opentype'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_2_0.woff2') format('woff2'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_2_0.woff') format('woff'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_2_0.ttf') format('truetype'),
+    url('//indirabijoux.ro/emails/html-email-support/2FF577_2_0.svg#wf') format('svg');
+}
+</style>
