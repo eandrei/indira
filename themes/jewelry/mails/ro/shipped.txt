@@ -1,6 +1,5 @@
-[{shop_url}] 
 
-Salut {firstname} {lastname},
+Buna {firstname} {lastname},
 
 Comanda ta a fost expediata. 
 Comanda ta cu numarul de referinta {order_name} a fost expediata
