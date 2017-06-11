@@ -1,14 +1,6 @@
-[{shop_url}] 
+Bine ai venit la {shop_name}. 
 
-Salut {firstname} {lastname},
-
-Va multumim ca v-ati creat cont la {shop_name}. 
-
-Aveti aici datele dumneavoastra de autentificare:
-
-E-MAIL ADDRESS: {email}
-
-PASSWORD: {passwd} 		 
+Magazin online de bijuteri boho chic, vintage si minimalist
 
 Sfaturi importante de securitate:
 
@@ -23,7 +15,5 @@ ilegitim, va rugam sa ne anuntti imediat.
 
 Acum puteti plasa comenzi in magazinul nostru: {shop_name}
 [{shop_url}] 
-
-{shop_name} [{shop_url}] powered by
-PrestaShop(tm) [http://www.prestashop.com/] 
+ 
 

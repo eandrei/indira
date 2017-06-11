@@ -1,12 +1,12 @@
 [{shop_url}] 
 
-Salut {firstname} {lastname},
+Buna {firstname} {lastname},
 
-Va multumim ca ati cumparat de la {shop_name}! 
+Iti multumim ca ati cumparat de la {shop_name}!
 
-ORDER: {order_name} Placed on {date}
+Comanda: {order_name} Plasata la data {date}
 
-PAYMENT: {payment} 		 
+Metoda de Plata: {payment}
 
 REFERINŢĂ
 
