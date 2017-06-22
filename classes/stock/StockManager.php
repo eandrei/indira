@@ -95,6 +95,18 @@ class StockManagerCore implements StockManagerInterface
             'sign' => 1
         );
 
+        if (empty($mvt_params['id_employee'])) {
+            $mvt_params['id_employee'] = 1;
+        }
+
+        if (empty($mvt_params['employee_firstname'])) {
+            $mvt_params['employee_firstname'] = 'Script';
+        }
+
+        if (empty($mvt_params['employee_lastname'])) {
+            $mvt_params['employee_lastname'] = 'Script';
+        }
+
         $stock_exists = false;
 
         // switch on MANAGEMENT_TYPE
@@ -231,6 +243,7 @@ class StockManagerCore implements StockManagerInterface
         $removedProducts = array();
 
         if ($this->shouldPreventStockOperation($warehouse, $id_product, $quantity)) {
+
             return $removedProducts;
         }
 
@@ -297,9 +310,11 @@ class StockManagerCore implements StockManagerInterface
                     );
                 }
             } else {
+
                 return false;
             }
         } else {
+
             $quantity_in_stock = $this->computeProductQuantityInStock(
                 $warehouse,
                 $id_product,
@@ -321,6 +336,7 @@ class StockManagerCore implements StockManagerInterface
 
             /** @var \Countable $stock_collection */
             if (count($stock_collection) <= 0) {
+
                 return $removedProducts;
             }
 
@@ -410,6 +426,7 @@ class StockManagerCore implements StockManagerInterface
                         ksort($stock_history_qty_available);
                     }
 
+
                     // checks each stock to manage the real quantity to decrement for each of them
                     foreach ($stock_history_qty_available as $entry) {
                         if ($entry['qty'] >= $global_quantity_to_decrement) {
@@ -429,6 +446,7 @@ class StockManagerCore implements StockManagerInterface
 
                     // for each stock, decrements it and logs the mvts
                     foreach ($stock_collection as $stock) {
+
                         if (
                             array_key_exists($stock->id, $quantity_to_decrement_by_stock) &&
                             is_array($quantity_to_decrement_by_stock[$stock->id])
