@@ -26,5 +26,7 @@ $_LANGMAIL['New voucher for your order %s'] = 'Cupon nou pentru comanda %s';
 $_LANGMAIL['Newsletter confirmation'] = '';
 $_LANGMAIL['Email verification'] = '';
 $_LANGMAIL['Newsletter voucher'] = 'Cupon Reducere!';
+$_LANGMAIL['Congratulations!'] = '';
+$_LANGMAIL['Referral Program'] = 'Recomandare de la {firstname} {lastname}! {discount} cadou';
 
 ?>

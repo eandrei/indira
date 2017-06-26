@@ -1,4 +1,3 @@
-
 Buna {firstname} {lastname},
 
 Comanda ta a fost expediata. 
@@ -8,8 +7,6 @@ Va multumim ca ati cumparat de la {shop_name}!
 
 Poti sa revizuiesti comanda si sa descarci factura de la 
 "Istoric Comenzi" [{history_url}] sectiune a contului tau de client din cadrul meniului Contul meu
-[{my_account_url}] odin magazinul nostru.
+[{my_account_url}] din magazinul nostru.
 
-{shop_name} [{shop_url}] powered by
-PrestaShop(tm) [http://www.prestashop.com/] 
-
+{shop_name} [{shop_url}]
