@@ -24,7 +24,7 @@
 *}
 
 <!-- MODULE ReferralProgram -->
-<fieldset class="account_creation">
+<fieldset class="account_creation" style="display: none;">
 	<h3 class="page-subheading">{l s='Referral program' mod='referralprogram'}</h3>
 	<p class="form-group">
 		<label for="referralprogram">{l s='E-mail address of your sponsor' mod='referralprogram'}</label>

@@ -24,10 +24,10 @@
 *}
 
 <!-- MODULE ReferralProgram -->
-<fieldset class="account_creation">
+<fieldset class="account_creation" style="display:none;">
 	<h3>{l s='Referral program' mod='referralprogram'}</h3>
 	<p class="text">
-		<label for="referralprogram">{l s='E-mail address of your sponsor' mod='referralprogram'}</label>
+		<label for="referralprogram">asd{l s='E-mail address of your sponsor' mod='referralprogram'}</label>
 		<input type="text" size="52" maxlength="128" id="referralprogram" name="referralprogram" value="{if isset($smarty.post.referralprogram)}{$smarty.post.referralprogram|escape:'html':'UTF-8'}{/if}" />
 	</p>
 </fieldset>
