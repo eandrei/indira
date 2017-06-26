@@ -2,7 +2,7 @@
 
 global $_LANGMAIL;
 $_LANGMAIL = array();
-$_LANGMAIL['Welcome!'] = 'Bine ati venit!';
+$_LANGMAIL['Welcome!'] = 'Bine ai venit!';
 $_LANGMAIL['Process the payment of your order'] = 'Procesează plata comenzii dumneavoastră';
 $_LANGMAIL['Your message has been correctly sent #ct%1$s #tc%2$s'] = 'Mesajul a fost trimis cu succes #ct%1$s #tc%2$s';
 $_LANGMAIL['Your message has been correctly sent'] = 'Mesajul a fost trimis cu succes';
@@ -20,7 +20,7 @@ $_LANGMAIL['Message from a customer'] = 'Mesaj de la un client';
 $_LANGMAIL['New message regarding your order'] = 'Mesaj nou privind comanda dumneavoastră';
 $_LANGMAIL['Your order return status has changed'] = 'Statusul returnării comenzii a fost modificat';
 $_LANGMAIL['Password query confirmation'] = 'Confirmare interogare parola';
-$_LANGMAIL['An answer to your message is available #ct%1$s #tc%2$s'] = 'Un răspuns la mesajul tău este posibil la #ct%1$s #tc%2$s ';
+$_LANGMAIL['An answer to your message is available #ct%1$s #tc%2$s'] = 'Răspuns la mesajul tău  #ct%1$s #tc%2$s ';
 $_LANGMAIL['New voucher for your order #%s'] = 'Cupon nou pentru comanda %s';
 $_LANGMAIL['New voucher for your order %s'] = 'Cupon nou pentru comanda %s';
 $_LANGMAIL['Newsletter confirmation'] = '';
