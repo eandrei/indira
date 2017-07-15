@@ -1168,3 +1168,9 @@ Quick View Styles
     padding-left: 70px;
 }
 
+#mailalert_link {
+    font-weight: bold;
+    color: #4ca;
+    margin-bottom: 19px;
+    display: block;
+}
