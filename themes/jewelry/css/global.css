@@ -9166,3 +9166,13 @@ body.order #columns {
 #new-products .nbrItemPage {
     display: none;
 }
+
+
+.col-xs-12.easyauth_popup_optimize {
+    padding: 15px !important;
+}
+
+#index  .fancybox-inner  .col-xs-12 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}

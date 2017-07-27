@@ -10,7 +10,7 @@
             <i class="fa fa-user"> {l s='Sign out' mod='blockuserinfo'}</i>
 		</a>
 	{else}
-        <a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log in to your customer account' mod='blockuserinfo'}" class="social-icon"><i class="fa fa-user"> {l s='Sign in' mod='blockuserinfo'}</i></a>
+        <a class="login" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log in to your customer account' mod='blockuserinfo'}" class="social-icon"><i class="fa fa-user"> {l s='Sign in' mod='blockuserinfo'}</i></a>
 	{/if}
 </div>
 <!-- /Block usmodule NAV -->
