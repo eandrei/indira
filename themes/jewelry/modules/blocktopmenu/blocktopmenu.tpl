@@ -18,7 +18,7 @@
 
 		<ul class="sf-menu clearfix menu-content">
             <li class="referral">
-                <a href="/ofera" title="Castiga 20 de Ron" class="{if $logged}login{/if} mobile-referral"><i class="fa fa-gift"><b>Invita prieteni castiga 20 RON!</b></i></a>
+                <a href="/ofera" title="Castiga 20 de Ron" class="{if !$logged}login{/if} mobile-referral"><i class="fa fa-gift"><b>Invita prieteni castiga 20 RON!</b></i></a>
             </li>
             {if $MENU_SEARCH}
                 <li class="sf-search noBack">
