@@ -28,5 +28,6 @@
     <a href="https://www.facebook.com/indirabijoux1/" target="_blank" title="Urmareste-ne pe Facebook" class="social-icon social-facebook"><i class="fa fa-facebook"></i></a>
     <a href="https://www.instagram.com/indirabijoux/" target="_blank" title="Urmareste-ne pe Instagram" class="social-icon social-instagram"><i class="fa fa-instagram"></i></a>
     <a href="tel:{$telnumber}" title="{l s='Call us' mod='blockcontact'}" class="social-icon"><i class="fa fa-phone"> {$telnumber}</i></a>
+    <a href="/ofera" title="Castiga 20 de Ron" class="social-icon headerlink-ofera"><i class="fa fa-gift"> Invita prieteni castiga 20 de RON</i></a>
 </div>
 

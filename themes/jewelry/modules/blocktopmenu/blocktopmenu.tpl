@@ -17,6 +17,9 @@
         </div>
 
 		<ul class="sf-menu clearfix menu-content">
+            <li class="referral">
+                <a href="/ofera" title="Castiga 20 de Ron" class="mobile-referral"><i class="fa fa-gift"><b>Invita prieteni castiga 20 RON!</b></i></a>
+            </li>
             {if $MENU_SEARCH}
                 <li class="sf-search noBack">
                     <form id="searchbox" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" method="get">

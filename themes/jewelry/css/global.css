@@ -8913,6 +8913,12 @@ body#order header .row #header_logo,
 }
 
 @media screen and (max-width: 767px) {
+    .headerlink-ofera {
+        display: none !important;
+    }
+    .mobile-referral {
+        border-bottom: 2px solid #000;
+    }
      .cart__mobile {
          display: block;
      }

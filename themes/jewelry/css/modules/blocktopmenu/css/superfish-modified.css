@@ -389,7 +389,7 @@ ul.sf-menu li li li.sfHover ul {
       float: none; text-align:left;
       position: relative; 
       border-right: none;
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
   }
 	  
@@ -442,4 +442,10 @@ ul.sf-menu li li li.sfHover ul {
     font-size: 14px;
     font-weight: normal;
     color: black;
+}
+
+@media (min-width: 768px) {
+    .mobile-referral {
+        display: none !important;
+    }
 }
