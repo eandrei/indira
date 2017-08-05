@@ -55,7 +55,7 @@ class UrgentCargus {
             $to = (new DateTime())->format("Y-m-d");
         }
 
-        $packages = $this->cargusClient->CallMethod("AwbTrace/GetAwbTraceDeltaOnlyInterval?FromDate=$from" ."T00:00:00-05:00&ToDate=$to" ."T00:00:00-05:00",  array(), 'GET', $this->cargusToken);
+        $packages = $this->cargusClient->CallMethod("AwbTrace/GetDeltaEvents?FromDate=$from" ."T00:00:00-05:00&ToDate=$to" ."T00:00:00-05:00",  array(), 'GET', $this->cargusToken);
 
         $result = [];
         foreach ($packages as $package) {
